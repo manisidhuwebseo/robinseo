@@ -135,13 +135,18 @@
     <section class="contact" id="contact">
         <h2>Get Your Free SEO Audit</h2>
         <p>Enter your details and I'll send you a personalized video teardown of your website.</p>
-        <form id="contactForm">
-            <input type="text" placeholder="Your Name" required>
-            <input type="url" placeholder="Your Website URL" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Tell me about your business goals..." rows="5"></textarea>
-            <button type="submit">Send My Audit Now</button>
-        </form>
+<form action="https://formsubmit.co/manisidhuwebseo@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="url" name="website" placeholder="Your Website URL" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Tell me about your business goals..." rows="5"></textarea>
+
+    <!-- Hidden settings -->
+    <input type="hidden" name="_subject" value="New SEO Audit Request">
+    <input type="hidden" name="_captcha" value="false">
+
+    <button type="submit">Send My Audit Now</button>
+</form>
     </section>
 
     <footer style="padding: 30px; text-align: center; background: #111; color: #777;">
