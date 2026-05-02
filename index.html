@@ -1,9 +1,19 @@
+Here’s a complete, production-ready website inspired by Webkitlab Technologies (https://webkitlab.com). This includes:
+
+Homepage (hero section, services, about, testimonials, contact)
+Responsive design (works on mobile, tablet, desktop)
+Modern UI (clean layout, smooth animations, professional colors)
+Fully functional code (HTML, CSS, JavaScript)
+Website Code (Copy-Paste Ready)
+html
+Copy
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEO Infographic</title>
+    <title>Webkitlab Technologies | Digital Marketing & Web Development</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* Reset & Base Styles */
         * {
@@ -14,181 +24,292 @@
         }
 
         body {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
         }
 
-        /* Infographic Container */
-        .seo-infographic {
+        /* Header & Navigation */
+        header {
             background: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
             width: 100%;
-            max-width: 800px;
-            overflow: hidden;
-            position: relative;
+            z-index: 1000;
+            padding: 15px 0;
         }
 
-        /* Header */
-        .seo-header {
-            background: linear-gradient(90deg, #4CAF50, #2E7D32);
-            color: white;
-            padding: 20px;
-            text-align: center;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
 
-        .seo-header h1 {
-            font-size: 28px;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-
-        .seo-header p {
-            font-size: 16px;
-            opacity: 0.9;
-        }
-
-        /* SEO Categories */
-        .seo-categories {
+        nav {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px;
-            gap: 15px;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        .category-card {
-            background: white;
-            border-radius: 10px;
-            padding: 15px;
-            width: 30%;
-            min-width: 200px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .category-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .category-icon {
+        .logo {
+            display: flex;
+            align-items: center;
             font-size: 24px;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-
-        .category-title {
-            font-size: 18px;
-            font-weight: 600;
+            font-weight: 700;
             color: #2E7D32;
-            text-align: center;
-            margin-bottom: 10px;
         }
 
-        .category-list {
+        .logo i {
+            margin-right: 10px;
+            font-size: 30px;
+        }
+
+        .nav-links {
+            display: flex;
             list-style: none;
-            font-size: 14px;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #2E7D32;
+        }
+
+        .cta-button {
+            background: #2E7D32;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #1B5E20;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 150px 0 100px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #2E7D32;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto 30px;
             color: #555;
         }
 
-        .category-list li {
-            margin-bottom: 8px;
-            padding-left: 5px;
-            position: relative;
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
 
-        .category-list li::before {
-            content: "•";
-            color: #4CAF50;
-            font-weight: bold;
-            position: absolute;
-            left: -10px;
+        .btn-secondary {
+            background: transparent;
+            color: #2E7D32;
+            border: 2px solid #2E7D32;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
         }
 
-        /* Footer */
-        .seo-footer {
-            background: #f5f5f5;
-            padding: 15px;
+        .btn-secondary:hover {
+            background: #2E7D32;
+            color: white;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .section-title {
             text-align: center;
-            font-size: 14px;
-            color: #777;
+            margin-bottom: 60px;
         }
 
-        /* Responsive Adjustments */
-        @media (max-width: 768px) {
-            .seo-categories {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .category-card {
-                width: 80%;
-            }
+        .section-title h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #2E7D32;
+            margin-bottom: 15px;
         }
-    </style>
-</head>
-<body>
-    <div class="seo-infographic">
-        <!-- Header -->
-        <div class="seo-header">
-            <h1>🚀 SEO Fundamentals</h1>
-            <p>Optimize your website for search engines & users</p>
-        </div>
 
-        <!-- SEO Categories -->
-        <div class="seo-categories">
-            <!-- On-Page SEO -->
-            <div class="category-card">
-                <div class="category-icon">📝</div>
-                <div class="category-title">On-Page SEO</div>
-                <ul class="category-list">
-                    <li>Keyword optimization</li>
-                    <li>Meta titles & descriptions</li>
-                    <li>Header tags (H1, H2, H3)</li>
-                    <li>Internal linking</li>
-                    <li>Image alt text</li>
-                    <li>URL structure</li>
-                </ul>
-            </div>
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
 
-            <!-- Off-Page SEO -->
-            <div class="category-card">
-                <div class="category-icon">🔗</div>
-                <div class="category-title">Off-Page SEO</div>
-                <ul class="category-list">
-                    <li>Backlink building</li>
-                    <li>Social signals</li>
-                    <li>Guest blogging</li>
-                    <li>Brand mentions</li>
-                    <li>Influencer collaborations</li>
-                    <li>Forum & community engagement</li>
-                </ul>
-            </div>
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
 
-            <!-- Technical SEO -->
-            <div class="category-card">
-                <div class="category-icon">⚙️</div>
-                <div class="category-title">Technical SEO</div>
-                <ul class="category-list">
-                    <li>Site speed optimization</li>
-                    <li>Mobile-friendliness</li>
-                    <li>XML sitemaps</li>
-                    <li>Robots.txt</li>
-                    <li>Schema markup</li>
-                    <li>HTTPS security</li>
-                </ul>
-            </div>
-        </div>
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
 
-        <!-- Footer -->
-        <div class="seo-footer">
-            <p>© 2024 SEO Guide | Built for Digital Marketers</p>
-        </div>
-    </div>
-</body>
-</html>
+        .service-icon {
+            font-size: 40px;
+            color: #2E7D32;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .service-card p {
+            color: #666;
+        }
+
+        /* About Section */
+        .about {
+            padding: 100px 0;
+            background: #f8f9fa;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-image {
+            flex: 1;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-text h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #2E7D32;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .testimonial-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-card h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #2E7D32;
+        }
+
+        .testimonial-card p {
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 100px 0;
+            background: #f8f9fa;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2E7D32;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #555;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 
