@@ -86,7 +86,9 @@
         }
     </style>
 </head>
-    <script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
 const names = [
   "John Smith", "Michael Johnson", "David Williams", "James Brown",
   "Robert Jones", "William Garcia", "Christopher Miller",
@@ -111,26 +113,29 @@ const actions = [
 ];
 
 function showPopup() {
+  const popup = document.getElementById("sales-popup");
+  const text = document.getElementById("sales-text");
+
+  if (!popup || !text) return; // safety
+
   const name = names[Math.floor(Math.random() * names.length)];
   const city = cities[Math.floor(Math.random() * cities.length)];
   const action = actions[Math.floor(Math.random() * actions.length)];
 
-  const popup = document.getElementById("sales-popup");
-  const text = document.getElementById("sales-text");
-
-  // 👇 NAME COLOR + BOLD
-  text.innerHTML = `<strong style="color:#007bff;">${name}</strong> from ${city} ${action}`;
+  text.innerHTML = `<strong style="color:#28a745;">${name}</strong> from ${city} ${action}`;
 
   popup.style.display = "block";
 
   setTimeout(() => {
     popup.style.display = "none";
-
     setTimeout(showPopup, 5000);
   }, 4000);
 }
 
+// start after 5 sec
 setTimeout(showPopup, 5000);
+
+});
 </script>
 <body>
     <nav>
