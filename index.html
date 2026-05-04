@@ -86,6 +86,52 @@
         }
     </style>
 </head>
+    <script>
+const names = [
+  "John Smith", "Michael Johnson", "David Williams", "James Brown",
+  "Robert Jones", "William Garcia", "Christopher Miller",
+  "Daniel Davis", "Matthew Rodriguez", "Anthony Martinez",
+  "Jessica Taylor", "Ashley Anderson", "Emily Thomas",
+  "Sarah Jackson", "Amanda White", "Jennifer Harris",
+  "Elizabeth Martin", "Megan Thompson", "Lauren Moore", "Rachel Clark"
+];
+
+const cities = [
+  "New York", "Los Angeles", "Chicago", "Houston", "Phoenix",
+  "Philadelphia", "San Antonio", "San Diego", "Dallas", "San Jose",
+  "Austin", "Jacksonville", "Fort Worth", "Columbus", "Charlotte",
+  "San Francisco", "Indianapolis", "Seattle", "Denver", "Washington"
+];
+
+const actions = [
+  "just bought this product",
+  "just placed an order",
+  "just signed up",
+  "just added this to cart"
+];
+
+function showPopup() {
+  const name = names[Math.floor(Math.random() * names.length)];
+  const city = cities[Math.floor(Math.random() * cities.length)];
+  const action = actions[Math.floor(Math.random() * actions.length)];
+
+  const popup = document.getElementById("sales-popup");
+  const text = document.getElementById("sales-text");
+
+  // 👇 NAME COLOR + BOLD
+  text.innerHTML = `<strong style="color:#007bff;">${name}</strong> from ${city} ${action}`;
+
+  popup.style.display = "block";
+
+  setTimeout(() => {
+    popup.style.display = "none";
+
+    setTimeout(showPopup, 5000);
+  }, 4000);
+}
+
+setTimeout(showPopup, 5000);
+</script>
 <body>
     <nav>
         <div class="logo">ROBIN SEO</div>
