@@ -1,326 +1,550 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="IqqxycKIED8fM4Xgg--p4evsbjN5HAqi8MfCmXOiwXw" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robin SEO Expert | SEO Services India | Best SEO Company India</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Robin SEO Expert - Local SEO Services for Doctors in India. Get more patient appointments with Google My Business optimization, local ranking strategies, and proven results.">
+    <meta name="keywords" content="SEO for doctors India, local SEO services, medical clinic SEO, Google My Business optimization, doctor SEO expert">
+    <meta name="author" content="Robin SEO Expert">
+    <title>Robin SEO Expert - Local SEO Services for Doctors in India</title>
     <style>
-        :root {
-            --primary: #2d6a4f; /* SEO Growth Green */
-            --secondary: #1b4332;
-            --accent: #d4a373;
-            --text-dark: #2b2d42;
-            --text-light: #8d99ae;
-            --white: #ffffff;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Poppins', sans-serif; color: var(--text-dark); line-height: 1.6; overflow-x: hidden; scroll-behavior: smooth; }
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
 
         /* Navigation */
         nav {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        nav .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 10%;
-            background: var(--white);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: fixed;
-            width: 100%;
-            top: 0; z-index: 1000;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
-        .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
-        .nav-links { display: flex; gap: 30px; list-style: none; }
-        .nav-links a { text-decoration: none; color: var(--text-dark); font-weight: 500; transition: 0.3s; }
-        .nav-links a:hover { color: var(--primary); }
-        .btn-cta { background: var(--primary); color: var(--white) !important; padding: 10px 20px; border-radius: 5px; }
+
+        nav .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        nav .logo-img {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+        }
+
+        nav .logo-text {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+        }
+
+        nav .logo-tagline {
+            font-size: 11px;
+            color: #fbbf24;
+            font-weight: 600;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        nav a:hover {
+            color: #fbbf24;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
         /* Hero Section */
         .hero {
-            padding: 150px 10% 100px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: linear-gradient(to right, #f8f9fa, #e9ecef);
-            min-height: 90vh;
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            color: white;
+            padding: 120px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
         }
-        .hero-content { flex: 1; }
-        .hero-content h1 { font-size: 3.5rem; line-height: 1.2; margin-bottom: 20px; }
-        .hero-content span { color: var(--primary); }
-        .hero-image { flex: 1; text-align: right; }
-        .hero-image img { 
-            width: 80%; 
-            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; 
-            box-shadow: 20px 20px 0px var(--primary);
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 400px;
+            height: 400px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(20px); }
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            font-weight: 800;
+            animation: slideInDown 0.8s ease;
+        }
+
+        @keyframes slideInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero .subtitle {
+            font-size: 20px;
+            margin-bottom: 15px;
+            opacity: 0.95;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: white;
+            padding: 16px 45px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
+        }
+
+        .cta-secondary {
+            background: rgba(255,255,255,0.2);
+            border: 2px solid white;
+        }
+
+        .cta-secondary:hover {
+            background: white;
+            color: #2563eb;
+            border-color: white;
+        }
+
+        /* Stats Section */
+        .stats {
+            background: white;
+            padding: 70px 20px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .stat-box {
+            padding: 35px;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.1);
+            text-align: center;
+            border-left: 5px solid #2563eb;
+            transition: all 0.3s;
+        }
+
+        .stat-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.15);
+        }
+
+        .stat-number {
+            font-size: 42px;
+            font-weight: bold;
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        .stat-text {
+            font-size: 16px;
+            color: #666;
+            font-weight: 500;
+        }
+
+        /* About Section */
+        .about {
+            background: linear-gradient(135deg, #f8fafc 0%, #f0f9ff 100%);
+            padding: 80px 20px;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 38px;
+            margin-bottom: 20px;
+            color: #1e3a8a;
+            font-weight: 800;
+        }
+
+        .about-text p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .about-box {
+            background: white;
+            padding: 28px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #f59e0b;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .about-box h4 {
+            color: #2563eb;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .expertise-list {
+            list-style: none;
+        }
+
+        .expertise-list li {
+            padding: 10px 0;
+            color: #555;
+            font-size: 15px;
+        }
+
+        .expertise-list li:before {
+            content: "✓ ";
+            color: #10b981;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        .about-image {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            color: white;
+        }
+
+        .about-image-placeholder {
+            font-size: 100px;
+            margin-bottom: 15px;
+        }
+
+        .about-image h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .about-image p {
+            color: rgba(255,255,255,0.9);
+            margin: 0;
         }
 
         /* Services Section */
-        .services { padding: 100px 10%; text-align: center; }
-        .section-header { margin-bottom: 50px; }
-        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .card { 
-            background: var(--white); 
-            padding: 40px; 
-            border-radius: 15px; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
-            transition: 0.3s;
-            border-bottom: 4px solid transparent;
+        .services {
+            padding: 80px 20px;
+            background: white;
         }
-        .card:hover { transform: translateY(-10px); border-bottom: 4px solid var(--primary); }
-        .card img { width: 60px; margin-bottom: 20px; }
-        .card h3 { margin-bottom: 15px; }
 
-        /* Contact Section */
-        .contact { padding: 100px 10%; background: var(--secondary); color: var(--white); text-align: center; }
-        .contact form { max-width: 600px; margin: 40px auto; background: var(--white); padding: 40px; border-radius: 10px; display: flex; flex-direction: column; gap: 15px; }
-        .contact input, .contact textarea { padding: 15px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit; }
-        .contact button { background: var(--primary); color: white; border: none; padding: 15px; font-size: 1rem; font-weight: 600; cursor: pointer; border-radius: 5px; }
-
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .hero { flex-direction: column; text-align: center; padding-top: 100px; }
-            .hero-image { margin-top: 50px; }
-            .nav-links { display: none; }
+        .section-title {
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: #1e3a8a;
+            font-weight: 800;
         }
-    </style>
-</head>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
 
-const names = [
-  "John Smith", "Michael Johnson", "David Williams", "James Brown",
-  "Robert Jones", "William Garcia", "Christopher Miller",
-  "Daniel Davis", "Matthew Rodriguez", "Anthony Martinez",
-  "Jessica Taylor", "Ashley Anderson", "Emily Thomas",
-  "Sarah Jackson", "Amanda White", "Jennifer Harris",
-  "Elizabeth Martin", "Megan Thompson", "Lauren Moore", "Rachel Clark"
-];
+        .section-subtitle {
+            text-align: center;
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 60px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-const cities = [
-  "New York", "Los Angeles", "Chicago", "Houston", "Phoenix",
-  "Philadelphia", "San Antonio", "San Diego", "Dallas", "San Jose",
-  "Austin", "Jacksonville", "Fort Worth", "Columbus", "Charlotte",
-  "San Francisco", "Indianapolis", "Seattle", "Denver", "Washington"
-];
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
 
-const actions = [
-  "just bought this product",
-  "just placed an order",
-  "just signed up",
-  "just added this to cart"
-];
+        .service-card {
+            padding: 35px;
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            border-radius: 12px;
+            border-top: 4px solid #2563eb;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+        }
 
-function showPopup() {
-  const popup = document.getElementById("sales-popup");
-  const text = document.getElementById("sales-text");
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 35px rgba(37, 99, 235, 0.15);
+        }
 
-  if (!popup || !text) return; // safety
+        .service-icon {
+            font-size: 42px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
 
-  const name = names[Math.floor(Math.random() * names.length)];
-  const city = cities[Math.floor(Math.random() * cities.length)];
-  const action = actions[Math.floor(Math.random() * actions.length)];
+        .service-card h3 {
+            margin-bottom: 15px;
+            color: #1e3a8a;
+            font-size: 22px;
+            font-weight: 700;
+        }
 
-  text.innerHTML = `<strong style="color:#28a745;">${name}</strong> from ${city} ${action}`;
+        .service-card p {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
 
-  popup.style.display = "block";
+        .service-features {
+            list-style: none;
+            font-size: 14px;
+            color: #555;
+        }
 
-  setTimeout(() => {
-    popup.style.display = "none";
-    setTimeout(showPopup, 5000);
-  }, 4000);
-}
+        .service-features li {
+            padding: 8px 0;
+        }
 
-// start after 5 sec
-setTimeout(showPopup, 5000);
+        .service-features li:before {
+            content: "→ ";
+            color: #f59e0b;
+            font-weight: bold;
+            margin-right: 8px;
+        }
 
-});
-</script>
-<body>
-    <nav>
-        <div class="logo">ROBIN SEO</div>
-        <ul class="nav-links">
-            <li><a href="#services">Services</a></li>
-            <li><a href="#results">Results</a></li>
-            <li><a href="#contact" class="btn-cta">Free Audit</a></li>
-        </ul>
-    </nav>
+        /* Case Studies */
+        .case-studies {
+            background: linear-gradient(135deg, #f8fafc 0%, #f0f9ff 100%);
+            padding: 80px 20px;
+        }
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Stop Chasing Leads. <br><span>Start Ranking #1.</span></h1>
-            <p>I am Robin, an Expert SEO Strategist helping brands increase their organic traffic by up to 300% using data-backed techniques.</p> 
-            <!-- URGENCY BOX -->
+        .case-study-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 30px;
+        }
 
-<div id="urgencyBox">
-  👁 <span id="userCount">52</span> people are online now on this page!
-</div>
+        .case-study {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+        }
 
-<div id="timerBox">
-  Your order is reserved for <span id="countdown">08:32</span>
-</div>
+        .case-study:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 35px rgba(37, 99, 235, 0.15);
+        }
 
-<style>
-#urgencyBox {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: #eef7ff;
-  color: #0073e6;
-  padding: 8px 14px;
-  border-radius: 20px;
-  font-size: 15px;
-  font-weight: 500;
-}
+        .case-study-header {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            padding: 30px 20px;
+            color: white;
+        }
 
-#timerBox {
-  margin-top: 10px;
-  font-weight: bold;
-  font-size: 16px;
-}
+        .case-study-header h4 {
+            font-size: 19px;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
 
-/* Pulse animation */
-.pulse {
-  animation: pulseAnim 0.4s;
-}
+        .case-study-specialty {
+            font-size: 13px;
+            opacity: 0.9;
+        }
 
-@keyframes pulseAnim {
-  0% {transform: scale(1);}
-  50% {transform: scale(1.25);}
-  100% {transform: scale(1);}
-}
-</style>
+        .case-study-content {
+            padding: 30px 20px;
+        }
 
-<script>
-// Start random between 45–65
-let currentUsers = Math.floor(Math.random() * (65 - 45 + 1)) + 45;
+        .case-study-label {
+            font-size: 11px;
+            color: #999;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
 
-function updateUsers() {
-  let randomType = Math.random();
+        .case-study-metric {
+            font-size: 32px;
+            font-weight: bold;
+            color: #2563eb;
+            margin-bottom: 5px;
+        }
 
-  if (randomType < 0.5) {
-    // Small change
-    currentUsers += Math.floor(Math.random() * 5) - 2; // -2 to +2
-  } else if (randomType < 0.8) {
-    // Medium jump
-    currentUsers += Math.floor(Math.random() * 10) - 5; // -5 to +5
-  } else {
-    // Big jump (real feel)
-    currentUsers += Math.floor(Math.random() * 20) - 10; // -10 to +10
-  }
+        .case-study-description {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
 
-  // Limits
-  if (currentUsers < 40) currentUsers = 40;
-  if (currentUsers > 70) currentUsers = 70;
+        .result {
+            background: linear-gradient(135deg, #d1fae5 0%, #c6f6d5 100%);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #10b981;
+        }
 
-  let el = document.getElementById("userCount");
-  el.innerText = currentUsers;
+        .result-label {
+            font-size: 11px;
+            color: #047857;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            letter-spacing: 0.5px;
+        }
 
-  // Animation
-  el.classList.add("pulse");
-  setTimeout(() => el.classList.remove("pulse"), 400);
-}
+        .result-text {
+            color: #065f46;
+            font-weight: 700;
+            font-size: 15px;
+        }
 
-// Random interval (2 to 5 sec)
-function randomInterval() {
-  let time = Math.floor(Math.random() * (5000 - 2000 + 1)) + 2000;
-  setTimeout(() => {
-    updateUsers();
-    randomInterval();
-  }, time);
-}
+        /* Why Choose Section */
+        .why-choose {
+            padding: 80px 20px;
+            background: white;
+        }
 
-randomInterval();
+        .why-choose-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
 
+        .why-box {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border-radius: 12px;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
 
-// Countdown Timer (8:32)
-let time = 512;
+        .why-box:hover {
+            background: linear-gradient(135deg, #e0f2fe 0%, #cffafe 100%);
+            transform: translateY(-8px);
+            border-color: #2563eb;
+        }
 
-function startTimer() {
-  let minutes = Math.floor(time / 60);
-  let seconds = time % 60;
+        .why-icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
 
-  seconds = seconds < 10 ? "0" + seconds : seconds;
+        .why-box h4 {
+            color: #1e3a8a;
+            margin-bottom: 12px;
+            font-size: 20px;
+            font-weight: 700;
+        }
 
-  document.getElementById("countdown").innerText = minutes + ":" + seconds;
+        .why-box p {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.7;
+        }
 
-  if (time > 0) time--;
-}
+        /* Pricing Section */
+        .pricing {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #f8fafc 0%, #f0f9ff 100%);
+        }
 
-setInterval(startTimer, 1000);
-</script>
-
-            <br>
-            <a href="#contact" class="btn-cta" style="padding: 15px 30px; display: inline-block;">Work With Me</a>
-        </div>
-        <div class="hero-image">
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7TMoPmZDI6eJBIJduzWOFUCLhasEDu_GCOW8Hdo7R1t3OIIcK5RucCZiPt9p275H3MjopoXbnG6lqE1PDLRW_R6WuZIM99R76a1lGj7CYbqymorgMkf9X39VtKqJsSs34Ikgb7Yi3IepCLJ7Mpo2_vcNaBA93Spn7DBN674Idkadc3D_hk-GOsuvihAc/s600/WhatsApp%20Image%202026-04-01%20at%209.25.43%20PM.jpeg" alt="Robin SEO Expert">
-        </div>
-    </section>
-
-    <section class="services" id="services">
-        <div class="section-header">
-            <h2>Premium SEO Services</h2>
-            <p>Tailored strategies for sustainable growth.</p>
-        </div>
-        <div class="service-grid">
-            <div class="card">
-                <img src="https://cdn-icons-png.flaticon.com/512/2821/2821637.png" alt="Icon">
-                <h3>Technical SEO</h3>
-                <p>I fix the hidden site issues that are stopping you from ranking on Google.</p>
-            </div>
-            <div class="card">
-                <img src="https://cdn-icons-png.flaticon.com/512/1055/1055644.png" alt="Icon">
-                <h3>Content Strategy</h3>
-                <p>Ranking isn't just about keywords; it's about providing value to your users.</p>
-            </div>
-            <div class="card">
-                <img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" alt="Icon">
-                <h3>Link Building</h3>
-                <p>Earn high-authority backlinks that establish your brand as an industry leader.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <h2>Get Your Free SEO Audit</h2>
-        <p>Enter your details and I'll send you a personalized video teardown of your website.</p>
-<form action="https://formsubmit.co/manisidhuwebseo@gmail.com" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="url" name="website" placeholder="Your Website URL" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Tell me about your business goals..." rows="5"></textarea>
-
-    <!-- Hidden settings -->
-    <input type="hidden" name="_subject" value="New SEO Audit Request">
-    <input type="hidden" name="_captcha" value="false">
-
-    <button type="submit">Send My Audit Now</button>
-</form>
-    </section>
-
-    <footer style="padding: 30px; text-align: center; background: #111; color: #777;">
-        <p>&copy; 2026 Robin SEO Expert. All rights reserved.</p>
-    </footer>
-
-    <script>
-        // Simple Form Submission Alert
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Success! Hi, I am Robin. I have received your request and will get back to you with your audit within 24 hours.');
-            this.reset();
-        });
-
-        // Sticky Nav Change
-        window.onscroll = function() {
-            const nav = document.querySelector('nav');
-            if (window.pageYOffset > 50) {
-                nav.style.padding = '10px 10%';
-            } else {
-                nav.style.padding = '20px 10%';
-            }
-        };
-    </script>
-</body>
-</html>
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(330px, 1fr
