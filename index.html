@@ -1,326 +1,1014 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="IqqxycKIED8fM4Xgg--p4evsbjN5HAqi8MfCmXOiwXw" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robin SEO Expert | SEO Services India | Best SEO Company India</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary: #2d6a4f; /* SEO Growth Green */
-            --secondary: #1b4332;
-            --accent: #d4a373;
-            --text-dark: #2b2d42;
-            --text-light: #8d99ae;
-            --white: #ffffff;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+  <title>7 Figure Accelerator™ – Official Digital Course</title>
+  <meta name="description" content="7 Figure Accelerator is a powerful digital course that teaches high‑ticket affiliate marketing using short‑form video. Join now and get instant access." />
+  <meta name="keywords" content="7 figure accelerator, digital course, high-ticket affiliate, short-form video, Philip Johansen, online business" />
+  <link rel="icon" href="https://img.icons8.com/color/48/000000/idea.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&display=swap" rel="stylesheet" />
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Poppins', sans-serif; color: var(--text-dark); line-height: 1.6; overflow-x: hidden; scroll-behavior: smooth; }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
 
-        /* Navigation */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 10%;
-            background: var(--white);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: fixed;
-            width: 100%;
-            top: 0; z-index: 1000;
-        }
-        .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
-        .nav-links { display: flex; gap: 30px; list-style: none; }
-        .nav-links a { text-decoration: none; color: var(--text-dark); font-weight: 500; transition: 0.3s; }
-        .nav-links a:hover { color: var(--primary); }
-        .btn-cta { background: var(--primary); color: var(--white) !important; padding: 10px 20px; border-radius: 5px; }
+    /* Top Bar */
+    .top-bar {
+      background: #1e3a8a;
+      color: #fff;
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .top-bar strong {
+      color: #fbbf24;
+    }
 
-        /* Hero Section */
-        .hero {
-            padding: 150px 10% 100px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: linear-gradient(to right, #f8f9fa, #e9ecef);
-            min-height: 90vh;
-        }
-        .hero-content { flex: 1; }
-        .hero-content h1 { font-size: 3.5rem; line-height: 1.2; margin-bottom: 20px; }
-        .hero-content span { color: var(--primary); }
-        .hero-image { flex: 1; text-align: right; }
-        .hero-image img { 
-            width: 80%; 
-            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; 
-            box-shadow: 20px 20px 0px var(--primary);
-        }
+    /* Header */
+    .header {
+      background: #0f172a;
+      padding: 16px 0;
+      border-bottom: 2px solid #fbbf24;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -0.5px;
+    }
+    .logo span {
+      color: #fbbf24;
+    }
+    .nav {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+    }
+    .nav a {
+      color: #cbd5e1;
+      font-size: 15px;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+    .nav a:hover {
+      color: #fbbf24;
+    }
+    .btn-nav {
+      background: #fbbf24;
+      color: #0f172a !important;
+      padding: 8px 20px;
+      border-radius: 30px;
+      font-weight: 700;
+      transition: 0.2s;
+    }
+    .btn-nav:hover {
+      background: #f59e0b;
+      color: #0f172a;
+    }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+    .hamburger span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background: #fff;
+      border-radius: 2px;
+    }
 
-        /* Services Section */
-        .services { padding: 100px 10%; text-align: center; }
-        .section-header { margin-bottom: 50px; }
-        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .card { 
-            background: var(--white); 
-            padding: 40px; 
-            border-radius: 15px; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
-            transition: 0.3s;
-            border-bottom: 4px solid transparent;
-        }
-        .card:hover { transform: translateY(-10px); border-bottom: 4px solid var(--primary); }
-        .card img { width: 60px; margin-bottom: 20px; }
-        .card h3 { margin-bottom: 15px; }
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #fff;
+      padding: 80px 0;
+      border-bottom: 1px solid #fbbf24;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .hero-content h1 {
+      font-size: 52px;
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      letter-spacing: -0.5px;
+    }
+    .hero-content h1 em {
+      color: #fbbf24;
+      font-style: normal;
+    }
+    .hero-content p {
+      font-size: 20px;
+      color: #cbd5e1;
+      max-width: 600px;
+      margin-bottom: 30px;
+      line-height: 1.7;
+    }
+    .hero-bullets {
+      list-style: none;
+      margin-bottom: 32px;
+    }
+    .hero-bullets li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #e2e8f0;
+    }
+    .hero-bullets li span {
+      background: #fbbf24;
+      color: #0f172a;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .btn-primary {
+      background: #fbbf24;
+      color: #0f172a;
+      padding: 16px 36px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 18px;
+      display: inline-block;
+      transition: 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-primary:hover {
+      background: #f59e0b;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(251, 191, 36, 0.3);
+    }
+    .hero-image img {
+      width: 100%;
+      max-width: 500px;
+      display: block;
+      margin: 0 auto;
+      filter: drop-shadow(0 20px 40px rgba(0,0,0,0.4));
+      border-radius: 16px;
+    }
 
-        /* Contact Section */
-        .contact { padding: 100px 10%; background: var(--secondary); color: var(--white); text-align: center; }
-        .contact form { max-width: 600px; margin: 40px auto; background: var(--white); padding: 40px; border-radius: 10px; display: flex; flex-direction: column; gap: 15px; }
-        .contact input, .contact textarea { padding: 15px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit; }
-        .contact button { background: var(--primary); color: white; border: none; padding: 15px; font-size: 1rem; font-weight: 600; cursor: pointer; border-radius: 5px; }
+    /* Trust Badges */
+    .trust-bar {
+      background: #f8fafc;
+      padding: 40px 0;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .trust-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .trust-item img {
+      width: 56px;
+      height: 56px;
+    }
+    .trust-item div {
+      font-weight: 600;
+      font-size: 18px;
+    }
+    .trust-item div small {
+      display: block;
+      font-weight: 400;
+      font-size: 15px;
+      color: #64748b;
+    }
 
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .hero { flex-direction: column; text-align: center; padding-top: 100px; }
-            .hero-image { margin-top: 50px; }
-            .nav-links { display: none; }
-        }
-    </style>
+    /* Sections */
+    .section {
+      padding: 70px 0;
+    }
+    .section-title {
+      font-size: 42px;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 16px;
+      color: #0f172a;
+    }
+    .section-title .highlight {
+      color: #f59e0b;
+    }
+    .section-sub {
+      text-align: center;
+      font-size: 20px;
+      color: #475569;
+      max-width: 700px;
+      margin: 0 auto 40px;
+    }
+    .section.bg-light {
+      background: #f8fafc;
+    }
+
+    /* Text content */
+    .content-block {
+      max-width: 880px;
+      margin: 0 auto;
+    }
+    .content-block p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #334155;
+      margin-bottom: 20px;
+    }
+    .content-block ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .content-block ul li {
+      font-size: 18px;
+      line-height: 1.8;
+      padding-left: 28px;
+      position: relative;
+      margin-bottom: 8px;
+    }
+    .content-block ul li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #f59e0b;
+      font-weight: 700;
+    }
+
+    /* Reviews */
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+    .review-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+      border: 1px solid #e2e8f0;
+    }
+    .review-card .avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #fbbf24;
+      margin-bottom: 12px;
+    }
+    .review-card .name {
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 2px;
+    }
+    .review-card .location {
+      font-size: 15px;
+      color: #64748b;
+    }
+    .review-card .stars {
+      color: #f59e0b;
+      font-size: 20px;
+      letter-spacing: 2px;
+      margin: 6px 0 10px;
+    }
+    .review-card .text {
+      font-style: italic;
+      color: #334155;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    /* Pricing */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 20px;
+    }
+    .pricing-card {
+      background: #fff;
+      border-radius: 24px;
+      padding: 40px 30px;
+      text-align: center;
+      border: 2px solid #e2e8f0;
+      transition: 0.3s;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    }
+    .pricing-card:hover {
+      border-color: #fbbf24;
+    }
+    .pricing-card.featured {
+      border-color: #fbbf24;
+      background: linear-gradient(160deg, #fffbeb, #fff);
+      position: relative;
+    }
+    .pricing-card .badge {
+      background: #fbbf24;
+      color: #0f172a;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 14px;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+    .pricing-card .plan-name {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .pricing-card .price {
+      font-size: 44px;
+      font-weight: 800;
+      color: #0f172a;
+      margin: 10px 0 4px;
+    }
+    .pricing-card .price small {
+      font-size: 18px;
+      font-weight: 400;
+      color: #64748b;
+    }
+    .pricing-card .old-price {
+      font-size: 20px;
+      color: #94a3b8;
+      text-decoration: line-through;
+    }
+    .pricing-card .savings {
+      background: #dcfce7;
+      color: #166534;
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 15px;
+      display: inline-block;
+      margin: 8px 0 16px;
+    }
+    .pricing-card ul {
+      list-style: none;
+      text-align: left;
+      margin: 16px 0 24px;
+    }
+    .pricing-card ul li {
+      padding-left: 24px;
+      position: relative;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #334155;
+      margin-bottom: 6px;
+    }
+    .pricing-card ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #f59e0b;
+      font-weight: 700;
+    }
+
+    /* Bonuses */
+    .bonus-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    .bonus-item {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px 24px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    }
+    .bonus-item img {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+    .bonus-item .info {
+      flex: 1;
+    }
+    .bonus-item .info strong {
+      display: block;
+      font-size: 18px;
+      color: #0f172a;
+    }
+    .bonus-item .info span {
+      font-size: 15px;
+      color: #475569;
+    }
+    .bonus-item .value {
+      font-weight: 700;
+      color: #f59e0b;
+      font-size: 16px;
+      white-space: nowrap;
+    }
+
+    /* Guarantee */
+    .guarantee-box {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 40px;
+      align-items: center;
+      background: #fffbeb;
+      border: 2px solid #fbbf24;
+      border-radius: 24px;
+      padding: 40px 50px;
+      margin: 40px auto;
+      max-width: 860px;
+    }
+    .guarantee-box img {
+      width: 140px;
+      display: block;
+      margin: 0 auto;
+    }
+    .guarantee-box h3 {
+      font-size: 30px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 12px;
+    }
+    .guarantee-box p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #334155;
+    }
+
+    /* FAQ */
+    .faq-item {
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .faq-question {
+      width: 100%;
+      background: #f8fafc;
+      padding: 18px 24px;
+      font-size: 20px;
+      font-weight: 600;
+      text-align: left;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: 0.2s;
+    }
+    .faq-question:hover {
+      background: #e2e8f0;
+    }
+    .faq-question .icon {
+      font-size: 28px;
+      transition: 0.3s;
+    }
+    .faq-answer {
+      padding: 0 24px 20px;
+      display: none;
+    }
+    .faq-answer p {
+      font-size: 17px;
+      line-height: 1.7;
+      color: #334155;
+    }
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+    .faq-item.active .faq-question .icon {
+      transform: rotate(45deg);
+    }
+
+    /* Footer */
+    .footer {
+      background: #0f172a;
+      color: #94a3b8;
+      padding: 60px 0 30px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      border-bottom: 1px solid #1e293b;
+      padding-bottom: 40px;
+    }
+    .footer-grid h4 {
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+    .footer-grid a {
+      color: #94a3b8;
+      display: block;
+      margin-bottom: 8px;
+      transition: 0.2s;
+    }
+    .footer-grid a:hover {
+      color: #fbbf24;
+    }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding-top: 24px;
+      font-size: 14px;
+    }
+    .footer-bottom .disclaimer {
+      font-size: 13px;
+      color: #64748b;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .hero-grid { grid-template-columns: 1fr; text-align: center; }
+      .hero-content p { margin: 0 auto 30px; }
+      .hero-bullets li { justify-content: center; }
+      .hero-image img { max-width: 380px; }
+      .review-grid { grid-template-columns: repeat(2, 1fr); }
+      .pricing-grid { grid-template-columns: 1fr 1fr; }
+      .bonus-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 768px) {
+      .nav { display: none; }
+      .hamburger { display: flex; }
+      .hero-content h1 { font-size: 36px; }
+      .section-title { font-size: 32px; }
+      .review-grid { grid-template-columns: 1fr; }
+      .pricing-grid { grid-template-columns: 1fr; }
+      .guarantee-box { grid-template-columns: 1fr; text-align: center; }
+      .guarantee-box img { width: 100px; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-const names = [
-  "John Smith", "Michael Johnson", "David Williams", "James Brown",
-  "Robert Jones", "William Garcia", "Christopher Miller",
-  "Daniel Davis", "Matthew Rodriguez", "Anthony Martinez",
-  "Jessica Taylor", "Ashley Anderson", "Emily Thomas",
-  "Sarah Jackson", "Amanda White", "Jennifer Harris",
-  "Elizabeth Martin", "Megan Thompson", "Lauren Moore", "Rachel Clark"
-];
-
-const cities = [
-  "New York", "Los Angeles", "Chicago", "Houston", "Phoenix",
-  "Philadelphia", "San Antonio", "San Diego", "Dallas", "San Jose",
-  "Austin", "Jacksonville", "Fort Worth", "Columbus", "Charlotte",
-  "San Francisco", "Indianapolis", "Seattle", "Denver", "Washington"
-];
-
-const actions = [
-  "just bought this product",
-  "just placed an order",
-  "just signed up",
-  "just added this to cart"
-];
-
-function showPopup() {
-  const popup = document.getElementById("sales-popup");
-  const text = document.getElementById("sales-text");
-
-  if (!popup || !text) return; // safety
-
-  const name = names[Math.floor(Math.random() * names.length)];
-  const city = cities[Math.floor(Math.random() * cities.length)];
-  const action = actions[Math.floor(Math.random() * actions.length)];
-
-  text.innerHTML = `<strong style="color:#28a745;">${name}</strong> from ${city} ${action}`;
-
-  popup.style.display = "block";
-
-  setTimeout(() => {
-    popup.style.display = "none";
-    setTimeout(showPopup, 5000);
-  }, 4000);
-}
-
-// start after 5 sec
-setTimeout(showPopup, 5000);
-
-});
-</script>
 <body>
-    <nav>
-        <div class="logo">ROBIN SEO</div>
-        <ul class="nav-links">
-            <li><a href="#services">Services</a></li>
-            <li><a href="#results">Results</a></li>
-            <li><a href="#contact" class="btn-cta">Free Audit</a></li>
-        </ul>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  🔥 <strong>Limited‑time offer:</strong> Save up to 70% + get <strong>$1,991 in bonuses</strong> when you join the Elite package.
+</div>
+
+<!-- Header -->
+<header class="header">
+  <div class="container header-inner">
+    <div class="logo">7<span>Figure</span> Accelerator™</div>
+    <nav class="nav">
+      <a href="#benefits">Benefits</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#pricing" class="btn-nav">Get Instant Access</a>
     </nav>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Stop Chasing Leads. <br><span>Start Ranking #1.</span></h1>
-            <p>I am Robin, an Expert SEO Strategist helping brands increase their organic traffic by up to 300% using data-backed techniques.</p> 
-            <!-- URGENCY BOX -->
+<!-- Hero -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-content">
+      <span style="background:#fbbf24;color:#0f172a;padding:4px 16px;border-radius:20px;font-weight:700;display:inline-block;margin-bottom:16px;font-size:14px;">🔥 Digital Course – Instant Access</span>
+      <h1>Turn Your Passion Into a 7‑Figure Online Business with <em>7 Figure Accelerator</em></h1>
+      <p>This is a complete digital training program that teaches you high‑ticket affiliate marketing using short‑form video. No products to ship, no inventory – just pure knowledge and systems.</p>
+      <ul class="hero-bullets">
+        <li><span>✓</span> 327+ step‑by‑step video modules</li>
+        <li><span>✓</span> Done‑for‑you funnels, emails &amp; scripts</li>
+        <li><span>✓</span> Earn $500–$1,600+ per sale</li>
+        <li><span>✓</span> No need to show your face or have prior experience</li>
+      </ul>
+      <a href="#pricing" class="btn-primary">🚀 Start Your 7‑Figure Journey</a>
+    </div>
+    <div class="hero-image">
+      <img src="https://placehold.co/500x500/0f172a/fbbf24?text=7+Figure+Accelerator" alt="7 Figure Accelerator Digital Course" />
+    </div>
+  </div>
+</section>
 
-<div id="urgencyBox">
-  👁 <span id="userCount">52</span> people are online now on this page!
-</div>
+<!-- Trust Bar -->
+<section class="trust-bar">
+  <div class="container trust-grid">
+    <div class="trust-item">
+      <img src="https://img.icons8.com/color/96/000000/star--v1.png" alt="star" />
+      <div>Trusted by 10,000+<small>Entrepreneurs worldwide</small></div>
+    </div>
+    <div class="trust-item">
+      <img src="https://img.icons8.com/color/96/000000/approval.png" alt="approval" />
+      <div>Proven System<small>Used by 7‑figure earners</small></div>
+    </div>
+    <div class="trust-item">
+      <img src="https://img.icons8.com/color/96/000000/shield.png" alt="shield" />
+      <div>30‑Day Guarantee<small>100% money‑back</small></div>
+    </div>
+    <div class="trust-item">
+      <img src="https://img.icons8.com/color/96/000000/rocket.png" alt="rocket" />
+      <div>Lifetime Access<small>Updates included forever</small></div>
+    </div>
+  </div>
+</section>
 
-<div id="timerBox">
-  Your order is reserved for <span id="countdown">08:32</span>
-</div>
+<!-- Benefits -->
+<section class="section" id="benefits">
+  <div class="container">
+    <h2 class="section-title">Why Choose <span class="highlight">7 Figure Accelerator</span>?</h2>
+    <p class="section-sub">This is not just another course – it's a complete business‑in‑a‑box designed to get you from zero to consistent high‑ticket commissions.</p>
+    <div class="content-block">
+      <ul>
+        <li><strong>Digital Product – No Shipping, No Inventory</strong> – Everything is delivered instantly online. You get video lessons, templates, scripts, and tools – all downloadable.</li>
+        <li><strong>High‑Ticket Commissions</strong> – Promote premium offers and earn $500 to $1,600+ per sale. Fewer sales, bigger income.</li>
+        <li><strong>Short‑Form Video Strategy</strong> – Learn how to attract free traffic from TikTok, Instagram Reels, and YouTube Shorts – without showing your face.</li>
+        <li><strong>Done‑For‑You Funnels</strong> – Pre‑built sales funnels, email swipes, and automation tools so you can launch fast.</li>
+        <li><strong>Weekly Live Coaching</strong> – Get direct feedback from Philip Johansen and his team every week.</li>
+        <li><strong>Private Community</strong> – Join 8,000+ ambitious entrepreneurs who share tips and celebrate wins together.</li>
+        <li><strong>Lifetime Access</strong> – All future updates are included at no extra cost.</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-<style>
-#urgencyBox {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: #eef7ff;
-  color: #0073e6;
-  padding: 8px 14px;
-  border-radius: 20px;
-  font-size: 15px;
-  font-weight: 500;
-}
+<!-- Reviews -->
+<section class="section bg-light" id="reviews">
+  <div class="container">
+    <h2 class="section-title">What Our Students <span class="highlight">Say</span></h2>
+    <p class="section-sub">Real reviews from real people who have transformed their lives with this digital program.</p>
+    <div class="review-grid">
+      <div class="review-card">
+        <img src="https://i.pravatar.cc/64?img=11" alt="avatar" class="avatar" />
+        <div class="name">Jason T.</div>
+        <div class="location">Austin, TX</div>
+        <div class="stars">★★★★★</div>
+        <p class="text">“I had the drive but zero strategy. This digital course gave me a clear roadmap. My monthly revenue has grown 5X, and I now attract dream clients consistently.”</p>
+      </div>
+      <div class="review-card">
+        <img src="https://i.pravatar.cc/64?img=12" alt="avatar" class="avatar" />
+        <div class="name">Emily S.</div>
+        <div class="location">Miami, FL</div>
+        <div class="stars">★★★★★</div>
+        <p class="text">“After years of spinning my wheels, this program gave me the structure I needed. I’ve already signed two premium clients and am on track for consistent $10K months.”</p>
+      </div>
+      <div class="review-card">
+        <img src="https://i.pravatar.cc/64?img=13" alt="avatar" class="avatar" />
+        <div class="name">Marcus D.</div>
+        <div class="location">San Diego, CA</div>
+        <div class="stars">★★★★★</div>
+        <p class="text">“I was stuck trying to grow my online store with no direction. This system showed me how to streamline everything. Now I run a profitable business that no longer drains me.”</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-#timerBox {
-  margin-top: 10px;
-  font-weight: bold;
-  font-size: 16px;
-}
+<!-- What is 7 Figure Accelerator -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">What Is <span class="highlight">7 Figure Accelerator</span>?</h2>
+    <div class="content-block">
+      <p>7 Figure Accelerator is a results‑focused digital training program created by top affiliate marketer <strong>Philip Johansen</strong>. It is designed for beginners, side hustlers, and aspiring online entrepreneurs who want to build a high‑ticket affiliate marketing business using the power of short‑form video content on platforms like TikTok, Instagram Reels, and YouTube Shorts.</p>
+      <p>Inside the program, members gain access to over <strong>327 video lessons</strong>, pre‑built sales funnels, plug‑and‑play automation tools, and weekly live coaching sessions. The goal is simple: help you go from zero to generating commissions of <strong>$500 to over $1,600 per sale</strong> – all without needing prior experience, your own product, or complex tech skills.</p>
+      <p><strong>Remember – this is a digital product.</strong> There is nothing to ship, no inventory to manage, and no physical items. You get instant access to the entire system upon purchase, and you can start learning and implementing right away.</p>
+    </div>
+  </div>
+</section>
 
-/* Pulse animation */
-.pulse {
-  animation: pulseAnim 0.4s;
-}
+<!-- How It Works -->
+<section class="section bg-light">
+  <div class="container">
+    <h2 class="section-title">How Does <span class="highlight">7 Figure Accelerator</span> Work?</h2>
+    <div class="content-block">
+      <p>The program is broken down into clear, actionable steps that anyone can follow – even if you’ve never made a dollar online.</p>
+      <ul>
+        <li><strong>Step 1 – Master the Foundations</strong> – Beginner‑friendly training on affiliate marketing, high‑ticket offers, and why short‑form video is the fastest way to free traffic.</li>
+        <li><strong>Step 2 – Launch with Done‑For‑You Funnels</strong> – Use the pre‑built funnels, email templates, and content scripts to start capturing leads immediately – no tech headaches.</li>
+        <li><strong>Step 3 – Create Viral Content</strong> – Learn simple techniques to create engaging short videos that attract buyers – without showing your face or expensive gear.</li>
+        <li><strong>Step 4 – Grow Your Audience on Autopilot</strong> – Your videos drive organic traffic to your funnels, where automated emails nurture leads while you sleep.</li>
+        <li><strong>Step 5 – Close High‑Ticket Sales</strong> – Your automated system handles follow‑ups, and you collect commissions of $500+ per sale – without chasing clients.</li>
+        <li><strong>Step 6 – Get Ongoing Mentorship</strong> – Join weekly live coaching calls and the private community to stay motivated and get your questions answered.</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-@keyframes pulseAnim {
-  0% {transform: scale(1);}
-  50% {transform: scale(1.25);}
-  100% {transform: scale(1);}
-}
-</style>
+<!-- What's Inside -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">What's Inside <span class="highlight">7 Figure Accelerator</span>?</h2>
+    <div class="content-block">
+      <ul>
+        <li><strong>High‑Ticket Affiliate Marketing Made Simple</strong> – Learn how to earn $500–$1,600 per sale by promoting premium digital products.</li>
+        <li><strong>Ready‑to‑Use Funnels, Scripts &amp; Automation</strong> – Done‑for‑you funnels, email sequences, and automation tools that work 24/7.</li>
+        <li><strong>Short‑Form Video Strategy</strong> – Proven frameworks for creating viral content on TikTok, Instagram Reels, and YouTube Shorts – no face needed.</li>
+        <li><strong>327+ Step‑by‑Step Modules</strong> – Detailed video lessons covering everything from setup to closing high‑ticket deals.</li>
+        <li><strong>Weekly Live Coaching</strong> – Direct access to Philip Johansen and his team for personalised feedback.</li>
+        <li><strong>Private Community of 8,000+</strong> – A supportive network of entrepreneurs who share wins and help each other grow.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Bonuses -->
+<section class="section bg-light" id="bonuses">
+  <div class="container">
+    <h2 class="section-title">Exclusive <span class="highlight">Bonuses</span> – Worth $1,991</h2>
+    <p class="section-sub">When you choose the Elite package, you get these digital bonuses absolutely free. They are delivered instantly – no shipping, just pure value.</p>
+    <div class="bonus-grid">
+      <div class="bonus-item">
+        <img src="https://img.icons8.com/color/96/000000/funnel.png" alt="funnel" />
+        <div class="info">
+          <strong>High‑Performance Funnel Templates</strong>
+          <span>Ready‑to‑use funnel designs from 7‑figure marketers.</span>
+        </div>
+        <div class="value">$69.95</div>
+      </div>
+      <div class="bonus-item">
+        <img src="https://img.icons8.com/color/96/000000/magnet.png" alt="lead magnet" />
+        <div class="info">
+          <strong>Ready‑Made Lead Magnet Bundle</strong>
+          <span>Professionally crafted lead magnets to grow your email list.</span>
+        </div>
+        <div class="value">$69.95</div>
+      </div>
+      <div class="bonus-item">
+        <img src="https://img.icons8.com/color/96/000000/video.png" alt="video" />
+        <div class="info">
+          <strong>Viral Content Blueprint</strong>
+          <span>Step‑by‑step guide to creating scroll‑stopping videos.</span>
+        </div>
+        <div class="value">$79.95</div>
+      </div>
+      <div class="bonus-item">
+        <img src="https://img.icons8.com/color/96/000000/community.png" alt="community" />
+        <div class="info">
+          <strong>Exclusive Mastermind Group Access</strong>
+          <span>Private ongoing community of motivated entrepreneurs.</span>
+        </div>
+        <div class="value">$59.95</div>
+      </div>
+      <div class="bonus-item">
+        <img src="https://img.icons8.com/color/96/000000/calendar.png" alt="blueprint" />
+        <div class="info">
+          <strong>30‑Day Launch Blueprint</strong>
+          <span>Day‑by‑day action plan to get your business off the ground.</span>
+        </div>
+        <div class="value">$59.95</div>
+      </div>
+      <div class="bonus-item">
+        <img src="https://img.icons8.com/color/96/000000/growth.png" alt="growth" />
+        <div class="info">
+          <strong>Organic Traffic Growth Bundle</strong>
+          <span>Proven strategies to drive free, targeted traffic.</span>
+        </div>
+        <div class="value">$59.95</div>
+      </div>
+      <div class="bonus-item">
+        <img src="https://img.icons8.com/color/96/000000/email.png" alt="email" />
+        <div class="info">
+          <strong>Unlimited Email Swipe File</strong>
+          <span>Ready‑to‑use email sequences for every stage.</span>
+        </div>
+        <div class="value">$59.95</div>
+      </div>
+      <div class="bonus-item">
+        <img src="https://img.icons8.com/color/96/000000/coach.png" alt="coaching" />
+        <div class="info">
+          <strong>Weekly Live Coaching &amp; Q&amp;A</strong>
+          <span>Direct access to Philip Johansen and his team.</span>
+        </div>
+        <div class="value">$59.95</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section class="section" id="pricing">
+  <div class="container">
+    <h2 class="section-title">Choose Your <span class="highlight">7 Figure Accelerator</span> Package</h2>
+    <p class="section-sub">All packages give you instant digital access – no shipping, no waiting. Pick the tier that fits your goals.</p>
+    <div class="pricing-grid">
+      <!-- Starter -->
+      <div class="pricing-card">
+        <div class="plan-name">Starter</div>
+        <div class="badge">Self‑Paced</div>
+        <div class="price">$297 <small>one‑time</small></div>
+        <div class="old-price">$997</div>
+        <div class="savings">Save $700</div>
+        <ul>
+          <li>Full course access (327+ modules)</li>
+          <li>Done‑for‑you funnels &amp; templates</li>
+          <li>Short‑form video training</li>
+          <li>Lifetime access &amp; updates</li>
+        </ul>
+        <a href="#" class="btn-primary" style="width:100%;text-align:center;padding:14px;">Enroll Now</a>
+      </div>
+      <!-- Pro -->
+      <div class="pricing-card featured">
+        <div class="plan-name">Pro</div>
+        <div class="badge">Most Popular</div>
+        <div class="price">$497 <small>one‑time</small></div>
+        <div class="old-price">$1,497</div>
+        <div class="savings">Save $1,000</div>
+        <ul>
+          <li>Everything in Starter</li>
+          <li>Weekly live coaching calls</li>
+          <li>Private community access</li>
+          <li>1‑on‑1 feedback sessions</li>
+        </ul>
+        <a href="#" class="btn-primary" style="width:100%;text-align:center;padding:14px;">Enroll Now</a>
+      </div>
+      <!-- Elite -->
+      <div class="pricing-card">
+        <div class="plan-name">Elite</div>
+        <div class="badge">Best Value</div>
+        <div class="price">$697 <small>one‑time</small></div>
+        <div class="old-price">$2,197</div>
+        <div class="savings">Save $1,500 + 3 Bonuses</div>
+        <ul>
+          <li>Everything in Pro</li>
+          <li>3 exclusive bonuses (value $1,991)</li>
+          <li>1‑hour 1‑on‑1 strategy session</li>
+          <li>12‑month fast‑track implementation plan</li>
+        </ul>
+        <a href="#" class="btn-primary" style="width:100%;text-align:center;padding:14px;">Enroll Now &amp; Get Bonuses</a>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:30px;color:#64748b;font-size:16px;">⭐ 4.9 average rating · 87% of students choose the Elite package</p>
+  </div>
+</section>
+
+<!-- Guarantee -->
+<section class="section bg-light">
+  <div class="container">
+    <div class="guarantee-box">
+      <img src="https://img.icons8.com/color/144/000000/guarantee.png" alt="Guarantee" />
+      <div>
+        <h3>100% Satisfaction Guarantee – 30 Days</h3>
+        <p>We're so confident you'll love this digital course that we offer a 30‑day no‑questions‑asked money‑back guarantee. If you don't see results, simply contact us and we'll refund every penny. No risk, no hard feelings.</p>
+        <a href="#pricing" class="btn-primary">Enroll Risk‑Free Today →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="container">
+    <h2 class="section-title">Frequently Asked <span class="highlight">Questions</span></h2>
+    <div style="max-width:780px;margin:0 auto;">
+      <div class="faq-item active">
+        <button class="faq-question">Who created 7 Figure Accelerator? <span class="icon">+</span></button>
+        <div class="faq-answer"><p>The program is led by <strong>Philip Johansen</strong>, a top affiliate marketer who has built multiple 7‑figure businesses. He brings years of real‑world experience to help you succeed.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Is this a physical product? <span class="icon">+</span></button>
+        <div class="faq-answer"><p><strong>No – it's a digital course.</strong> Everything is delivered online instantly after purchase. You get video lessons, templates, scripts, and tools – all downloadable. No shipping, no inventory.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How soon can I see results? <span class="icon">+</span></button>
+        <div class="faq-answer"><p>Many students start seeing momentum – like leads, clients, or commissions – within 30–60 days. Your results depend on your commitment and how quickly you implement the strategies.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Is it beginner‑friendly? <span class="icon">+</span></button>
+        <div class="faq-answer"><p>Absolutely. The training is designed for complete beginners. No prior tech skills or marketing experience are needed – everything is broken down step‑by‑step.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Do I have to show my face? <span class="icon">+</span></button>
+        <div class="faq-answer"><p>No. The program includes methods that allow you to build your business without ever showing your face – perfect for those who prefer staying behind the scenes.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="section bg-light">
+  <div class="container" style="text-align:center;">
+    <h2 class="section-title" style="font-size:38px;">Ready to Build Your <span class="highlight">7‑Figure</span> Business?</h2>
+    <p style="font-size:20px;color:#334155;max-width:600px;margin:0 auto 30px;">Join thousands who have already transformed their lives with this digital course. Get instant access and start your journey today.</p>
+    <a href="#pricing" class="btn-primary" style="padding:18px 50px;font-size:20px;">🚀 Enroll Now – Instant Access</a>
+    <p style="margin-top:16px;color:#64748b;font-size:15px;">⚡ Digital product · No shipping · 30‑day guarantee</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>7 Figure Accelerator™</h4>
+        <p style="color:#94a3b8;font-size:15px;line-height:1.7;">The ultimate digital course for building a high‑ticket affiliate business using short‑form video. Everything you need is online – no physical products.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="#benefits">Benefits</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a href="/contact">Contact</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms</a>
+        <a href="/disclaimer">Disclaimer</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 7 Figure Accelerator. All rights reserved.</span>
+      <span>🛡️ Secure checkout · Verified SSL</span>
+      <div class="disclaimer">* Results not guaranteed. This is a digital educational course. Your success depends on effort and implementation.</div>
+    </div>
+  </div>
+</footer>
 
 <script>
-// Start random between 45–65
-let currentUsers = Math.floor(Math.random() * (65 - 45 + 1)) + 45;
-
-function updateUsers() {
-  let randomType = Math.random();
-
-  if (randomType < 0.5) {
-    // Small change
-    currentUsers += Math.floor(Math.random() * 5) - 2; // -2 to +2
-  } else if (randomType < 0.8) {
-    // Medium jump
-    currentUsers += Math.floor(Math.random() * 10) - 5; // -5 to +5
-  } else {
-    // Big jump (real feel)
-    currentUsers += Math.floor(Math.random() * 20) - 10; // -10 to +10
+  // Hamburger toggle
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('.nav');
+  if (hamburger && nav) {
+    hamburger.addEventListener('click', function() {
+      if (nav.style.display === 'flex') {
+        nav.style.display = 'none';
+      } else {
+        nav.style.display = 'flex';
+        nav.style.flexDirection = 'column';
+        nav.style.position = 'absolute';
+        nav.style.top = '70px';
+        nav.style.left = '0';
+        nav.style.right = '0';
+        nav.style.background = '#0f172a';
+        nav.style.padding = '20px 24px';
+        nav.style.gap = '16px';
+        nav.style.borderBottom = '2px solid #fbbf24';
+        nav.style.zIndex = '99';
+      }
+    });
+    window.addEventListener('resize', function() {
+      if (window.innerWidth > 768) {
+        nav.style.display = 'flex';
+        nav.style.flexDirection = 'row';
+        nav.style.position = 'static';
+        nav.style.background = 'transparent';
+        nav.style.padding = '0';
+        nav.style.borderBottom = 'none';
+      } else {
+        nav.style.display = 'none';
+      }
+    });
   }
 
-  // Limits
-  if (currentUsers < 40) currentUsers = 40;
-  if (currentUsers > 70) currentUsers = 70;
-
-  let el = document.getElementById("userCount");
-  el.innerText = currentUsers;
-
-  // Animation
-  el.classList.add("pulse");
-  setTimeout(() => el.classList.remove("pulse"), 400);
-}
-
-// Random interval (2 to 5 sec)
-function randomInterval() {
-  let time = Math.floor(Math.random() * (5000 - 2000 + 1)) + 2000;
-  setTimeout(() => {
-    updateUsers();
-    randomInterval();
-  }, time);
-}
-
-randomInterval();
-
-
-// Countdown Timer (8:32)
-let time = 512;
-
-function startTimer() {
-  let minutes = Math.floor(time / 60);
-  let seconds = time % 60;
-
-  seconds = seconds < 10 ? "0" + seconds : seconds;
-
-  document.getElementById("countdown").innerText = minutes + ":" + seconds;
-
-  if (time > 0) time--;
-}
-
-setInterval(startTimer, 1000);
+  // FAQ toggle
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const item = this.parentElement;
+      const isActive = item.classList.contains('active');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+      if (!isActive) item.classList.add('active');
+    });
+  });
 </script>
-
-            <br>
-            <a href="#contact" class="btn-cta" style="padding: 15px 30px; display: inline-block;">Work With Me</a>
-        </div>
-        <div class="hero-image">
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7TMoPmZDI6eJBIJduzWOFUCLhasEDu_GCOW8Hdo7R1t3OIIcK5RucCZiPt9p275H3MjopoXbnG6lqE1PDLRW_R6WuZIM99R76a1lGj7CYbqymorgMkf9X39VtKqJsSs34Ikgb7Yi3IepCLJ7Mpo2_vcNaBA93Spn7DBN674Idkadc3D_hk-GOsuvihAc/s600/WhatsApp%20Image%202026-04-01%20at%209.25.43%20PM.jpeg" alt="Robin SEO Expert">
-        </div>
-    </section>
-
-    <section class="services" id="services">
-        <div class="section-header">
-            <h2>Premium SEO Services</h2>
-            <p>Tailored strategies for sustainable growth.</p>
-        </div>
-        <div class="service-grid">
-            <div class="card">
-                <img src="https://cdn-icons-png.flaticon.com/512/2821/2821637.png" alt="Icon">
-                <h3>Technical SEO</h3>
-                <p>I fix the hidden site issues that are stopping you from ranking on Google.</p>
-            </div>
-            <div class="card">
-                <img src="https://cdn-icons-png.flaticon.com/512/1055/1055644.png" alt="Icon">
-                <h3>Content Strategy</h3>
-                <p>Ranking isn't just about keywords; it's about providing value to your users.</p>
-            </div>
-            <div class="card">
-                <img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" alt="Icon">
-                <h3>Link Building</h3>
-                <p>Earn high-authority backlinks that establish your brand as an industry leader.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <h2>Get Your Free SEO Audit</h2>
-        <p>Enter your details and I'll send you a personalized video teardown of your website.</p>
-<form action="https://formsubmit.co/manisidhuwebseo@gmail.com" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="url" name="website" placeholder="Your Website URL" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Tell me about your business goals..." rows="5"></textarea>
-
-    <!-- Hidden settings -->
-    <input type="hidden" name="_subject" value="New SEO Audit Request">
-    <input type="hidden" name="_captcha" value="false">
-
-    <button type="submit">Send My Audit Now</button>
-</form>
-    </section>
-
-    <footer style="padding: 30px; text-align: center; background: #111; color: #777;">
-        <p>&copy; 2026 Robin SEO Expert. All rights reserved.</p>
-    </footer>
-
-    <script>
-        // Simple Form Submission Alert
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Success! Hi, I am Robin. I have received your request and will get back to you with your audit within 24 hours.');
-            this.reset();
-        });
-
-        // Sticky Nav Change
-        window.onscroll = function() {
-            const nav = document.querySelector('nav');
-            if (window.pageYOffset > 50) {
-                nav.style.padding = '10px 10%';
-            } else {
-                nav.style.padding = '20px 10%';
-            }
-        };
-    </script>
 </body>
 </html>
