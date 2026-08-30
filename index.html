@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SB2PXXTJKC">
-    </script>
+    <!-- Google Analytics: loaded after the initial page becomes interactive -->
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+        window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
         gtag('js', new Date());
         gtag('config', 'G-SB2PXXTJKC');
+        window.addEventListener('load', function () {
+            var loadGA = function () {
+                var s = document.createElement('script');
+                s.async = true;
+                s.src = 'https://www.googletagmanager.com/gtag/js?id=G-SB2PXXTJKC';
+                document.head.appendChild(s);
+            };
+            if ('requestIdleCallback' in window) {
+                requestIdleCallback(loadGA, {timeout: 2500});
+            } else {
+                setTimeout(loadGA, 1500);
+            }
+        }, {once:true});
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,9 +31,6 @@
     <link rel="canonical" href="https://robinseo.vercel.app/" />
     <link rel="preload" as="image" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7TMoPmZDI6eJBIJduzWOFUCLhasEDu_GCOW8Hdo7R1t3OIIcK5RucCZiPt9p275H3MjopoXbnG6lqE1PDLRW_R6WuZIM99R76a1lGj7CYbqymorgMkf9X39VtKqJsSs34Ikgb7Yi3IepCLJ7Mpo2_vcNaBA93Spn7DBN674Idkadc3D_hk-GOsuvihAc/s600/WhatsApp%20Image%202026-04-01%20at%209.25.43%20PM.jpeg" fetchpriority="high" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
     <style>
         /* ===== RESET & BASE ===== */
         * {
@@ -31,7 +39,7 @@
             box-sizing: border-box;
         }
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background: #ffffff;
             color: #1a1a1a;
             line-height: 1.6;
@@ -44,6 +52,11 @@
         a {
             text-decoration: none;
             color: inherit;
+        }
+        a:focus-visible,
+        button:focus-visible {
+            outline: 3px solid #087f3f;
+            outline-offset: 3px;
         }
         ul {
             list-style: none;
@@ -61,31 +74,31 @@
             cursor: pointer;
         }
         .btn-primary {
-            background: #25D366;
+            background: #087f3f;
             color: #ffffff;
         }
         .btn-primary:hover {
-            background: #1ebe5c;
+            background: #066b35;
             transform: translateY(-2px);
         }
         .btn-outline {
             background: transparent;
-            color: #25D366;
-            border: 2px solid #25D366;
+            color: #087f3f;
+            border: 2px solid #087f3f;
         }
         .btn-outline:hover {
-            background: #25D366;
+            background: #087f3f;
             color: #ffffff;
         }
         .btn-whatsapp {
-            background: #25D366;
+            background: #087f3f;
             color: #ffffff;
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
         }
         .btn-whatsapp:hover {
-            background: #1ebe5c;
+            background: #066b35;
             transform: translateY(-2px);
         }
         .btn-whatsapp svg {
@@ -111,7 +124,7 @@
         .logo {
             font-size: 1.5rem;
             font-weight: 900;
-            color: #25D366;
+            color: #087f3f;
         }
         .logo span {
             font-weight: 400;
@@ -128,7 +141,7 @@
             transition: color 0.2s;
         }
         .nav-list a:hover {
-            color: #25D366;
+            color: #087f3f;
         }
         .has-dropdown {
             position: relative;
@@ -155,7 +168,7 @@
         }
         .dropdown li a:hover {
             background: #f9f9f9;
-            color: #25D366;
+            color: #087f3f;
         }
         .mobile-menu-toggle {
             display: none;
@@ -275,7 +288,7 @@
             background: #ffffff;
             padding: 2rem;
             border-radius: 1rem;
-            border-left: 4px solid #25D366;
+            border-left: 4px solid #087f3f;
         }
         .deliverable h3 {
             font-size: 1.125rem;
@@ -328,7 +341,7 @@
         /* ===== STATS ===== */
         .team-stats {
             padding: 3rem 0;
-            background: #25D366;
+            background: #087f3f;
             color: #ffffff;
         }
         .stats-grid {
@@ -379,7 +392,7 @@
             border-radius: 10px;
         }
         .reviews-slider::-webkit-scrollbar-thumb {
-            background: #25D366;
+            background: #087f3f;
             border-radius: 10px;
         }
         .review-card {
@@ -409,7 +422,7 @@
             height: 50px;
             border-radius: 50%;
             object-fit: cover;
-            border: 2px solid #25D366;
+            border: 2px solid #087f3f;
             flex-shrink: 0;
             background: #e8f5e9;
             display: flex;
@@ -417,7 +430,7 @@
             justify-content: center;
             font-size: 1.5rem;
             font-weight: 700;
-            color: #25D366;
+            color: #087f3f;
         }
         .review-avatar img {
             width: 100%;
@@ -435,13 +448,13 @@
             align-items: center;
             gap: 0.3rem;
             font-size: 0.8rem;
-            color: #25D366;
+            color: #087f3f;
             font-weight: 600;
         }
         .review-verified svg {
             width: 16px;
             height: 16px;
-            fill: #25D366;
+            fill: #087f3f;
         }
         .review-stars {
             color: #fbbc04;
@@ -494,8 +507,8 @@
             justify-content: center;
         }
         .reviews-nav button:hover {
-            background: #25D366;
-            border-color: #25D366;
+            background: #087f3f;
+            border-color: #087f3f;
             color: #ffffff;
         }
         .reviews-dots {
@@ -514,7 +527,7 @@
             border: none;
         }
         .reviews-dots .dot.active {
-            background: #25D366;
+            background: #087f3f;
             width: 24px;
             border-radius: 5px;
         }
@@ -591,7 +604,7 @@
         .faq-list summary::after {
             content: '+';
             font-size: 1.5rem;
-            color: #25D366;
+            color: #087f3f;
         }
         .faq-list details[open] summary::after {
             content: '−';
@@ -638,13 +651,13 @@
         .contact-whatsapp .whatsapp-number {
             font-size: 2rem;
             font-weight: 900;
-            color: #25D366;
+            color: #087f3f;
             display: block;
             margin: 0.75rem 0;
         }
         .contact-whatsapp .response-badge {
             display: inline-block;
-            background: #25D366;
+            background: #087f3f;
             color: #fff;
             padding: 0.35rem 1.25rem;
             border-radius: 2rem;
@@ -658,7 +671,7 @@
             font-size: 1.1rem;
         }
         .contact-whatsapp .email-link {
-            color: #25D366;
+            color: #087f3f;
             font-weight: 600;
         }
         .contact-whatsapp .email-link:hover {
@@ -696,7 +709,7 @@
             gap: 2rem;
         }
         .footer-brand .logo {
-            color: #25D366;
+            color: #087f3f;
             font-size: 1.5rem;
             font-weight: 900;
         }
@@ -714,7 +727,7 @@
             transition: color 0.2s;
         }
         .footer-nav a:hover {
-            color: #25D366;
+            color: #087f3f;
         }
         .footer-legal {
             text-align: right;
@@ -855,6 +868,7 @@
         </div>
     </header>
 
+    <main>
     <!-- ===== HOME / HERO ===== -->
     <section id="home" class="hero">
         <div class="container hero-grid">
@@ -867,7 +881,7 @@
                 </a>
             </div>
             <div class="hero-image">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7TMoPmZDI6eJBIJduzWOFUCLhasEDu_GCOW8Hdo7R1t3OIIcK5RucCZiPt9p275H3MjopoXbnG6lqE1PDLRW_R6WuZIM99R76a1lGj7CYbqymorgMkf9X39VtKqJsSs34Ikgb7Yi3IepCLJ7Mpo2_vcNaBA93Spn7DBN674Idkadc3D_hk-GOsuvihAc/s600/WhatsApp%20Image%202026-04-01%20at%209.25.43%20PM.jpeg" alt="Robin SEO Expert - Healthcare SEO Services" width="285" height="430" fetchpriority="high" decoding="async" />
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7TMoPmZDI6eJBIJduzWOFUCLhasEDu_GCOW8Hdo7R1t3OIIcK5RucCZiPt9p275H3MjopoXbnG6lqE1PDLRW_R6WuZIM99R76a1lGj7CYbqymorgMkf9X39VtKqJsSs34Ikgb7Yi3IepCLJ7Mpo2_vcNaBA93Spn7DBN674Idkadc3D_hk-GOsuvihAc/s600/WhatsApp%20Image%202026-04-01%20at%209.25.43%20PM.jpeg" srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7TMoPmZDI6eJBIJduzWOFUCLhasEDu_GCOW8Hdo7R1t3OIIcK5RucCZiPt9p275H3MjopoXbnG6lqE1PDLRW_R6WuZIM99R76a1lGj7CYbqymorgMkf9X39VtKqJsSs34Ikgb7Yi3IepCLJ7Mpo2_vcNaBA93Spn7DBN674Idkadc3D_hk-GOsuvihAc/s300/WhatsApp%20Image%202026-04-01%20at%209.25.43%20PM.jpeg 300w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7TMoPmZDI6eJBIJduzWOFUCLhasEDu_GCOW8Hdo7R1t3OIIcK5RucCZiPt9p275H3MjopoXbnG6lqE1PDLRW_R6WuZIM99R76a1lGj7CYbqymorgMkf9X39VtKqJsSs34Ikgb7Yi3IepCLJ7Mpo2_vcNaBA93Spn7DBN674Idkadc3D_hk-GOsuvihAc/s600/WhatsApp%20Image%202026-04-01%20at%209.25.43%20PM.jpeg 600w" sizes="(max-width: 768px) 250px, 285px" alt="Robin SEO Expert - Healthcare SEO Services" width="285" height="430" fetchpriority="high" decoding="async" />
             </div>
         </div>
     </section>
@@ -996,23 +1010,23 @@
             <p style="text-align:center; max-width:800px; margin:0 auto 2rem; color:#4a4a4a;">Every day, millions of patients turn to Google searches to find <strong>healthcare providers, medical clinics, and specialist doctors</strong>. <strong>Healthcare SEO</strong> has been proven as the most powerful and cost-effective method to reach potential patients who are actively searching online for medical services. Our <strong>healthcare SEO services</strong> help you dominate local search and attract more <strong>patient leads</strong>.</p>
             <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:1.5rem; max-width:900px; margin:0 auto;">
                 <div style="background:#f9fafb; padding:1.5rem; border-radius:0.75rem; text-align:center;">
-                    <span style="display:block; font-size:2rem; font-weight:900; color:#25D366;">1</span>
+                    <span style="display:block; font-size:2rem; font-weight:900; color:#087f3f;">1</span>
                     <p style="font-weight:600;">Increased healthcare website traffic from local patients</p>
                 </div>
                 <div style="background:#f9fafb; padding:1.5rem; border-radius:0.75rem; text-align:center;">
-                    <span style="display:block; font-size:2rem; font-weight:900; color:#25D366;">2</span>
+                    <span style="display:block; font-size:2rem; font-weight:900; color:#087f3f;">2</span>
                     <p style="font-weight:600;">Generation of more quality patient leads and appointment requests</p>
                 </div>
                 <div style="background:#f9fafb; padding:1.5rem; border-radius:0.75rem; text-align:center;">
-                    <span style="display:block; font-size:2rem; font-weight:900; color:#25D366;">3</span>
+                    <span style="display:block; font-size:2rem; font-weight:900; color:#087f3f;">3</span>
                     <p style="font-weight:600;">Increased brand awareness for your medical clinic in local search</p>
                 </div>
                 <div style="background:#f9fafb; padding:1.5rem; border-radius:0.75rem; text-align:center;">
-                    <span style="display:block; font-size:2rem; font-weight:900; color:#25D366;">4</span>
+                    <span style="display:block; font-size:2rem; font-weight:900; color:#087f3f;">4</span>
                     <p style="font-weight:600;">Lower patient acquisition costs compared to traditional healthcare advertising</p>
                 </div>
                 <div style="background:#f9fafb; padding:1.5rem; border-radius:0.75rem; text-align:center;">
-                    <span style="display:block; font-size:2rem; font-weight:900; color:#25D366;">5</span>
+                    <span style="display:block; font-size:2rem; font-weight:900; color:#087f3f;">5</span>
                     <p style="font-weight:600;">Long-lasting healthcare SEO results that continue bringing patients month after month</p>
                 </div>
             </div>
@@ -1032,22 +1046,22 @@
             <p style="text-align:center; max-width:600px; margin:0 auto 2.5rem; color:#4a4a4a;">Real data from medical clinics. Real patient acquisition growth. Real ROI from <strong>healthcare SEO</strong> and <strong>patient lead generation</strong>.</p>
             <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:2rem;">
                 <div style="background:#ffffff; padding:2rem; border-radius:1rem; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.04);">
-                    <span style="display:block; font-size:2.5rem; font-weight:900; color:#25D366;">+312%</span>
+                    <span style="display:block; font-size:2.5rem; font-weight:900; color:#087f3f;">+312%</span>
                     <p style="font-weight:600;">Patient Acquisition ROAS</p>
                     <p style="font-size:0.9rem; color:#4a4a4a;">Healthcare PPC Campaign Performance</p>
                 </div>
                 <div style="background:#ffffff; padding:2rem; border-radius:1rem; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.04);">
-                    <span style="display:block; font-size:2.5rem; font-weight:900; color:#25D366;">+284%</span>
+                    <span style="display:block; font-size:2.5rem; font-weight:900; color:#087f3f;">+284%</span>
                     <p style="font-weight:600;">Organic Patient Traffic</p>
                     <p style="font-size:0.9rem; color:#4a4a4a;">Healthcare SEO Results</p>
                 </div>
                 <div style="background:#ffffff; padding:2rem; border-radius:1rem; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.04);">
-                    <span style="display:block; font-size:2.5rem; font-weight:900; color:#25D366;">+196%</span>
+                    <span style="display:block; font-size:2.5rem; font-weight:900; color:#087f3f;">+196%</span>
                     <p style="font-weight:600;">Total Healthcare Website Users</p>
                     <p style="font-size:0.9rem; color:#4a4a4a;">Medical Website Traffic &amp; Engagement</p>
                 </div>
                 <div style="background:#ffffff; padding:2rem; border-radius:1rem; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.04);">
-                    <span style="display:block; font-size:2.5rem; font-weight:900; color:#25D366;">+245%</span>
+                    <span style="display:block; font-size:2.5rem; font-weight:900; color:#087f3f;">+245%</span>
                     <p style="font-weight:600;">New Healthcare Patients</p>
                     <p style="font-size:0.9rem; color:#4a4a4a;">Patient Audience Growth</p>
                 </div>
@@ -1091,7 +1105,7 @@
             <div style="max-width:700px; margin:2rem auto 0; text-align:center; background:#f9fafb; padding:2rem; border-radius:1rem;">
                 <h3 style="font-size:1.25rem; font-weight:700;">Consultative Healthcare SEO Approach</h3>
                 <p style="color:#4a4a4a;">We believe that every medical clinic and healthcare provider is unique and has different patient acquisition needs. We begin by understanding your healthcare practice and patient growth goals, then develop <strong>healthcare SEO campaigns</strong> tailored specifically for your medical clinic.</p>
-                <p style="font-weight:700; color:#25D366; margin-top:1rem;">"Your patient growth is our only metric"</p>
+                <p style="font-weight:700; color:#087f3f; margin-top:1rem;">"Your patient growth is our only metric"</p>
             </div>
         </div>
     </section>
@@ -1256,17 +1270,17 @@
             </div>
 
             <div class="reviews-dots" id="reviewsDots">
-                <button class="dot active" data-index="0"></button>
-                <button class="dot" data-index="1"></button>
-                <button class="dot" data-index="2"></button>
-                <button class="dot" data-index="3"></button>
-                <button class="dot" data-index="4"></button>
-                <button class="dot" data-index="5"></button>
+                <button class="dot active" data-index="0" type="button" aria-label="Show review 1"></button>
+                <button class="dot" data-index="1" type="button" aria-label="Show review 2"></button>
+                <button class="dot" data-index="2" type="button" aria-label="Show review 3"></button>
+                <button class="dot" data-index="3" type="button" aria-label="Show review 4"></button>
+                <button class="dot" data-index="4" type="button" aria-label="Show review 5"></button>
+                <button class="dot" data-index="5" type="button" aria-label="Show review 6"></button>
             </div>
 
             <div class="reviews-nav">
-                <button id="prevReview" aria-label="Previous reviews">‹</button>
-                <button id="nextReview" aria-label="Next reviews">›</button>
+                <button id="prevReview" type="button" aria-label="Previous reviews">‹</button>
+                <button id="nextReview" type="button" aria-label="Next reviews">›</button>
             </div>
         </div>
     </section>
@@ -1330,15 +1344,15 @@
             </div>
             <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:1.5rem; margin-top:2.5rem; max-width:800px; margin-left:auto; margin-right:auto;">
                 <div style="background:#ffffff; padding:1.5rem; border-radius:1rem; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.04);">
-                    <span style="display:block; font-size:2rem; font-weight:900; color:#25D366;">60%+</span>
+                    <span style="display:block; font-size:2rem; font-weight:900; color:#087f3f;">60%+</span>
                     <p style="font-weight:600;">of patients use voice search to find healthcare providers</p>
                 </div>
                 <div style="background:#ffffff; padding:1.5rem; border-radius:1rem; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.04);">
-                    <span style="display:block; font-size:2rem; font-weight:900; color:#25D366;">40%+</span>
+                    <span style="display:block; font-size:2rem; font-weight:900; color:#087f3f;">40%+</span>
                     <p style="font-weight:600;">of Google searches now use generative AI responses</p>
                 </div>
                 <div style="background:#ffffff; padding:1.5rem; border-radius:1rem; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.04);">
-                    <span style="display:block; font-size:2rem; font-weight:900; color:#25D366;">#1</span>
+                    <span style="display:block; font-size:2rem; font-weight:900; color:#087f3f;">#1</span>
                     <p style="font-weight:600;">ranked answer gets 40% of all clicks in AEO results</p>
                 </div>
             </div>
@@ -1390,15 +1404,15 @@
             </div>
             <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px,1fr)); gap:1.5rem; margin-top:2.5rem; max-width:800px; margin-left:auto; margin-right:auto;">
                 <div style="background:#f9fafb; padding:1.5rem; border-radius:1rem; text-align:center;">
-                    <span style="display:block; font-size:2rem; font-weight:900; color:#25D366;">70%</span>
+                    <span style="display:block; font-size:2rem; font-weight:900; color:#087f3f;">70%</span>
                     <p style="font-weight:600;">Faster patient response time with AI chatbots</p>
                 </div>
                 <div style="background:#f9fafb; padding:1.5rem; border-radius:1rem; text-align:center;">
-                    <span style="display:block; font-size:2rem; font-weight:900; color:#25D366;">3x</span>
+                    <span style="display:block; font-size:2rem; font-weight:900; color:#087f3f;">3x</span>
                     <p style="font-weight:600;">More patient leads with AI-powered targeting</p>
                 </div>
                 <div style="background:#f9fafb; padding:1.5rem; border-radius:1rem; text-align:center;">
-                    <span style="display:block; font-size:2rem; font-weight:900; color:#25D366;">24/7</span>
+                    <span style="display:block; font-size:2rem; font-weight:900; color:#087f3f;">24/7</span>
                     <p style="font-weight:600;">Patient lead generation that never sleeps</p>
                 </div>
             </div>
@@ -1419,23 +1433,23 @@
             <p style="text-align:center; max-width:700px; margin:0 auto 2.5rem; color:#4a4a4a;">We make getting more patient leads for your medical clinic, dental practice, or healthcare provider simple. Here is exactly what happens when you work with us on <strong>patient acquisition</strong>.</p>
             <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:2rem;">
                 <div style="background:#ffffff; padding:2rem; border-radius:1rem; box-shadow:0 4px 12px rgba(0,0,0,0.04); text-align:center;">
-                    <span style="display:inline-block; background:#25D366; color:#ffffff; width:50px; height:50px; line-height:50px; border-radius:50%; font-weight:900; font-size:1.5rem; margin-bottom:1rem;">01</span>
+                    <span style="display:inline-block; background:#087f3f; color:#ffffff; width:50px; height:50px; line-height:50px; border-radius:50%; font-weight:900; font-size:1.5rem; margin-bottom:1rem;">01</span>
                     <h3 style="font-size:1.25rem; font-weight:700;">Free Healthcare Audit</h3>
                     <h4 style="font-size:1rem; font-weight:600; margin-top:0.5rem;">Healthcare Website &amp; Keyword Analysis</h4>
                     <p style="color:#4a4a4a;">We check your healthcare website speed, mobile performance, and find the best patient acquisition keywords for your medical clinic. Then we tell you exactly what's stopping patients from calling your practice.</p>
                 </div>
                 <div style="background:#ffffff; padding:2rem; border-radius:1rem; box-shadow:0 4px 12px rgba(0,0,0,0.04); text-align:center;">
-                    <span style="display:inline-block; background:#25D366; color:#ffffff; width:50px; height:50px; line-height:50px; border-radius:50%; font-weight:900; font-size:1.5rem; margin-bottom:1rem;">02</span>
+                    <span style="display:inline-block; background:#087f3f; color:#ffffff; width:50px; height:50px; line-height:50px; border-radius:50%; font-weight:900; font-size:1.5rem; margin-bottom:1rem;">02</span>
                     <h3 style="font-size:1.25rem; font-weight:700;">Campaign Launch</h3>
                     <h4 style="font-size:1rem; font-weight:600; margin-top:0.5rem;">Healthcare Google Ads &amp; SEO Setup</h4>
                     <p style="color:#4a4a4a;">We build your <strong>healthcare Google Ads</strong> campaigns and optimise your medical clinic website for <strong>healthcare SEO</strong>. Within 48-72 hours, your practice starts showing up when patients search for your healthcare services.</p>
                 </div>
                 <div style="background:#ffffff; padding:2rem; border-radius:1rem; box-shadow:0 4px 12px rgba(0,0,0,0.04); text-align:center;">
-                    <span style="display:inline-block; background:#25D366; color:#ffffff; width:50px; height:50px; line-height:50px; border-radius:50%; font-weight:900; font-size:1.5rem; margin-bottom:1rem;">03</span>
+                    <span style="display:inline-block; background:#087f3f; color:#ffffff; width:50px; height:50px; line-height:50px; border-radius:50%; font-weight:900; font-size:1.5rem; margin-bottom:1rem;">03</span>
                     <h3 style="font-size:1.25rem; font-weight:700;">Patient Leads Start Coming</h3>
                     <h4 style="font-size:1rem; font-weight:600; margin-top:0.5rem;">Ongoing Optimisation &amp; More Patient Calls</h4>
                     <p style="color:#4a4a4a;">Once your healthcare campaigns are live, we track every patient call and lead. We keep optimising to bring you more patient inquiries for less cost. Your phone starts ringing with new patient appointments.</p>
-                    <p style="font-weight:700; color:#25D366; margin-top:1rem;">Average time to first patient lead: 48-72 Hours</p>
+                    <p style="font-weight:700; color:#087f3f; margin-top:1rem;">Average time to first patient lead: 48-72 Hours</p>
                 </div>
             </div>
             <div style="text-align:center; margin-top:2.5rem;">
@@ -1488,11 +1502,11 @@
     <section id="contact" class="contact-page">
         <div class="container contact-grid">
             <div class="contact-info">
-                <h3>Get More Patient Leads</h3>
+                <h2>Get More Patient Leads</h2>
                 <p>Tell us about your medical clinic and we'll show you how to get more patients from Google. Free healthcare SEO consultation. No obligation. Response within 10 minutes.</p>
                 <ul class="contact-details">
-                    <li><strong>Email:</strong> <a href="mailto:robinwebseo4@gmail.com" style="color:#25D366;font-weight:600;">robinwebseo4@gmail.com</a></li>
-                    <li><strong>Phone / WhatsApp:</strong> <a href="https://wa.me/919814590619" style="color:#25D366;font-weight:600;">+91 98145 90619</a></li>
+                    <li><strong>Email:</strong> <a href="mailto:robinwebseo4@gmail.com" style="color:#087f3f;font-weight:600;">robinwebseo4@gmail.com</a></li>
+                    <li><strong>Phone / WhatsApp:</strong> <a href="https://wa.me/919814590619" style="color:#087f3f;font-weight:600;">+91 98145 90619</a></li>
                     <li><strong>Response Time:</strong> Within 10 minutes</li>
                 </ul>
             </div>
@@ -1527,6 +1541,7 @@
             </a>
         </div>
     </section>
+    </main>
 
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
@@ -1536,7 +1551,7 @@
                 <p>Healthcare SEO &amp; AI Visibility That Brings More Patient Bookings</p>
                 <p style="font-size:0.85rem; color:#777; margin-top:0.5rem;">GP | DC | PT | Trusted by 127+ Medical Clinics &amp; Healthcare Providers</p>
                 <p style="font-size:0.85rem; color:#777; margin-top:0.25rem;">
-                    <a href="mailto:robinwebseo4@gmail.com" style="color:#25D366;">robinwebseo4@gmail.com</a> | <a href="https://wa.me/919814590619" style="color:#25D366;">+91 98145 90619</a>
+                    <a href="mailto:robinwebseo4@gmail.com" style="color:#087f3f;">robinwebseo4@gmail.com</a> | <a href="https://wa.me/919814590619" style="color:#087f3f;">+91 98145 90619</a>
                 </p>
             </div>
             <nav class="footer-nav">
