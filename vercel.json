@@ -1,4 +1,26 @@
 {
+  "redirects": [
+    {
+      "source": "/healthcare-seo.html",
+      "destination": "/healthcare-seo",
+      "permanent": true
+    },
+    {
+      "source": "/medical-website-optimisation.html",
+      "destination": "/medical-website-optimisation",
+      "permanent": true
+    },
+    {
+      "source": "/healthcare-local-seo.html",
+      "destination": "/healthcare-local-seo",
+      "permanent": true
+    },
+    {
+      "source": "/patient-acquisition-seo.html",
+      "destination": "/patient-acquisition-seo",
+      "permanent": true
+    }
+  ],
   "routes": [
     { "src": "/", "dest": "/index.html" },
     { "src": "/healthcare-seo", "dest": "/healthcare-seo.html" },
