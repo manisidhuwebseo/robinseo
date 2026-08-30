@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://robinseo.vercel.app/</loc>
   </url>
+
   <url>
-    <loc>https://robinseo.vercel.app/healthcare-seo.html</loc>
+    <loc>https://robinseo.vercel.app/healthcare-seo</loc>
   </url>
+
   <url>
-    <loc>https://robinseo.vercel.app/medical-website-optimisation.html</loc>
+    <loc>https://robinseo.vercel.app/medical-website-optimisation</loc>
   </url>
+
   <url>
-    <loc>https://robinseo.vercel.app/healthcare-local-seo.html</loc>
+    <loc>https://robinseo.vercel.app/healthcare-local-seo</loc>
   </url>
+
   <url>
-    <loc>https://robinseo.vercel.app/patient-acquisition-seo.html</loc>
+    <loc>https://robinseo.vercel.app/patient-acquisition-seo</loc>
   </url>
+
 </urlset>
