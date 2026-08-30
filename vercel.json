@@ -1,5 +1,11 @@
 {
   "routes": [
-    { "src": "/", "dest": "/index.html" }
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/healthcare-seo", "dest": "/healthcare-seo.html" },
+    { "src": "/medical-website-optimisation", "dest": "/medical-website-optimisation.html" },
+    { "src": "/healthcare-local-seo", "dest": "/healthcare-local-seo.html" },
+    { "src": "/patient-acquisition-seo", "dest": "/patient-acquisition-seo.html" },
+    { "src": "/robots.txt", "dest": "/robots.txt" },
+    { "src": "/sitemap.xml", "dest": "/sitemap.xml" }
   ]
 }
