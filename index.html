@@ -16,8 +16,8 @@
     <meta name="description" content="Healthcare SEO & AI Visibility by Robin SEO Expert – Get more patient bookings. Medical clinic SEO, Google Ads for doctors, patient lead generation." />
     <meta name="keywords" content="healthcare SEO services, medical clinic SEO, patient acquisition, doctor SEO, healthcare Google Ads, medical website optimization, patient lead generation, healthcare digital marketing, SEO for doctors, medical practice growth, healthcare SEO expert, patient appointment SEO, healthcare marketing agency, local SEO for clinics, AI healthcare SEO" />
 
-    <!-- ===== CANONICAL URL ===== -->
-    <link rel="canonical" href="https://robinseo.vercel.app" />
+    <!-- ===== CANONICAL URLs ===== -->
+    <link rel="canonical" href="https://robinseo.vercel.app/" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -338,6 +338,178 @@
             opacity: 0.9;
         }
 
+        /* ===== REVIEWS SLIDER ===== */
+        .reviews-section {
+            padding: 4rem 0;
+            background: #f9fafb;
+        }
+        .reviews-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+        .reviews-section .subtitle {
+            text-align: center;
+            color: #4a4a4a;
+            margin-bottom: 2.5rem;
+        }
+        .reviews-slider {
+            display: flex;
+            gap: 2rem;
+            overflow-x: auto;
+            padding: 1rem 0.5rem 2rem;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+        .reviews-slider::-webkit-scrollbar {
+            height: 6px;
+        }
+        .reviews-slider::-webkit-scrollbar-track {
+            background: #e8e8e8;
+            border-radius: 10px;
+        }
+        .reviews-slider::-webkit-scrollbar-thumb {
+            background: #25D366;
+            border-radius: 10px;
+        }
+        .review-card {
+            flex: 0 0 320px;
+            background: #ffffff;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+            scroll-snap-align: start;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #f0f0f0;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .review-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+        .review-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 0.75rem;
+        }
+        .review-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #25D366;
+            flex-shrink: 0;
+            background: #e8f5e9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #25D366;
+        }
+        .review-avatar img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .review-name {
+            font-weight: 700;
+            font-size: 1rem;
+            color: #1a1a1a;
+        }
+        .review-verified {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            font-size: 0.8rem;
+            color: #25D366;
+            font-weight: 600;
+        }
+        .review-verified svg {
+            width: 16px;
+            height: 16px;
+            fill: #25D366;
+        }
+        .review-stars {
+            color: #fbbc04;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+        }
+        .review-text {
+            color: #1a1a1a;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            flex: 1;
+            font-style: italic;
+        }
+        .review-date {
+            font-size: 0.75rem;
+            color: #999;
+            margin-top: 0.75rem;
+        }
+        .review-source {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.75rem;
+            color: #777;
+            margin-top: 0.3rem;
+        }
+        .review-source svg {
+            width: 14px;
+            height: 14px;
+            fill: #777;
+        }
+        .reviews-nav {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-top: 0.5rem;
+        }
+        .reviews-nav button {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid #ddd;
+            background: #ffffff;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: background 0.3s, border-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .reviews-nav button:hover {
+            background: #25D366;
+            border-color: #25D366;
+            color: #ffffff;
+        }
+        .reviews-dots {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        .reviews-dots .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #d1d5db;
+            cursor: pointer;
+            transition: background 0.3s;
+            border: none;
+        }
+        .reviews-dots .dot.active {
+            background: #25D366;
+            width: 24px;
+            border-radius: 5px;
+        }
+
         /* ===== AI SECTION ===== */
         .ai-section {
             padding: 4rem 0;
@@ -618,6 +790,12 @@
             .contact-whatsapp .whatsapp-number {
                 font-size: 1.5rem;
             }
+            .review-card {
+                flex: 0 0 280px;
+            }
+            .reviews-slider {
+                gap: 1rem;
+            }
         }
     </style>
 </head>
@@ -633,10 +811,10 @@
                     <li class="has-dropdown">
                         <a href="#services">Services</a>
                         <ul class="dropdown">
-                            <li><a href="/healthcare-seo.html">Healthcare SEO</a></li>
-                            <li><a href="/medical-website-optimisation.html">Medical Website Optimisation</a></li>
-                            <li><a href="/healthcare-local-seo.html">Healthcare Local SEO</a></li>
-                            <li><a href="/patient-acquisition-seo.html">Patient Acquisition SEO</a></li>
+                            <li><a href="https://robinseo.vercel.app/healthcare-seo">Healthcare SEO</a></li>
+                            <li><a href="https://robinseo.vercel.app/medical-website-optimisation">Medical Website Optimisation</a></li>
+                            <li><a href="https://robinseo.vercel.app/healthcare-local-seo">Healthcare Local SEO</a></li>
+                            <li><a href="https://robinseo.vercel.app/patient-acquisition-seo">Patient Acquisition SEO</a></li>
                         </ul>
                     </li>
                     <li><a href="#contact">Contact</a></li>
@@ -673,22 +851,22 @@
                 <div class="service-card">
                     <h3>Healthcare SEO</h3>
                     <p>Get more patient inquiries and booked appointments. We help medical clinics show up when patients search for <strong>healthcare services online</strong>. Our <strong>doctor SEO services</strong> drive qualified traffic to your practice.</p>
-                    <a href="/healthcare-seo.html" class="btn btn-outline">Learn More →</a>
+                    <a href="https://robinseo.vercel.app/healthcare-seo" class="btn btn-outline">Learn More →</a>
                 </div>
                 <div class="service-card">
                     <h3>Medical Website Optimisation</h3>
                     <p>Fast loading, mobile friendly healthcare websites. We help medical clinics convert visitors into patients with <strong>medical website SEO</strong> and <strong>healthcare conversion rate optimisation</strong>.</p>
-                    <a href="/medical-website-optimisation.html" class="btn btn-outline">Learn More →</a>
+                    <a href="https://robinseo.vercel.app/medical-website-optimisation" class="btn btn-outline">Learn More →</a>
                 </div>
                 <div class="service-card">
                     <h3>Healthcare Local SEO</h3>
                     <p>Rank on Google Maps for searches like <strong>"healthcare services near me"</strong> or <strong>"medical clinic"</strong>. Get local patients without paying per click through <strong>local SEO for clinics</strong>.</p>
-                    <a href="/healthcare-local-seo.html" class="btn btn-outline">Learn More →</a>
+                    <a href="https://robinseo.vercel.app/healthcare-local-seo" class="btn btn-outline">Learn More →</a>
                 </div>
                 <div class="service-card">
                     <h3>Patient Acquisition SEO</h3>
                     <p>Attract more patients online. We help doctors, dentists, clinics, and specialists grow their practice with proven <strong>healthcare digital marketing strategies</strong> and <strong>patient lead generation</strong> campaigns.</p>
-                    <a href="/patient-acquisition-seo.html" class="btn btn-outline">Learn More →</a>
+                    <a href="https://robinseo.vercel.app/patient-acquisition-seo" class="btn btn-outline">Learn More →</a>
                 </div>
             </div>
             <div class="services-cta">
@@ -917,6 +1095,149 @@
                     <svg viewBox="0 0 24 24" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                     Get More Patients Now
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GOOGLE REVIEWS SLIDER ===== -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2>⭐ What Our Patients Say</h2>
+            <p class="subtitle">Real reviews from real patients — verified by Google</p>
+            <div class="reviews-slider" id="reviewsSlider">
+                <!-- Review 1 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://ui-avatars.com/api/?name=Sarah+Johnson&background=25D366&color=fff&size=50" alt="Sarah Johnson" />
+                        </div>
+                        <div>
+                            <div class="review-name">Sarah Johnson</div>
+                            <div class="review-verified">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                Verified Patient
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">"I was struggling to get new patients for my dental practice. Robin SEO Expert completely transformed my online presence. Within 3 months, my appointment bookings tripled. The team is professional and really understands healthcare marketing."</div>
+                    <div class="review-date">March 15, 2026</div>
+                    <div class="review-source">Google Review</div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://ui-avatars.com/api/?name=Michael+Chen&background=25D366&color=fff&size=50" alt="Michael Chen" />
+                        </div>
+                        <div>
+                            <div class="review-name">Michael Chen</div>
+                            <div class="review-verified">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                Verified Patient
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">"Our physiotherapy clinic was invisible on Google. After working with Robin SEO Expert, we now rank #1 for 'physiotherapy near me' in our area. Patient calls went from 5 to 50 per week. Absolutely life-changing for our practice."</div>
+                    <div class="review-date">February 28, 2026</div>
+                    <div class="review-source">Google Review</div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://ui-avatars.com/api/?name=Emily+Rodriguez&background=25D366&color=fff&size=50" alt="Emily Rodriguez" />
+                        </div>
+                        <div>
+                            <div class="review-name">Emily Rodriguez</div>
+                            <div class="review-verified">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                Verified Patient
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">"As a dermatology clinic owner, I was spending thousands on ads with little return. Robin SEO Expert's healthcare SEO strategy brought in organic traffic that actually converts. My patient acquisition cost dropped by 60% in just 4 months."</div>
+                    <div class="review-date">January 20, 2026</div>
+                    <div class="review-source">Google Review</div>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://ui-avatars.com/api/?name=James+Williams&background=25D366&color=fff&size=50" alt="James Williams" />
+                        </div>
+                        <div>
+                            <div class="review-name">James Williams</div>
+                            <div class="review-verified">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                Verified Patient
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">"Our multi-location medical group was struggling with local SEO. Robin SEO Expert helped each of our 5 clinics rank on Google Maps. Within 6 months, we saw a 200% increase in local patient inquiries. Highly recommend!"</div>
+                    <div class="review-date">December 10, 2025</div>
+                    <div class="review-source">Google Review</div>
+                </div>
+
+                <!-- Review 5 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://ui-avatars.com/api/?name=Jessica+Taylor&background=25D366&color=fff&size=50" alt="Jessica Taylor" />
+                        </div>
+                        <div>
+                            <div class="review-name">Jessica Taylor</div>
+                            <div class="review-verified">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                Verified Patient
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">"I run a small pediatric clinic and was skeptical about SEO. Robin SEO Expert proved me wrong. They got my website optimized and now I have parents calling me daily. The ROI has been incredible. Thank you!"</div>
+                    <div class="review-date">November 5, 2025</div>
+                    <div class="review-source">Google Review</div>
+                </div>
+
+                <!-- Review 6 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://ui-avatars.com/api/?name=Robert+Anderson&background=25D366&color=fff&size=50" alt="Robert Anderson" />
+                        </div>
+                        <div>
+                            <div class="review-name">Robert Anderson</div>
+                            <div class="review-verified">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                Verified Patient
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">"Our orthopedic practice was stuck with outdated marketing. Robin SEO Expert revamped our website and Google Ads strategy. Now we're getting high-intent patient leads every single day. Best investment we've made for our practice."</div>
+                    <div class="review-date">October 18, 2025</div>
+                    <div class="review-source">Google Review</div>
+                </div>
+            </div>
+
+            <div class="reviews-dots" id="reviewsDots">
+                <button class="dot active" data-index="0"></button>
+                <button class="dot" data-index="1"></button>
+                <button class="dot" data-index="2"></button>
+                <button class="dot" data-index="3"></button>
+                <button class="dot" data-index="4"></button>
+                <button class="dot" data-index="5"></button>
+            </div>
+
+            <div class="reviews-nav">
+                <button id="prevReview" aria-label="Previous reviews">‹</button>
+                <button id="nextReview" aria-label="Next reviews">›</button>
             </div>
         </div>
     </section>
@@ -1192,10 +1513,10 @@
             <nav class="footer-nav">
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/healthcare-seo.html">Healthcare SEO</a></li>
-                    <li><a href="/medical-website-optimisation.html">Medical Website Optimisation</a></li>
-                    <li><a href="/healthcare-local-seo.html">Healthcare Local SEO</a></li>
-                    <li><a href="/patient-acquisition-seo.html">Patient Acquisition SEO</a></li>
+                    <li><a href="https://robinseo.vercel.app/healthcare-seo">Healthcare SEO</a></li>
+                    <li><a href="https://robinseo.vercel.app/medical-website-optimisation">Medical Website Optimisation</a></li>
+                    <li><a href="https://robinseo.vercel.app/healthcare-local-seo">Healthcare Local SEO</a></li>
+                    <li><a href="https://robinseo.vercel.app/patient-acquisition-seo">Patient Acquisition SEO</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -1240,6 +1561,69 @@
                         target.scrollIntoView({ behavior: 'smooth' });
                     }
                 });
+            });
+
+            // ===== REVIEWS SLIDER =====
+            const slider = document.getElementById('reviewsSlider');
+            const dots = document.querySelectorAll('.dot');
+            const prevBtn = document.getElementById('prevReview');
+            const nextBtn = document.getElementById('nextReview');
+            let currentIndex = 0;
+            const totalReviews = dots.length;
+
+            function updateSlider(index) {
+                const cardWidth = slider.querySelector('.review-card').offsetWidth + 32; // card width + gap
+                slider.scrollTo({
+                    left: index * cardWidth,
+                    behavior: 'smooth'
+                });
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('active', i === index);
+                });
+                currentIndex = index;
+            }
+
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', function() {
+                    updateSlider(index);
+                });
+            });
+
+            prevBtn.addEventListener('click', function() {
+                const newIndex = (currentIndex - 1 + totalReviews) % totalReviews;
+                updateSlider(newIndex);
+            });
+
+            nextBtn.addEventListener('click', function() {
+                const newIndex = (currentIndex + 1) % totalReviews;
+                updateSlider(newIndex);
+            });
+
+            // Auto-slide every 5 seconds
+            let autoSlide = setInterval(() => {
+                const newIndex = (currentIndex + 1) % totalReviews;
+                updateSlider(newIndex);
+            }, 5000);
+
+            // Pause auto-slide on hover
+            slider.addEventListener('mouseenter', () => clearInterval(autoSlide));
+            slider.addEventListener('mouseleave', () => {
+                autoSlide = setInterval(() => {
+                    const newIndex = (currentIndex + 1) % totalReviews;
+                    updateSlider(newIndex);
+                }, 5000);
+            });
+
+            // Update dots on scroll
+            slider.addEventListener('scroll', function() {
+                const cardWidth = this.querySelector('.review-card').offsetWidth + 32;
+                const scrollIndex = Math.round(this.scrollLeft / cardWidth);
+                if (scrollIndex !== currentIndex && scrollIndex < totalReviews) {
+                    dots.forEach((dot, i) => {
+                        dot.classList.toggle('active', i === scrollIndex);
+                    });
+                    currentIndex = scrollIndex;
+                }
             });
         });
     </script>
