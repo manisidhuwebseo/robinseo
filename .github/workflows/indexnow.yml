@@ -7,6 +7,7 @@ on:
     paths:
       - "**.html"
       - "sitemap.xml"
+      - "8d4c1a7f93e2b6d0a5c8f1e4b7d2936a.txt"
   workflow_dispatch:
 
 permissions:
@@ -25,7 +26,6 @@ jobs:
         env:
           INDEXNOW_KEY: 8d4c1a7f93e2b6d0a5c8f1e4b7d2936a
           GITHUB_EVENT_PATH: ${{ github.event_path }}
-          SITEMAP_CHANGED: ${{ contains(github.event.head_commit.modified, 'sitemap.xml') || contains(github.event.head_commit.added, 'sitemap.xml') }}
         run: |
           python - <<'PY'
           import json
@@ -54,7 +54,8 @@ jobs:
               changed.update(commit.get("modified", []))
 
           sitemap_changed = "sitemap.xml" in changed
-          if sitemap_changed or not changed:
+          html_changed = any(name.endswith(".html") for name in changed)
+          if sitemap_changed or not html_changed:
               selected = urls
           else:
               selected = []
