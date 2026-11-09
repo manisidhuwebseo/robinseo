@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="520" viewBox="0 0 640 520" role="img" aria-labelledby="title desc">
+<title id="title">SEO strategy and growth illustration</title><desc id="desc">A dashboard showing search visibility, a checklist and an upward growth chart.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e5f5e9"/><stop offset="1" stop-color="#f8fcf9"/></linearGradient></defs>
+<rect x="25" y="20" width="590" height="480" rx="34" fill="url(#bg)"/>
+<circle cx="510" cy="105" r="48" fill="#c6e8d0"/><circle cx="120" cy="405" r="34" fill="#d2edda"/>
+<rect x="105" y="92" width="430" height="328" rx="22" fill="#fff" stroke="#dcebe0" stroke-width="3"/>
+<rect x="105" y="92" width="430" height="58" rx="22" fill="#087f3f"/><path d="M105 128h430v22H105z" fill="#087f3f"/>
+<circle cx="137" cy="121" r="7" fill="#bfe8cb"/><circle cx="160" cy="121" r="7" fill="#bfe8cb"/><circle cx="183" cy="121" r="7" fill="#bfe8cb"/>
+<rect x="140" y="180" width="180" height="100" rx="13" fill="#f3faf5" stroke="#e0eee4"/>
+<text x="160" y="211" font-family="Arial,sans-serif" font-size="13" fill="#64736a">Organic visibility</text>
+<path d="M160 251l32-17 30 8 35-31 38-14" fill="none" stroke="#087f3f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M284 197l11 0-2 11" fill="none" stroke="#087f3f" stroke-width="5" stroke-linecap="round"/>
+<rect x="340" y="180" width="160" height="100" rx="13" fill="#f3faf5" stroke="#e0eee4"/>
+<text x="360" y="211" font-family="Arial,sans-serif" font-size="13" fill="#64736a">SEO checklist</text>
+<g fill="none" stroke="#087f3f" stroke-width="3" stroke-linecap="round"><path d="M360 235l6 6 11-13M360 257l6 6 11-13"/><path d="M395 238h83M395 260h68"/></g>
+<rect x="140" y="305" width="360" height="82" rx="13" fill="#f8fbf8" stroke="#e0eee4"/>
+<text x="160" y="333" font-family="Arial,sans-serif" font-size="13" fill="#64736a">Strategy • Optimisation • Growth</text>
+<rect x="160" y="350" width="90" height="9" rx="5" fill="#c7e6d0"/><rect x="260" y="350" width="105" height="9" rx="5" fill="#a5d9b5"/><rect x="375" y="350" width="95" height="9" rx="5" fill="#087f3f"/>
+<path d="M85 340l28-30 25 13 36-45" fill="none" stroke="#087f3f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M157 278h18v18" fill="none" stroke="#087f3f" stroke-width="7" stroke-linecap="round"/>
+<text x="320" y="458" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#087f3f">A clearer path to search growth</text>
+</svg>
