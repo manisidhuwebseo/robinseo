@@ -1,0 +1,101 @@
+name: Notify IndexNow
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "**.html"
+      - "sitemap.xml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  submit-changed-urls:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Submit changed URLs to IndexNow
+        env:
+          INDEXNOW_KEY: 8d4c1a7f93e2b6d0a5c8f1e4b7d2936a
+          GITHUB_EVENT_PATH: ${{ github.event_path }}
+          SITEMAP_CHANGED: ${{ contains(github.event.head_commit.modified, 'sitemap.xml') || contains(github.event.head_commit.added, 'sitemap.xml') }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import urllib.request
+          import xml.etree.ElementTree as ET
+
+          site = "https://robinseo.vercel.app"
+          key = os.environ["INDEXNOW_KEY"]
+
+          with open("sitemap.xml", encoding="utf-8") as f:
+              root = ET.parse(f).getroot()
+
+          urls = [
+              node.text.strip()
+              for node in root.iter()
+              if node.tag.endswith("loc") and node.text and node.text.strip().startswith(site + "/")
+          ]
+
+          with open(os.environ["GITHUB_EVENT_PATH"], encoding="utf-8") as f:
+              event = json.load(f)
+
+          changed = set()
+          for commit in event.get("commits", []):
+              changed.update(commit.get("added", []))
+              changed.update(commit.get("modified", []))
+
+          sitemap_changed = "sitemap.xml" in changed
+          if sitemap_changed or not changed:
+              selected = urls
+          else:
+              selected = []
+              for url in urls:
+                  path = url.split(site, 1)[1].strip("/")
+                  for filename in changed:
+                      if not filename.endswith(".html"):
+                          continue
+                      stem = os.path.splitext(os.path.basename(filename))[0]
+                      if path == "" and stem == "index":
+                          selected.append(url)
+                          break
+                      if path == stem or path == stem + ".html":
+                          selected.append(url)
+                          break
+
+          selected = list(dict.fromkeys(selected))
+          if not selected:
+              print("No sitemap URLs matched the changed HTML files; nothing submitted.")
+              raise SystemExit(0)
+
+          payload = json.dumps({
+              "host": "robinseo.vercel.app",
+              "key": key,
+              "urlList": selected
+          }).encode("utf-8")
+
+          request = urllib.request.Request(
+              "https://api.indexnow.org/indexnow",
+              data=payload,
+              headers={"Content-Type": "application/json; charset=utf-8"},
+              method="POST"
+          )
+
+          try:
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  print(f"IndexNow response: HTTP {response.status}")
+                  print(f"URLs submitted: {len(selected)}")
+                  for url in selected:
+                      print(url)
+          except Exception as exc:
+              print(f"IndexNow submission failed: {exc}")
+              raise
+          PY
