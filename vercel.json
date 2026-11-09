@@ -29,6 +29,56 @@
       "source": "/seo-packages.html",
       "destination": "/seo-packages",
       "permanent": true
+    },
+    {
+      "source": "/dental-seo-services.html",
+      "destination": "/dental-seo-services",
+      "permanent": true
+    },
+    {
+      "source": "/hair-transplant-seo-services.html",
+      "destination": "/hair-transplant-seo-services",
+      "permanent": true
+    },
+    {
+      "source": "/dermatology-seo-services.html",
+      "destination": "/dermatology-seo-services",
+      "permanent": true
+    },
+    {
+      "source": "/med-spa-seo-services.html",
+      "destination": "/med-spa-seo-services",
+      "permanent": true
+    },
+    {
+      "source": "/chiropractor-seo-services.html",
+      "destination": "/chiropractor-seo-services",
+      "permanent": true
+    },
+    {
+      "source": "/physical-therapy-seo-services.html",
+      "destination": "/physical-therapy-seo-services",
+      "permanent": true
+    },
+    {
+      "source": "/plastic-surgery-seo-services.html",
+      "destination": "/plastic-surgery-seo-services",
+      "permanent": true
+    },
+    {
+      "source": "/ophthalmology-seo-services.html",
+      "destination": "/ophthalmology-seo-services",
+      "permanent": true
+    },
+    {
+      "source": "/primary-care-seo-services.html",
+      "destination": "/primary-care-seo-services",
+      "permanent": true
+    },
+    {
+      "source": "/mental-health-seo-services.html",
+      "destination": "/mental-health-seo-services",
+      "permanent": true
     }
   ],
   "routes": [
@@ -59,6 +109,46 @@
     {
       "src": "/seo-packages",
       "dest": "/seo-packages.html"
+    },
+    {
+      "src": "/dental-seo-services",
+      "dest": "/dental-seo-services.html"
+    },
+    {
+      "src": "/hair-transplant-seo-services",
+      "dest": "/hair-transplant-seo-services.html"
+    },
+    {
+      "src": "/dermatology-seo-services",
+      "dest": "/dermatology-seo-services.html"
+    },
+    {
+      "src": "/med-spa-seo-services",
+      "dest": "/med-spa-seo-services.html"
+    },
+    {
+      "src": "/chiropractor-seo-services",
+      "dest": "/chiropractor-seo-services.html"
+    },
+    {
+      "src": "/physical-therapy-seo-services",
+      "dest": "/physical-therapy-seo-services.html"
+    },
+    {
+      "src": "/plastic-surgery-seo-services",
+      "dest": "/plastic-surgery-seo-services.html"
+    },
+    {
+      "src": "/ophthalmology-seo-services",
+      "dest": "/ophthalmology-seo-services.html"
+    },
+    {
+      "src": "/primary-care-seo-services",
+      "dest": "/primary-care-seo-services.html"
+    },
+    {
+      "src": "/mental-health-seo-services",
+      "dest": "/mental-health-seo-services.html"
     },
     {
       "src": "/robots.txt",
