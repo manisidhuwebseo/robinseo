@@ -969,6 +969,32 @@
                 gap: 1rem;
             }
         }
+    
+        /* ===== SERVICE DIRECTORY ADDITIONS ===== */
+        .dropdown-label{display:block;padding:.55rem 1.2rem .28rem;color:#087f3f;font-size:.69rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+        .has-dropdown.open .dropdown{display:block}
+        .service-directory{padding:4.8rem 0;background:#f5faf6}
+        .directory-intro{max-width:780px;margin:0 auto 3rem;text-align:center}
+        .directory-kicker{color:#087f3f;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+        .directory-intro h2{font-size:clamp(2rem,4vw,2.7rem);line-height:1.15;margin:.75rem 0 1rem;color:#17251c}
+        .directory-intro p,.directory-heading p{color:#5b685f}
+        .directory-category{margin:2.7rem 0}
+        .directory-heading{display:flex;align-items:flex-start;gap:1rem;margin-bottom:1.25rem}
+        .directory-heading>span{flex:0 0 42px;height:42px;display:grid;place-items:center;background:#087f3f;color:#fff;border-radius:12px;font-weight:800}
+        .directory-heading h3{font-size:1.45rem;margin:0 0 .35rem;color:#17251c}
+        .directory-heading p{margin:0;font-size:.96rem}
+        .directory-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
+        .directory-grid-two{grid-template-columns:repeat(2,minmax(0,1fr))}
+        .directory-card{min-height:175px;background:#fff;border:1px solid #e2ece5;border-radius:15px;padding:1.25rem;display:flex;flex-direction:column;gap:.65rem;transition:transform .2s,box-shadow .2s,border-color .2s}
+        .directory-card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(13,60,31,.09);border-color:#9dceb0}
+        .directory-card b{font-size:1.02rem;color:#17251c;line-height:1.35}
+        .directory-card span{font-size:.88rem;color:#657168;line-height:1.55}
+        .directory-card i{font-style:normal;font-size:.82rem;font-weight:800;color:#087f3f;margin-top:auto}
+        .directory-note{display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;background:#e7f5eb;border:1px solid #d2ead9;border-radius:15px;padding:1.2rem 1.4rem;color:#294b35}
+        .directory-note strong{color:#123c23}.directory-note span{flex:1 1 280px;font-size:.9rem}.directory-note a{font-weight:800;color:#087f3f;font-size:.9rem}
+        @media(max-width:1000px){.directory-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+        @media(max-width:768px){.directory-grid,.directory-grid-two{grid-template-columns:1fr}.service-directory{padding:3.4rem 0}.directory-card{min-height:0}.dropdown{position:static;min-width:0;width:100%;box-shadow:none;border:0;border-left:2px solid #e0eee4;border-radius:0;margin:.35rem 0 .5rem;padding:.25rem 0 .25rem .35rem}.dropdown li a{white-space:normal}.dropdown-label{padding:.65rem .8rem .2rem}}
+
     </style>
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Robin SEO Expert – Healthcare SEO &amp; AI Visibility | Get More Patients" />
@@ -1002,24 +1028,28 @@
                     <li class="has-dropdown">
                         <a href="#services">Services</a>
                         <ul class="dropdown">
-<li><a href="/dental-seo-services">Dental & Orthodontic Clinics</a></li>
-<li><a href="/hair-transplant-seo-services">Hair Transplant & Hair Restoration Clinics</a></li>
-<li><a href="/dermatology-seo-services">Dermatology Clinics</a></li>
-<li><a href="/med-spa-seo-services">Med Spas & Aesthetic Clinics</a></li>
-<li><a href="/chiropractor-seo-services">Chiropractic Clinics</a></li>
-<li><a href="/physical-therapy-seo-services">Physical Therapy & Rehabilitation</a></li>
-<li><a href="/plastic-surgery-seo-services">Plastic & Cosmetic Surgery Clinics</a></li>
-<li><a href="/ophthalmology-seo-services">Eye Care & Ophthalmology Clinics</a></li>
-<li><a href="/primary-care-seo-services">Primary Care & Family Medicine</a></li>
-<li><a href="/mental-health-seo-services">Mental Health & Therapy Practices</a></li>
-<li><a href="/healthcare-seo">Healthcare SEO</a></li>
-<li><a href="/medical-website-optimisation">Medical Website Optimisation</a></li>
-<li><a href="/healthcare-local-seo">Healthcare Local SEO</a></li>
-<li><a href="/patient-acquisition-seo">Patient Acquisition SEO</a></li>
-<li><a href="/technical-seo-services-for-small-businesses">Technical SEO for Small Businesses</a></li>
-                        </ul>
+<li class="dropdown-label">Core Healthcare SEO</li>
+<li><a href="/healthcare-seo.html">Healthcare SEO Services</a></li>
+<li><a href="/medical-website-optimisation.html">Medical Website Optimisation</a></li>
+<li><a href="/healthcare-local-seo.html">Healthcare Local SEO</a></li>
+<li><a href="/patient-acquisition-seo.html">Patient Acquisition SEO</a></li>
+<li class="dropdown-label">Specialty Clinic SEO</li>
+<li><a href="/dental-seo-services.html">Dental &amp; Orthodontic Clinics</a></li>
+<li><a href="/hair-transplant-seo-services.html">Hair Transplant &amp; Hair Restoration</a></li>
+<li><a href="/dermatology-seo-services.html">Dermatology Clinics</a></li>
+<li><a href="/med-spa-seo-services.html">Med Spas &amp; Aesthetic Clinics</a></li>
+<li><a href="/chiropractor-seo-services.html">Chiropractic Clinics</a></li>
+<li><a href="/physical-therapy-seo-services.html">Physical Therapy &amp; Rehabilitation</a></li>
+<li><a href="/plastic-surgery-seo-services.html">Plastic &amp; Cosmetic Surgery</a></li>
+<li><a href="/ophthalmology-seo-services.html">Eye Care &amp; Ophthalmology</a></li>
+<li><a href="/primary-care-seo-services.html">Primary Care &amp; Family Medicine</a></li>
+<li><a href="/mental-health-seo-services.html">Mental Health &amp; Therapy Practices</a></li>
+<li class="dropdown-label">Technical SEO &amp; Growth</li>
+<li><a href="/technical-seo-services-for-small-businesses.html">Technical SEO for Small Businesses</a></li>
+<li><a href="/seo-packages.html">SEO Packages</a></li>
+</ul>
                     </li>
-                    <li><a href="/seo-packages">SEO Packages</a></li>
+                    <li><a href="/seo-packages.html">SEO Packages</a></li>
                             <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -1075,7 +1105,7 @@
                             <div class="service-card">
                     <h3>Technical SEO for Small Businesses</h3>
                     <p>Improve crawlability, indexing, website structure and page experience with practical technical SEO audits and prioritised fixes for small business websites.</p>
-                    <a href="/technical-seo-services-for-small-businesses" class="btn btn-outline">Learn More →</a>
+                    <a href="/technical-seo-services-for-small-businesses.html" class="btn btn-outline">Learn More →</a>
                 </div>
 </div>
             <div class="services-cta">
@@ -1086,6 +1116,54 @@
                 </a>
             </div>
         </div>
+    </section>
+
+    
+    <!-- ===== SERVICE DIRECTORY BY CATEGORY ===== -->
+    <section class="service-directory" id="service-categories">
+      <div class="container">
+        <div class="directory-intro">
+          <span class="directory-kicker">Explore our services</span>
+          <h2>Healthcare SEO services organised around your practice</h2>
+          <p>Choose the service that matches your business. Robin SEO supports healthcare providers with core search optimisation, specialty-specific SEO, technical improvements and patient acquisition strategy. Each service below links to its dedicated information page.</p>
+        </div>
+
+        <div class="directory-category">
+          <div class="directory-heading"><span>01</span><div><h3>Core Healthcare SEO Services</h3><p>Build a stronger search foundation and make it easier for the right people to find your practice.</p></div></div>
+          <div class="directory-grid">
+            <a class="directory-card" href="/healthcare-seo.html"><b>Healthcare SEO</b><span>On-page, off-page, content and technical optimisation for healthcare websites.</span><i>View service →</i></a>
+            <a class="directory-card" href="/medical-website-optimisation.html"><b>Medical Website Optimisation</b><span>Improve site structure, mobile usability, content clarity and conversion paths.</span><i>View service →</i></a>
+            <a class="directory-card" href="/healthcare-local-seo.html"><b>Healthcare Local SEO</b><span>Improve local discovery through Google Business Profile, local pages and citations.</span><i>View service →</i></a>
+            <a class="directory-card" href="/patient-acquisition-seo.html"><b>Patient Acquisition SEO</b><span>Connect search intent, helpful landing pages and enquiry journeys.</span><i>View service →</i></a>
+          </div>
+        </div>
+
+        <div class="directory-category">
+          <div class="directory-heading"><span>02</span><div><h3>SEO for Healthcare Specialties</h3><p>Explore focused SEO pages for different clinic types and healthcare disciplines.</p></div></div>
+          <div class="directory-grid">
+            <a class="directory-card" href="/dental-seo-services.html"><b>Dental &amp; Orthodontic SEO</b><span>SEO strategies for dental clinics, dentists and orthodontic practices.</span><i>View service →</i></a>
+            <a class="directory-card" href="/hair-transplant-seo-services.html"><b>Hair Transplant SEO</b><span>Search visibility for hair restoration, transplant and hair clinic services.</span><i>View service →</i></a>
+            <a class="directory-card" href="/dermatology-seo-services.html"><b>Dermatology SEO</b><span>Help patients discover dermatology and skin-care clinic services.</span><i>View service →</i></a>
+            <a class="directory-card" href="/med-spa-seo-services.html"><b>Med Spa &amp; Aesthetic SEO</b><span>Local and organic search optimisation for aesthetic practices and med spas.</span><i>View service →</i></a>
+            <a class="directory-card" href="/chiropractor-seo-services.html"><b>Chiropractor SEO</b><span>Improve visibility for chiropractic clinics and relevant local searches.</span><i>View service →</i></a>
+            <a class="directory-card" href="/physical-therapy-seo-services.html"><b>Physical Therapy SEO</b><span>SEO for physiotherapy, rehabilitation and physical therapy providers.</span><i>View service →</i></a>
+            <a class="directory-card" href="/plastic-surgery-seo-services.html"><b>Plastic Surgery SEO</b><span>Search-focused website content for plastic and cosmetic surgery practices.</span><i>View service →</i></a>
+            <a class="directory-card" href="/ophthalmology-seo-services.html"><b>Ophthalmology SEO</b><span>Help people find eye-care clinics, ophthalmologists and vision services.</span><i>View service →</i></a>
+            <a class="directory-card" href="/primary-care-seo-services.html"><b>Primary Care SEO</b><span>Local search optimisation for family medicine and primary care practices.</span><i>View service →</i></a>
+            <a class="directory-card" href="/mental-health-seo-services.html"><b>Mental Health SEO</b><span>Improve online discoverability for therapy and mental health practices.</span><i>View service →</i></a>
+          </div>
+        </div>
+
+        <div class="directory-category">
+          <div class="directory-heading"><span>03</span><div><h3>Technical SEO &amp; Growth Support</h3><p>Strengthen the technical experience and choose a service scope that fits your website.</p></div></div>
+          <div class="directory-grid directory-grid-two">
+            <a class="directory-card" href="/technical-seo-services-for-small-businesses.html"><b>Technical SEO for Small Businesses</b><span>Address crawlability, indexing, site architecture, metadata and technical site health.</span><i>View service →</i></a>
+            <a class="directory-card" href="/seo-packages.html"><b>SEO Packages</b><span>Review available SEO service options and discuss a scope based on your goals.</span><i>View service →</i></a>
+          </div>
+        </div>
+
+        <div class="directory-note"><strong>Need a wider digital strategy?</strong><span>Google Ads, healthcare website design and patient lead generation can also be discussed as part of your project.</span><a href="#contact">Discuss your requirements →</a></div>
+      </div>
     </section>
 
     <!-- ===== WHAT WE DELIVER ===== -->
@@ -1727,8 +1805,8 @@
                     <li><a href="https://robinseo.vercel.app/medical-website-optimisation.html">Medical Website Optimisation</a></li>
                     <li><a href="https://robinseo.vercel.app/healthcare-local-seo.html">Healthcare Local SEO</a></li>
                     <li><a href="https://robinseo.vercel.app/patient-acquisition-seo.html">Patient Acquisition SEO</a></li>
-                    <li><a href="https://robinseo.vercel.app/technical-seo-services-for-small-businesses">Technical SEO for Small Businesses</a></li>
-                    <li><a href="/seo-packages">SEO Packages</a></li>
+                    <li><a href="/technical-seo-services-for-small-businesses.html">Technical SEO for Small Businesses</a></li>
+                    <li><a href="/seo-packages.html">SEO Packages</a></li>
                             <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
