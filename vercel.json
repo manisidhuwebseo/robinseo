@@ -24,6 +24,11 @@
       "source": "/technical-seo-services-for-small-businesses.html",
       "destination": "/technical-seo-services-for-small-businesses",
       "permanent": true
+    },
+    {
+      "source": "/seo-packages.html",
+      "destination": "/seo-packages",
+      "permanent": true
     }
   ],
   "routes": [
@@ -50,6 +55,10 @@
     {
       "src": "/technical-seo-services-for-small-businesses",
       "dest": "/technical-seo-services-for-small-businesses.html"
+    },
+    {
+      "src": "/seo-packages",
+      "dest": "/seo-packages.html"
     },
     {
       "src": "/robots.txt",
