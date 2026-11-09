@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+<title id="title">Technical SEO audit illustration for small business websites</title>
+<desc id="desc">A website dashboard with crawl, indexing, speed and technical health checks, illustrated with a magnifying glass and verification marks.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff0f0"/></linearGradient>
+  <linearGradient id="red" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e34a4a"/><stop offset="1" stop-color="#a61f1f"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#171717" flood-opacity=".10"/></filter>
+</defs>
+<rect width="1200" height="900" rx="52" fill="url(#bg)"/>
+<circle cx="1000" cy="160" r="100" fill="#f9dede"/><circle cx="170" cy="730" r="82" fill="#f9dede"/>
+<g filter="url(#shadow)">
+<rect x="155" y="125" width="820" height="610" rx="28" fill="#fff" stroke="#e8e8e8" stroke-width="4"/>
+<path d="M183 125h764a28 28 0 0 1 28 28v70H155v-70a28 28 0 0 1 28-28" fill="#202124"/>
+<circle cx="198" cy="178" r="10" fill="#f28b82"/><circle cx="234" cy="178" r="10" fill="#fbbc04"/><circle cx="270" cy="178" r="10" fill="#81c995"/>
+<rect x="330" y="160" width="420" height="34" rx="17" fill="#3c4043"/>
+<text x="195" y="290" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#171717">Technical SEO Health Check</text>
+<text x="195" y="333" font-family="Arial,sans-serif" font-size="21" fill="#6b7075">A clearer foundation for search visibility</text>
+<rect x="195" y="375" width="330" height="245" rx="18" fill="#fafafa" stroke="#ececec" stroke-width="3"/>
+<text x="225" y="422" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#343434">Website health</text>
+<circle cx="360" cy="515" r="68" fill="none" stroke="#f1d5d5" stroke-width="18"/>
+<path d="M360 447a68 68 0 1 1-63 93" fill="none" stroke="url(#red)" stroke-width="18" stroke-linecap="round"/>
+<text x="360" y="525" text-anchor="middle" font-family="Arial,sans-serif" font-size="38" font-weight="700" fill="#171717">SEO</text>
+<text x="360" y="570" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#6b7075">Audit overview</text>
+<rect x="555" y="375" width="360" height="72" rx="14" fill="#fff7f7" stroke="#f1dada" stroke-width="2"/>
+<circle cx="594" cy="411" r="18" fill="#c62828"/><path d="m585 411 7 7 13-15" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="630" y="419" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#292929">Crawlability</text>
+<rect x="555" y="465" width="360" height="72" rx="14" fill="#fff7f7" stroke="#f1dada" stroke-width="2"/>
+<circle cx="594" cy="501" r="18" fill="#c62828"/><path d="m585 501 7 7 13-15" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="630" y="509" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#292929">Indexing signals</text>
+<rect x="555" y="555" width="360" height="72" rx="14" fill="#fff7f7" stroke="#f1dada" stroke-width="2"/>
+<circle cx="594" cy="591" r="18" fill="#c62828"/><path d="m585 591 7 7 13-15" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="630" y="599" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#292929">Page experience</text>
+</g>
+<g filter="url(#shadow)">
+<circle cx="930" cy="650" r="105" fill="#fff" stroke="#c62828" stroke-width="18"/>
+<circle cx="930" cy="650" r="58" fill="#fff4f4"/>
+<path d="m974 726 95 95" stroke="#a61f1f" stroke-width="30" stroke-linecap="round"/>
+<path d="m901 650 20 20 40-47" fill="none" stroke="#c62828" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
