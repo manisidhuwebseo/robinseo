@@ -19,15 +19,45 @@
       "source": "/patient-acquisition-seo.html",
       "destination": "/patient-acquisition-seo",
       "permanent": true
+    },
+    {
+      "source": "/technical-seo-services-for-small-businesses.html",
+      "destination": "/technical-seo-services-for-small-businesses",
+      "permanent": true
     }
   ],
   "routes": [
-    { "src": "/", "dest": "/index.html" },
-    { "src": "/healthcare-seo", "dest": "/healthcare-seo.html" },
-    { "src": "/medical-website-optimisation", "dest": "/medical-website-optimisation.html" },
-    { "src": "/healthcare-local-seo", "dest": "/healthcare-local-seo.html" },
-    { "src": "/patient-acquisition-seo", "dest": "/patient-acquisition-seo.html" },
-    { "src": "/robots.txt", "dest": "/robots.txt" },
-    { "src": "/sitemap.xml", "dest": "/sitemap.xml" }
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/healthcare-seo",
+      "dest": "/healthcare-seo.html"
+    },
+    {
+      "src": "/medical-website-optimisation",
+      "dest": "/medical-website-optimisation.html"
+    },
+    {
+      "src": "/healthcare-local-seo",
+      "dest": "/healthcare-local-seo.html"
+    },
+    {
+      "src": "/patient-acquisition-seo",
+      "dest": "/patient-acquisition-seo.html"
+    },
+    {
+      "src": "/technical-seo-services-for-small-businesses",
+      "dest": "/technical-seo-services-for-small-businesses.html"
+    },
+    {
+      "src": "/robots.txt",
+      "dest": "/robots.txt"
+    },
+    {
+      "src": "/sitemap.xml",
+      "dest": "/sitemap.xml"
+    }
   ]
 }
