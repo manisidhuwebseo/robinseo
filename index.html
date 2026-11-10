@@ -253,6 +253,8 @@
         }
         .nav-list {
             justify-content: center;
+            width: 100%;
+            margin-inline: auto;
         }
         .logo {
             font-size: 1.5rem;
@@ -291,7 +293,7 @@
             min-width: 220px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
         }
-        .has-dropdown:hover .dropdown, .has-dropdown:focus-within .dropdown {
+        .has-dropdown:focus-within .dropdown {
             display: block;
         }
         .dropdown li a { display: block; padding: .38rem 1.2rem; font-size: .88rem; line-height: 1.35; font-weight: 500; }
@@ -1027,7 +1029,7 @@
                     <li><a href="/">Home</a></li>
                     <li class="has-dropdown">
                         <a href="#services">Services</a>
-                        <ul class="dropdown">
+                        <ul class="dropdown" id="services-dropdown">
 <li class="dropdown-label">Core Healthcare SEO</li>
 <li><a href="/healthcare-seo.html">Healthcare SEO Services</a></li>
 <li><a href="/medical-website-optimisation.html">Medical Website Optimisation</a></li>
