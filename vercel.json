@@ -79,6 +79,16 @@
       "source": "/mental-health-seo-services.html",
       "destination": "/mental-health-seo-services",
       "permanent": true
+    },
+    {
+      "source": "/blog.html",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio.html",
+      "destination": "/portfolio",
+      "permanent": true
     }
   ],
   "routes": [
@@ -149,6 +159,14 @@
     {
       "src": "/mental-health-seo-services",
       "dest": "/mental-health-seo-services.html"
+    },
+    {
+      "src": "/blog",
+      "dest": "/blog.html"
+    },
+    {
+      "src": "/portfolio",
+      "dest": "/portfolio.html"
     },
     {
       "src": "/robots.txt",
