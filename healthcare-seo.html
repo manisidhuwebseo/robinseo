@@ -1,667 +1,1129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SB2PXXTJKC"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-SB2PXXTJKC');
-    </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Healthcare SEO Services for Clinics | Robin SEO</title>
-    <meta name="description" content="Healthcare SEO for doctors, clinics and specialists. Improve Google visibility, attract qualified patient enquiries and grow your practice. Get a free audit." />
-    <meta name="keywords" content="healthcare SEO services, medical SEO for small clinics, best medical SEO company, how to get more patients from Google, Google SEO for doctors, healthcare digital marketing, patient acquisition SEO, medical practice growth, healthcare website optimization" />
-    <link rel="canonical" href="https://robinseo.vercel.app/healthcare-seo" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
-    <style>
-        /* RESET & BASE */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; background: #ffffff; color: #1a1a1a; line-height: 1.6; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
-        a { text-decoration: none; color: inherit; }
-        ul { list-style: none; }
-        .btn { display: inline-block; padding: 0.875rem 2rem; border-radius: 0.5rem; font-weight: 700; font-size: 1rem; transition: background 0.3s, transform 0.2s; border: none; cursor: pointer; }
-        .btn-primary { background: #25D366; color: #ffffff; }
-        .btn-primary:hover { background: #1ebe5c; transform: translateY(-2px); }
-        .btn-outline { background: transparent; color: #25D366; border: 2px solid #25D366; }
-        .btn-outline:hover { background: #25D366; color: #ffffff; }
-        .btn-whatsapp { background: #25D366; color: #ffffff; display: inline-flex; align-items: center; gap: 0.5rem; }
-        .btn-whatsapp:hover { background: #1ebe5c; transform: translateY(-2px); }
-        .btn-whatsapp svg { width: 22px; height: 22px; fill: currentColor; }
-        .header { background: #ffffff; border-bottom: 1px solid #f0f0f0; padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
-        .header-inner { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.5rem; font-weight: 900; color: #25D366; }
-        .logo span { font-weight: 400; color: #1a1a1a; }
-        .nav-list { display: flex; gap: 2rem; align-items: center; }
-        .nav-list a { font-weight: 600; color: #1a1a1a; transition: color 0.2s; }
-        .nav-list a:hover { color: #25D366; }
-        .has-dropdown { position: relative; }
-        .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #ffffff; border: 1px solid #f0f0f0; border-radius: 0.5rem; padding: 0.75rem 0; min-width: 220px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); }
-        .has-dropdown:hover .dropdown, .has-dropdown:focus-within .dropdown { display: block; }
-        .dropdown { min-width: 310px; max-width: min(380px, 92vw); max-height: 72vh; overflow-y: auto; }
-        .dropdown .dropdown-heading { padding: 0.55rem 1.5rem 0.25rem; color: #087f3f; font-size: 0.76rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
-        .dropdown .dropdown-heading-spaced { margin-top: .45rem; border-top: 1px solid #edf0ed; padding-top: .8rem; }
-        .dropdown li a { display: block; padding: .38rem 1.2rem; font-size: .88rem; line-height: 1.35; font-weight: 500; }
-        .dropdown li a:hover { background: #f9f9f9; color: #25D366; }
-        .mobile-menu-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; }
-        .mobile-menu-toggle span { display: block; width: 25px; height: 3px; background: #1a1a1a; border-radius: 3px; transition: 0.3s; }
-        .hero { padding: 4rem 0 3rem; background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%); }
-        .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
-        .hero-content h1 { font-size: 3rem; font-weight: 900; line-height: 1.2; margin-bottom: 1.5rem; color: #1a1a1a; }
-        .hero-content p { font-size: 1.125rem; color: #4a4a4a; margin-bottom: 2rem; }
-        .hero-image { width: 100%; border-radius: 1rem; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.08); }
-        .hero-image .before-after { display: flex; flex-direction: column; background: #fff; padding: 1.5rem; }
-        .hero-image .before-after .ba-row { display: flex; justify-content: space-between; align-items: center; padding: 0.75rem 0; border-bottom: 1px solid #f0f0f0; }
-        .hero-image .before-after .ba-row:last-child { border-bottom: none; }
-        .hero-image .before-after .ba-label { font-weight: 600; color: #1a1a1a; width: 40%; }
-        .hero-image .before-after .ba-value { font-weight: 700; color: #25D366; width: 25%; text-align: right; }
-        .hero-image .before-after .ba-bar { width: 35%; height: 20px; background: #f0f0f0; border-radius: 10px; overflow: hidden; position: relative; }
-        .hero-image .before-after .ba-bar .fill { height: 100%; background: #25D366; border-radius: 10px; transition: width 1s; }
-        .hero-image .before-after .ba-bar .fill.before { width: 30%; background: #e0e0e0; }
-        .hero-image .before-after .ba-bar .fill.after { width: 85%; background: #25D366; }
-        .hero-image .before-after .ba-title { font-weight: 800; font-size: 1.1rem; margin-bottom: 0.5rem; color: #1a1a1a; text-align: center; }
-        .breadcrumb { font-size: 0.875rem; color: #777; margin-bottom: 1rem; }
-        .breadcrumb a { color: #25D366; }
-        .section { padding: 4rem 0; }
-        .section-alt { background: #f9fafb; }
-        .section h2 { font-size: 2.5rem; font-weight: 800; margin-bottom: 1.5rem; text-align: center; }
-        .section p { color: #4a4a4a; max-width: 800px; margin: 0 auto 1.5rem; text-align: center; }
-        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
-        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
-        .card { background: #ffffff; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); border-left: 4px solid #25D366; text-align: left; }
-        .card h4 { font-size: 1.125rem; font-weight: 700; margin-bottom: 0.75rem; }
-        .card p { color: #4a4a4a; text-align: left; margin: 0; }
-        .card ul { list-style: disc; padding-left: 1.5rem; color: #4a4a4a; margin-top: 0.75rem; }
-        .card ul li { margin-bottom: 0.35rem; }
-        .card-center { text-align: center; }
-        .card-center p { text-align: center; }
-        .stats-bar { padding: 3rem 0; background: #25D366; color: #ffffff; }
-        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; text-align: center; }
-        .stat-number { display: block; font-size: 2.5rem; font-weight: 900; }
-        .stat-label { font-size: 1rem; opacity: 0.9; }
-        .faq-list { max-width: 800px; margin: 0 auto; }
-        .faq-list details { border-bottom: 1px solid #f0f0f0; padding: 1.25rem 0; }
-        .faq-list summary { font-weight: 700; font-size: 1.125rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
-        .faq-list summary::after { content: '+'; font-size: 1.5rem; color: #25D366; }
-        .faq-list details[open] summary::after { content: '−'; }
-        .faq-list p { color: #4a4a4a; margin-top: 0.75rem; padding-right: 1rem; }
-        .contact-section { padding: 4rem 0; background: #ffffff; }
-        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
-        .contact-info h2 { font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; text-align: left; }
-        .contact-info p { color: #4a4a4a; margin-bottom: 1.5rem; text-align: left; }
-        .contact-details li { margin-bottom: 0.5rem; }
-        .contact-whatsapp { background: #f9fafb; padding: 2rem; border-radius: 1rem; text-align: center; }
-        .contact-whatsapp .whatsapp-number { font-size: 2rem; font-weight: 900; color: #25D366; display: block; margin: 0.75rem 0; }
-        .contact-whatsapp .response-badge { display: inline-block; background: #25D366; color: #fff; padding: 0.35rem 1.25rem; border-radius: 2rem; font-weight: 600; font-size: 0.9rem; margin-top: 0.5rem; }
-        .contact-whatsapp .btn-whatsapp { margin-top: 1.25rem; padding: 0.875rem 2.5rem; font-size: 1.1rem; }
-        .contact-whatsapp .email-link { color: #25D366; font-weight: 600; }
-        .final-cta { padding: 4rem 0; background: linear-gradient(135deg, #1a1a1a, #2d2d2d); color: #ffffff; text-align: center; }
-        .final-cta h2 { font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; }
-        .final-cta p { max-width: 600px; margin: 0 auto 2rem; color: #cccccc; }
-        .footer { background: #1a1a1a; color: #aaaaaa; padding: 3rem 0 1.5rem; border-top: 1px solid #2d2d2d; }
-        .footer-inner { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 2rem; }
-        .footer-brand .logo { color: #25D366; font-size: 1.5rem; font-weight: 900; }
-        .footer-brand p { margin-top: 0.5rem; font-size: 0.95rem; }
-        .footer-nav ul { display: flex; flex-direction: column; gap: 0.5rem; }
-        .footer-nav a { color: #cccccc; transition: color 0.2s; }
-        .footer-nav a:hover { color: #25D366; }
-        .footer-legal { text-align: right; font-size: 0.875rem; color: #777777; grid-column: 1 / -1; padding-top: 1.5rem; border-top: 1px solid #2d2d2d; margin-top: 1.5rem; }
-        @media (max-width: 992px) { .hero-grid, .contact-grid, .grid-2, .grid-3 { grid-template-columns: 1fr; } .hero-image { order: -1; } .footer-inner { grid-template-columns: 1fr; text-align: center; } .footer-legal { text-align: center; } .stats-grid { grid-template-columns: 1fr 1fr; } }
-        @media (max-width: 768px) { .nav-list { display: none; flex-direction: column; gap: 1rem; background: #ffffff; position: absolute; top: 100%; left: 0; right: 0; padding: 2rem; border-bottom: 1px solid #f0f0f0; box-shadow: 0 10px 25px rgba(0,0,0,0.05); } .nav-list.open { display: flex; } .mobile-menu-toggle { display: flex; } .dropdown { position: static; border: none; padding: 0; box-shadow: none; display: none; } .has-dropdown:hover .dropdown { display: none; } .has-dropdown.open .dropdown { display: block; } .stats-grid { grid-template-columns: 1fr; } .hero-content h1 { font-size: 2rem; } .contact-whatsapp .whatsapp-number { font-size: 1.5rem; } .grid-3 { grid-template-columns: 1fr; } .hero-image .before-after .ba-row { flex-wrap: wrap; gap: 0.5rem; } .hero-image .before-after .ba-label { width: 100%; } .hero-image .before-after .ba-value { width: auto; } .hero-image .before-after .ba-bar { width: 100%; } }
-    </style>
-    <!-- Structured data: Organization, WebSite, WebPage, Service, Breadcrumb and visible FAQs -->
-    <script type="application/ld+json">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SB2PXXTJKC"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-SB2PXXTJKC');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Healthcare SEO Services for Clinics &amp; Doctors | Robin SEO</title>
+<meta name="description" content="Healthcare SEO for doctors & clinics in Houston, Dallas, LA, Miami, NYC & more. Rank on Google & Bing, win local searches. Free clinic SEO audit.">
+<meta name="keywords" content="healthcare SEO services, healthcare SEO in Houston, healthcare SEO in Dallas, healthcare SEO Los Angeles, medical SEO for clinics near me, dental SEO for small clinics, med spa SEO company, doctor SEO by city, Bing SEO for clinics, medical SEO for clinics, healthcare SEO agency, SEO for doctors, get more patients from Google, patient acquisition SEO, local SEO for clinics, AEO for healthcare, GEO for clinics, healthcare digital marketing">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Robin SEO">
+<link rel="canonical" href="https://robinseo.vercel.app/healthcare-seo">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-readable site summary">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Robin SEO">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://robinseo.vercel.app/healthcare-seo">
+<meta property="og:title" content="Healthcare SEO Services for Clinics &amp; Doctors | Robin SEO">
+<meta property="og:description" content="Healthcare SEO for doctors & clinics in Houston, Dallas, LA, Miami, NYC & more. Rank on Google & Bing, win local searches. Free clinic SEO audit.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Healthcare SEO Services for Clinics &amp; Doctors | Robin SEO">
+<meta name="twitter:description" content="Healthcare SEO for doctors & clinics in Houston, Dallas, LA, Miami, NYC & more. Rank on Google & Bing, win local searches. Free clinic SEO audit.">
+<meta name="theme-color" content="#06150e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@graph": [
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://robinseo.vercel.app/#organization",
+   "name": "Robin SEO",
+   "alternateName": "Robin SEO Expert",
+   "url": "https://robinseo.vercel.app/",
+   "email": "robinwebseo4@gmail.com",
+   "telephone": "+91-98145-90619",
+   "areaServed": [
     {
-      "@type": "Organization",
-      "@id": "https://robinseo.vercel.app/#organization",
-      "name": "Robin SEO",
-      "alternateName": "Robin SEO Expert",
-      "url": "https://robinseo.vercel.app/",
-      "email": "robinwebseo4@gmail.com",
-      "telephone": "+91-98145-90619",
-      "areaServed": [
-        {
-          "@type": "Country",
-          "name": "United States"
-        },
-        {
-          "@type": "Country",
-          "name": "United Kingdom"
-        }
-      ]
+     "@type": "Country",
+     "name": "United States"
     },
     {
-      "@type": "WebSite",
-      "@id": "https://robinseo.vercel.app/#website",
-      "url": "https://robinseo.vercel.app/",
-      "name": "Robin SEO",
-      "publisher": {
-        "@id": "https://robinseo.vercel.app/#organization"
-      },
-      "inLanguage": "en"
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://robinseo.vercel.app/healthcare-seo#webpage",
-      "url": "https://robinseo.vercel.app/healthcare-seo",
-      "name": "Healthcare SEO Services for Clinics | Robin SEO",
-      "description": "Healthcare SEO for doctors, clinics and specialists. Improve Google visibility, attract qualified patient enquiries and grow your practice. Get a free audit.",
-      "isPartOf": {
-        "@id": "https://robinseo.vercel.app/#website"
-      },
-      "about": {
-        "@id": "https://robinseo.vercel.app/#organization"
-      },
-      "mainEntity": {
-        "@id": "https://robinseo.vercel.app/healthcare-seo#service"
-      },
-      "inLanguage": "en"
-    },
-    {
-      "@type": "Service",
-      "@id": "https://robinseo.vercel.app/healthcare-seo#service",
-      "name": "Healthcare SEO",
-      "serviceType": "Healthcare SEO",
-      "description": "Healthcare SEO for doctors, clinics and specialists. Improve Google visibility, attract qualified patient enquiries and grow your practice. Get a free audit.",
-      "provider": {
-        "@id": "https://robinseo.vercel.app/#organization"
-      },
-      "areaServed": [
-        {
-          "@type": "Country",
-          "name": "United States"
-        },
-        {
-          "@type": "Country",
-          "name": "United Kingdom"
-        }
-      ],
-      "audience": {
-        "@type": "Audience",
-        "audienceType": "Healthcare providers, medical clinics, doctors and specialists"
-      }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://robinseo.vercel.app/healthcare-seo#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://robinseo.vercel.app/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Healthcare SEO",
-          "item": "https://robinseo.vercel.app/healthcare-seo"
-        }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://robinseo.vercel.app/healthcare-seo#faq",
-      "url": "https://robinseo.vercel.app/healthcare-seo#faq",
-      "isPartOf": {
-        "@id": "https://robinseo.vercel.app/healthcare-seo#webpage"
-      },
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How long does healthcare SEO take to show results?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "While some improvements can be seen within 4-6 weeks, significant patient growth typically occurs within 3-6 months of consistent healthcare SEO efforts. Our strategies are designed for sustainable, long-term patient acquisition."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the cost of healthcare SEO services?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We offer customised healthcare SEO packages based on your practice size, location, and patient acquisition goals. Contact us for a free consultation and customised quote."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you guarantee #1 rankings on Google?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "While we can't guarantee #1 rankings due to market variables, we guarantee to work aggressively to improve your rankings and patient leads. We have a proven track record of delivering top 3 rankings for our healthcare clients."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you work with all types of medical clinics?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, we work with a wide range of healthcare providers including general practitioners, dentists, physiotherapists, specialists, multi-location clinics, and hospitals."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you offer healthcare SEO for multiple locations?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Absolutely. We provide healthcare SEO services for multi-location medical practices, helping each clinic rank locally while maintaining a consistent brand presence."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What long-tail keywords do you target for healthcare?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We target specific, intent-rich phrases like \"best pediatric dentist for children in [city],\" \"affordable physiotherapy for back pain,\" \"top-rated dermatologist for acne treatment,\" and many more based on your specialty and location."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do you measure success for healthcare SEO?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We measure success through key performance indicators such as organic traffic, keyword rankings, patient call volume, form submissions, and ultimately, new patient appointments booked."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is healthcare SEO compliant with medical advertising regulations?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, we strictly adhere to HIPAA, GDPR, and other medical advertising guidelines. Our content is accurate, non-misleading, and patient-centric."
-          }
-        }
-      ]
+     "@type": "Country",
+     "name": "United Kingdom"
     }
-  ]
+   ],
+   "knowsAbout": [
+    "Healthcare SEO",
+    "Local SEO",
+    "Technical SEO",
+    "Answer Engine Optimisation (AEO)",
+    "Generative Engine Optimisation (GEO)"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://robinseo.vercel.app/#website",
+   "url": "https://robinseo.vercel.app/",
+   "name": "Robin SEO",
+   "publisher": {
+    "@id": "https://robinseo.vercel.app/#organization"
+   },
+   "inLanguage": "en"
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://robinseo.vercel.app/healthcare-seo#webpage",
+   "url": "https://robinseo.vercel.app/healthcare-seo",
+   "name": "Healthcare SEO Services for Clinics & Doctors | Robin SEO",
+   "description": "Healthcare SEO for doctors & clinics in Houston, Dallas, LA, Miami, NYC & more. Rank on Google & Bing, win local searches. Free clinic SEO audit.",
+   "isPartOf": {
+    "@id": "https://robinseo.vercel.app/#website"
+   },
+   "about": {
+    "@id": "https://robinseo.vercel.app/#organization"
+   },
+   "mainEntity": {
+    "@id": "https://robinseo.vercel.app/healthcare-seo#service"
+   },
+   "breadcrumb": {
+    "@id": "https://robinseo.vercel.app/healthcare-seo#breadcrumb"
+   },
+   "inLanguage": "en",
+   "dateModified": "2026-11-11",
+   "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+     "h1",
+     ".speakable-answer",
+     ".faq-list summary"
+    ]
+   }
+  },
+  {
+   "@type": "Service",
+   "@id": "https://robinseo.vercel.app/healthcare-seo#service",
+   "name": "Healthcare SEO",
+   "serviceType": "Healthcare SEO",
+   "description": "Healthcare SEO for doctors & clinics in Houston, Dallas, LA, Miami, NYC & more. Rank on Google & Bing, win local searches. Free clinic SEO audit.",
+   "provider": {
+    "@id": "https://robinseo.vercel.app/#organization"
+   },
+   "areaServed": [
+    {
+     "@type": "Country",
+     "name": "United States"
+    },
+    {
+     "@type": "Country",
+     "name": "United Kingdom"
+    },
+    {
+     "@type": "City",
+     "name": "Houston",
+     "containedInPlace": {
+      "@type": "AdministrativeArea",
+      "name": "TX"
+     }
+    },
+    {
+     "@type": "City",
+     "name": "Dallas",
+     "containedInPlace": {
+      "@type": "AdministrativeArea",
+      "name": "TX"
+     }
+    },
+    {
+     "@type": "City",
+     "name": "Los Angeles",
+     "containedInPlace": {
+      "@type": "AdministrativeArea",
+      "name": "CA"
+     }
+    },
+    {
+     "@type": "City",
+     "name": "Miami",
+     "containedInPlace": {
+      "@type": "AdministrativeArea",
+      "name": "FL"
+     }
+    },
+    {
+     "@type": "City",
+     "name": "Atlanta",
+     "containedInPlace": {
+      "@type": "AdministrativeArea",
+      "name": "GA"
+     }
+    },
+    {
+     "@type": "City",
+     "name": "Chicago",
+     "containedInPlace": {
+      "@type": "AdministrativeArea",
+      "name": "IL"
+     }
+    },
+    {
+     "@type": "City",
+     "name": "New York",
+     "containedInPlace": {
+      "@type": "AdministrativeArea",
+      "name": "NY"
+     }
+    },
+    {
+     "@type": "City",
+     "name": "Phoenix",
+     "containedInPlace": {
+      "@type": "AdministrativeArea",
+      "name": "AZ"
+     }
+    },
+    {
+     "@type": "City",
+     "name": "Seattle",
+     "containedInPlace": {
+      "@type": "AdministrativeArea",
+      "name": "WA"
+     }
+    },
+    {
+     "@type": "City",
+     "name": "Denver",
+     "containedInPlace": {
+      "@type": "AdministrativeArea",
+      "name": "CO"
+     }
+    },
+    {
+     "@type": "City",
+     "name": "San Diego",
+     "containedInPlace": {
+      "@type": "AdministrativeArea",
+      "name": "CA"
+     }
+    },
+    {
+     "@type": "City",
+     "name": "Austin",
+     "containedInPlace": {
+      "@type": "AdministrativeArea",
+      "name": "TX"
+     }
+    }
+   ],
+   "audience": {
+    "@type": "Audience",
+    "audienceType": "Healthcare providers, medical clinics, doctors and specialists"
+   },
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Healthcare SEO services",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "On-Page Healthcare SEO",
+       "description": "Optimise content, meta tags, headings and internal linking for the healthcare keywords patients actually search, including long-tail phrases like “best gynecologist for pregnancy care”."
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Off-Page Healthcare SEO",
+       "description": "Earn quality backlinks and citations from trusted healthcare directories, medical associations and relevant websites to strengthen your domain authority."
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Technical Healthcare SEO",
+       "description": "Make your medical website fast, mobile-friendly, secure and easy for search engines to crawl, for better rankings and a smoother patient experience."
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Healthcare Content SEO",
+       "description": "Patient-focused, authoritative content that answers common medical questions and ranks for healthcare search terms, reviewed for accuracy and compliance."
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Healthcare Local SEO",
+       "description": "Win Google Maps and “near me” searches by optimising your Google Business Profile, local citations and location pages."
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Analytics & Reporting",
+       "description": "Transparent monthly reports covering patient traffic, rankings, calls and conversions, so you always know what is working."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://robinseo.vercel.app/healthcare-seo#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://robinseo.vercel.app/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Healthcare SEO",
+     "item": "https://robinseo.vercel.app/healthcare-seo"
+    }
+   ]
+  },
+  {
+   "@type": "HowTo",
+   "@id": "https://robinseo.vercel.app/healthcare-seo#howto",
+   "name": "How our healthcare SEO process works",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "position": 1,
+     "name": "Healthcare SEO audit",
+     "text": "We analyse your medical website, keyword landscape and competitor rankings to find the biggest opportunities for patient growth."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 2,
+     "name": "Strategy & implementation",
+     "text": "We build a customised healthcare SEO strategy and implement on-page, off-page, local and technical optimisations."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 3,
+     "name": "Monitor, optimise & grow",
+     "text": "We track patient traffic, rankings and conversions, and keep optimising to bring in more patient enquiries."
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://robinseo.vercel.app/healthcare-seo#faq",
+   "url": "https://robinseo.vercel.app/healthcare-seo#faq",
+   "isPartOf": {
+    "@id": "https://robinseo.vercel.app/healthcare-seo#webpage"
+   },
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "How long does healthcare SEO take to show results?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Some improvements can show within 4–6 weeks, but significant patient growth typically takes 3–6 months of consistent work. Healthcare SEO is built for sustainable, long-term patient acquisition rather than overnight spikes."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the cost of healthcare SEO services?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Pricing depends on your practice size, location, competition and patient acquisition goals. Contact us for a free consultation and a customised quote."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do you guarantee #1 rankings on Google?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Nobody can honestly guarantee rankings because Google controls them. We work to improve your rankings and patient enquiries, report on verified data, and explain what is and is not working."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do you work with all types of medical clinics?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. We work with general practitioners, dentists, dermatologists, med spas, chiropractors, physiotherapists, specialists, multi-location clinics and hospitals."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do you offer healthcare SEO for multiple locations?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. We provide healthcare SEO for multi-location practices, helping each clinic rank locally while keeping a consistent brand presence."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What long-tail keywords do you target for healthcare?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We target specific, intent-rich phrases such as “best pediatric dentist for children in [city]”, “affordable physiotherapy for back pain” and “top-rated dermatologist for acne treatment”, based on your specialty and location."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do you measure success for healthcare SEO?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We track organic traffic, keyword rankings, patient call volume, form submissions and, ultimately, new patient appointments booked."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is healthcare SEO compliant with medical advertising regulations?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We follow medical advertising guidelines and keep content accurate, non-misleading and patient-centric. We do not need access to patient health information to do SEO work."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can you rank my clinic in multiple cities and suburbs?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. We target your main city plus the suburbs and neighbourhoods your patients come from, using location-specific long-tail keywords, Google Business Profile optimisation, local citations and reviews. Each location should have a real presence (an address or service area) so the rankings are genuine."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need a separate page for every city?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not at the start. This page covers the cities we serve and the keywords we target. If you have a physical clinic in a city, a dedicated location page with unique content (your team, services, address, reviews and map) is the strongest long-term option. We never publish copy-paste city pages, because Google treats those as low quality."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is AEO (Answer Engine Optimisation) for clinics?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "AEO means structuring your pages so answer engines such as Google AI Overviews, ChatGPT, Gemini and Perplexity can pull a short, accurate answer about your practice. It uses question-style headings, direct answers, FAQ schema and consistent practice details."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is GEO (Generative Engine Optimisation)?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "GEO increases the chance that generative AI tools understand, mention and recommend your practice. It relies on clear entity information (name, address, specialties), schema markup, reviews, citations and helpful, trustworthy content. No agency can guarantee a mention."
+     }
+    }
+   ]
+  }
+ ]
 }
-    </script>
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Healthcare SEO Services for Clinics | Robin SEO" />
-    <meta property="og:description" content="Healthcare SEO for doctors, clinics and specialists. Improve Google visibility, attract qualified patient enquiries and grow your practice. Get a free audit." />
-    <meta property="og:url" content="https://robinseo.vercel.app/healthcare-seo" />
-    <meta property="og:image" content="https://robinseo.vercel.app/robin_seo_expert.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Healthcare SEO Services for Clinics | Robin SEO" />
-    <meta name="twitter:description" content="Healthcare SEO for doctors, clinics and specialists. Improve Google visibility, attract qualified patient enquiries and grow your practice. Get a free audit." />
-    <meta name="twitter:image" content="https://robinseo.vercel.app/robin_seo_expert.png" />
-
+</script>
 <style>
-/* Floating WhatsApp contact shortcut */
-.robin-whatsapp-float{position:fixed;right:22px;bottom:22px;z-index:9999;display:flex;align-items:center;gap:10px;padding:12px 17px;background:#25D366;color:#fff!important;border-radius:999px;box-shadow:0 5px 18px rgba(0,0,0,.22);font:700 15px/1.2 Arial,sans-serif;text-decoration:none!important;transition:transform .2s ease,box-shadow .2s ease}
-.robin-whatsapp-float:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(0,0,0,.26);background:#1ebe5d}
-.robin-whatsapp-float svg{width:25px;height:25px;display:block;flex:0 0 25px;fill:currentColor}
-.robin-whatsapp-float:focus-visible{outline:3px solid #111;outline-offset:4px}
-@media(max-width:600px){.robin-whatsapp-float{right:15px;bottom:16px;padding:13px;border-radius:50%;width:54px;height:54px;justify-content:center;gap:0}.robin-whatsapp-float .robin-whatsapp-label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}}
-</style>
+:root{--ink:#06150e;--forest:#0b3b29;--forest2:#0f4d36;--mint:#3ddc97;--mint2:#a8f0cc;--bone:#f4f7f2;--paper:#fff;--text:#14261c;--muted:#66786d;--line:#dfe9e2;--display:"Bricolage Grotesque","Instrument Sans",sans-serif;--body:"Instrument Sans",system-ui,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px;-webkit-text-size-adjust:100%}
+body{font-family:var(--body);color:var(--text);background:var(--paper);line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img,svg{max-width:100%}
+button{font:inherit}
+:focus-visible{outline:3px solid var(--mint);outline-offset:3px;border-radius:6px}
+.container{width:min(1220px,92%);margin:auto}
+h1,h2,h3{font-family:var(--display);letter-spacing:-.025em;line-height:1.08}
+.h2{font-size:clamp(32px,4.4vw,54px);font-weight:800;margin:16px 0}
+.lead{font-size:18px;color:var(--muted);max-width:640px}
+.kicker{display:inline-block;font-size:13px;font-weight:600;color:var(--forest2);background:#e3f4ea;padding:6px 14px;border-radius:99px}
+.on-dark .kicker{background:#ffffff14;color:var(--mint2)}
+.on-dark .lead{color:#b5cbbf}
+.section{padding:104px 0}
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--mint);z-index:2000}
 
-<style id="robin-service-redesign">/* Robin SEO service-page visual refresh; header and page copy preserved */
-main{overflow:hidden}
-main .hero{position:relative;isolation:isolate;padding:clamp(54px,7vw,92px) 0;background:radial-gradient(ellipse at 85% 12%,rgba(8,127,63,.12),transparent 34%),linear-gradient(125deg,#f1f8f3 0%,#fff 58%,#f7fbf8 100%);border-bottom:1px solid #e7efe9}
-main .hero:before{content:"";position:absolute;z-index:-1;width:390px;height:390px;border:1px solid rgba(8,127,63,.11);border-radius:50%;right:-150px;bottom:-230px;box-shadow:0 0 0 38px rgba(8,127,63,.025),0 0 0 78px rgba(8,127,63,.02)}
-main .hero .container{max-width:1240px}
-main .hero-grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(320px,.82fr);gap:clamp(30px,5vw,70px);align-items:center}
-main .hero h1,main .hero-content h1{font-size:clamp(2.25rem,4.4vw,3.75rem);font-weight:850;line-height:1.08;letter-spacing:-.045em;color:#15291c;margin:12px 0 20px}
-main .hero p,main .hero-content p{font-size:clamp(1rem,1.25vw,1.13rem);line-height:1.8;color:#536459;max-width:700px}
-main .eyebrow{display:inline-flex;align-items:center;gap:9px;color:#087f3f;font-size:.76rem;font-weight:850;letter-spacing:.13em;text-transform:uppercase}
-main .eyebrow:before{content:"";width:24px;height:2px;background:#087f3f;border-radius:4px}
-main .crumb,main .breadcrumb{font-size:.84rem;color:#78847c;margin-bottom:22px}
-main .crumb a,main .breadcrumb a{color:#087f3f;font-weight:700}
-main .hero-panel,main .hero-image{border:1px solid #e0ebe3;border-radius:22px;background:#fff;box-shadow:0 24px 65px rgba(21,55,32,.10);overflow:hidden}
-main .hero-panel{padding:clamp(24px,3vw,36px)}
-main .hero-panel h2{font-size:1.22rem;color:#183b25;margin:0 0 16px}
-main .hero-panel ul{padding-left:20px;color:#536459}
-main .hero-panel li{padding:5px 0}
-main .hero-image .before-after{padding:clamp(22px,3vw,34px);background:linear-gradient(145deg,#fff,#f7fbf8)}
-main .hero-image .before-after .ba-title{font-size:1.05rem;line-height:1.4}
-main .hero-image .before-after .ba-row{padding:14px 0}
-main .hero-image .before-after .ba-value{color:#087f3f}
-main .actions{gap:12px;margin-top:28px}
-main .btn,main .btn-primary,main .btn-whatsapp{min-height:48px;padding:13px 21px;border-radius:9px;background:#087f3f;color:#fff;border:1px solid #087f3f;box-shadow:0 8px 20px rgba(8,127,63,.14);font-weight:750;transition:transform .2s,box-shadow .2s,background .2s}
-main .btn:hover,main .btn-primary:hover,main .btn-whatsapp:hover{background:#066b35;transform:translateY(-2px);box-shadow:0 12px 25px rgba(8,127,63,.2)}
-main .btn.secondary,main .btn-outline{background:#fff;color:#087f3f;border:1px solid #b9d8c2;box-shadow:none}
-main .section{position:relative;padding:clamp(48px,6vw,78px) 0;background:#fff}
-main .section.alt,main .section-alt{background:#f5f9f6}
-main .section .container{max-width:1160px}
-main .section h2{font-size:clamp(1.65rem,3.2vw,2.55rem);font-weight:820;line-height:1.15;letter-spacing:-.035em;color:#172b1e;margin:0 auto 18px;max-width:900px;text-align:center}
-main .section h2:after{content:"";display:block;width:48px;height:3px;margin:17px auto 0;border-radius:5px;background:#0b8744}
-main .section p{max-width:900px;color:#5a685f;font-size:1rem;line-height:1.82;margin:0 auto 18px;text-align:left}
-main .section h3{color:#183b25;font-weight:780}
-main .cards,main .grid-2,main .grid-3{gap:20px;margin-top:30px}
-main .card{height:100%;padding:25px;border:1px solid #e2ebe4;border-radius:16px;background:#fff;box-shadow:0 8px 28px rgba(20,48,29,.045);border-left:1px solid #e2ebe4;transition:transform .2s,box-shadow .2s,border-color .2s}
-main .card:hover{transform:translateY(-4px);border-color:#b8d9c2;box-shadow:0 16px 34px rgba(20,48,29,.09)}
-main .card h3,main .card h4{font-size:1.08rem;line-height:1.35;color:#173c25;margin:0 0 10px}
-main .card p{font-size:.95rem;line-height:1.7;color:#637067;margin:0;text-align:left}
-main .stats-bar{padding:28px 0;background:#103b24;color:#fff}
-main .stats-grid{gap:18px}
-main .stat{padding:12px 8px}
-main .stat-number{font-size:clamp(1.8rem,3vw,2.5rem);color:#fff}
-main .stat-label{font-size:.9rem;color:#d8e9dc}
-main .faq,main .faq-list{max-width:900px;margin:30px auto 0}
-main .faq details,main .faq-list details{padding:19px 22px;margin:0 0 10px;border:1px solid #e4ece6;border-radius:12px;background:#fff}
-main .faq summary,main .faq-list summary{font-size:1rem;color:#20382a;line-height:1.5}
-main .faq details p,main .faq-list p{margin:12px 0 0;color:#5d6b62;max-width:none}
-main .contact-section{padding:clamp(50px,6vw,80px) 0;background:#f5f9f6}
-main .contact-grid{align-items:center;gap:30px}
-main .contact-info h2{font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.15;color:#172b1e}
-main .contact-info p{text-align:left;line-height:1.8}
-main .contact-whatsapp{padding:clamp(24px,3vw,38px);border:1px solid #dfebe2;border-radius:18px;background:#fff;box-shadow:0 15px 40px rgba(20,48,29,.06)}
-main .contact-whatsapp .whatsapp-number{color:#087f3f}
-main .final-cta,main .cta{padding:clamp(48px,6vw,76px) 0;background:linear-gradient(125deg,#102d1b,#164a2c);color:#fff;text-align:center}
-main .final-cta h2,main .cta h2{font-size:clamp(1.8rem,3.5vw,2.65rem);line-height:1.15;color:#fff}
-main .final-cta p,main .cta p{max-width:760px;color:#d8e6dc;line-height:1.8}
-main .final-cta .btn,main .cta .btn{background:#fff;color:#087f3f;border-color:#fff;box-shadow:none}
-main .section ul{line-height:1.8}
-main .section a:not(.btn){color:#087f3f;text-decoration-thickness:1px;text-underline-offset:3px}
-main .section a:not(.btn):hover{color:#075c30}
-footer.footer{background:#101b14;color:#d6e0d8}
-footer.footer h3,footer.footer .logo{color:#fff}
-footer.footer a:hover{color:#91d6a5}
-@media(max-width:900px){main .hero-grid{grid-template-columns:1fr;gap:28px}main .hero-panel,main .hero-image{max-width:680px}main .stats-grid{grid-template-columns:repeat(2,minmax(0,1fr))}main .grid-3,main .cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:600px){main .hero{padding:42px 0 38px}main .hero h1,main .hero-content h1{font-size:clamp(2rem,9vw,2.65rem)}main .hero p,main .hero-content p{font-size:1rem}main .section{padding:42px 0}main .section h2{font-size:1.75rem}main .cards,main .grid-2,main .grid-3,main .contact-grid,main .footer-inner{grid-template-columns:1fr}main .stats-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}main .stat-number{font-size:1.8rem}main .actions{display:grid;grid-template-columns:1fr}main .actions .btn{width:100%;text-align:center}main .hero-panel{padding:22px}main .contact-whatsapp .whatsapp-number{font-size:1.45rem}}
-@media(prefers-reduced-motion:reduce){main .card,main .btn{transition:none}}</style>
-<link rel="stylesheet" href="/robinseo-redesign.css?v=3">
+/* ===== shared header (same as home) ===== */
+.topbar{background:var(--ink);color:#b5cbbf;font-size:13px;text-align:center;padding:9px 14px}
+.topbar b{color:var(--mint)}
+header{position:sticky;top:0;z-index:1500;background:#06150ee8;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid #ffffff12}
+.navbar{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font:800 26px var(--display);color:#fff;letter-spacing:-.04em;white-space:nowrap;display:flex;align-items:center;gap:9px}
+.logo i{width:30px;height:30px;border-radius:9px;background:var(--mint);display:grid;place-items:center;color:var(--ink);font-style:normal;font-size:17px;flex:none}
+.logo em{font-style:normal;color:var(--mint)}
+nav ul{display:flex;gap:30px;list-style:none;align-items:center}
+nav a{position:relative;display:inline-block;font-size:14px;font-weight:600;color:#cfe0d6;transition:color .3s}
+nav a::before{content:attr(data-text);display:block;font-weight:700;height:0;overflow:hidden;visibility:hidden;pointer-events:none;user-select:none;white-space:nowrap}
+nav a:hover{color:var(--mint);font-weight:700}
+.dropdown{position:relative}
+.dropdown-menu{position:absolute;top:100%;left:-18px;width:300px;max-height:420px;overflow:auto;background:#fff;border-radius:16px;padding:10px;box-shadow:0 30px 70px #0006;display:none}
+.dropdown:hover .dropdown-menu,.dropdown:focus-within .dropdown-menu{display:block}
+.dropdown-menu a{display:block;color:var(--text);padding:10px 14px;border-radius:9px;font-size:14px;transition:color .3s,background .2s}
+.dropdown-menu a:hover{background:var(--bone);color:var(--forest2);font-weight:700}
+.menu-toggle{display:none;background:none;border:0;color:#fff;font-size:28px;cursor:pointer}
+nav .nav-cta{display:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 26px;border-radius:99px;font-weight:700;font-size:15px;border:0;cursor:pointer;transition:transform .25s,box-shadow .25s,background .25s}
+.btn .arr{transition:transform .25s}
+.btn:hover .arr{transform:translate(4px,-4px)}
+.btn-mint{background:var(--mint);color:var(--ink);box-shadow:0 10px 30px #3ddc9740}
+.btn-mint:hover{transform:translateY(-3px);box-shadow:0 16px 36px #3ddc9755}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--forest);transform:translateY(-3px)}
+.btn-ghost{border:1.5px solid #ffffff40;color:#fff}
+.btn-ghost:hover{background:#ffffff14}
+.btn-wa{background:#25d366;color:var(--ink)}
+.btn-wa:hover{transform:translateY(-3px);box-shadow:0 14px 34px #25d36655}
+
+/* ===== shared footer (same as home) ===== */
+footer{background:#030d08;color:#fff;padding:80px 0 30px}
+.f-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;margin-bottom:50px}
+footer h3{font-size:16px;margin-bottom:18px}
+footer p,footer a{color:#9db5a8;font-size:14px}
+footer a{position:relative;display:block;margin:10px 0;transition:color .3s}
+footer a::before{content:attr(data-text);display:block;font-weight:700;height:0;overflow:hidden;visibility:hidden;pointer-events:none;user-select:none}
+footer a:hover{color:var(--mint);font-weight:700}
+footer a.logo{display:flex;color:#fff;font-size:26px;margin:0}
+footer a.logo::before{display:none}
+.f-areas{border-top:1px solid #ffffff14;padding-top:26px;margin-bottom:26px;font-size:13px;color:#6f877a}
+.copy{border-top:1px solid #ffffff14;padding-top:24px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:13px;color:#7e968a}
+.wa{position:fixed;right:22px;bottom:22px;z-index:1400;background:#25d366;color:#06150e;font-weight:700;border-radius:99px;padding:14px 22px;box-shadow:0 12px 34px #25d36655;transition:transform .3s;font-size:14px}
+.wa:hover{transform:translateY(-4px)}
+
+/* ===== page: hero (dark + results dashboard) ===== */
+.hero{position:relative;background:var(--ink);color:#fff;padding:80px 0 100px;overflow:hidden;isolation:isolate}
+.hero:before{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(circle at 85% 20%,#14684a77,transparent 45%),radial-gradient(circle at 0% 100%,#0f4d3677,transparent 45%)}
+.hero:after{content:"";position:absolute;inset:0;z-index:-1;opacity:.5;background-image:linear-gradient(#ffffff0a 1px,transparent 1px),linear-gradient(90deg,#ffffff0a 1px,transparent 1px);background-size:64px 64px;-webkit-mask-image:radial-gradient(ellipse at 50% 30%,#000 20%,transparent 75%);mask-image:radial-gradient(ellipse at 50% 30%,#000 20%,transparent 75%)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.crumb{font-size:13px;color:#8fb0a0;margin-bottom:22px}
+.crumb a:hover{color:var(--mint)}
+.crumb span{color:#cfe0d6}
+.hero h1{font-size:clamp(34px,4.7vw,62px);font-weight:800;letter-spacing:-.04em;line-height:1.04;margin:22px 0 22px}
+.hero h1 em{font-style:normal;color:var(--mint)}
+.hero p.sub{font-size:18px;color:#b5cbbf;max-width:560px}
+.hero p.sub strong{color:#fff;font-weight:600}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.trust{display:flex;gap:10px 22px;flex-wrap:wrap;margin-top:30px;font-size:14px;color:#9fc2b1}
+.trust span:before{content:"✓";color:var(--mint);margin-right:8px;font-weight:800}
+.dash{background:#0b1f16;border:1px solid #ffffff1c;border-radius:22px;padding:22px;box-shadow:0 40px 90px #0009}
+.dash-top{display:flex;align-items:center;gap:7px;margin-bottom:16px}
+.dash-top i{width:10px;height:10px;border-radius:50%;background:#ffffff26}
+.dash-top i:first-child{background:#ff6b6b}.dash-top i:nth-child(2){background:#f5b301}.dash-top i:nth-child(3){background:var(--mint)}
+.dash-top span{margin-left:8px;font-size:12px;color:#8fb0a0}
+.dash-title{font:700 16px var(--display);margin-bottom:14px}
+.dash-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.metric{background:#ffffff08;border:1px solid #ffffff12;border-radius:14px;padding:14px}
+.metric small{display:block;font-size:12px;color:#8fb0a0}
+.metric b{display:block;font:800 20px var(--display);margin:4px 0 10px}
+.metric b s{color:#6f877a;font-weight:600;font-size:14px;text-decoration:none;margin-right:6px}
+.metric b s:after{content:" →";color:var(--mint)}
+.bar{height:7px;border-radius:9px;background:#ffffff14;margin-top:5px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;border-radius:9px;transition:width 1.4s cubic-bezier(.2,.7,.2,1)}
+.bar .b{background:#5d7a6b}.bar .a{background:linear-gradient(90deg,var(--mint),var(--mint2))}
+.go .bar i{width:var(--w)}
+.spark{margin-top:14px;background:#ffffff08;border:1px solid #ffffff12;border-radius:14px;padding:12px 14px 6px}
+.spark small{font-size:12px;color:#8fb0a0}
+.spark svg{display:block;width:100%;height:78px}
+.spark path.line{stroke-dasharray:420;stroke-dashoffset:420;transition:stroke-dashoffset 2s ease .3s}
+.go .spark path.line{stroke-dashoffset:0}
+.dash-note{font-size:12px;color:#6f877a;text-align:center;margin-top:12px}
+
+/* ===== answer / what is ===== */
+.what{background:var(--paper)}
+.what-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
+.aeo-box{background:#effbf4;border:1px solid #cfeedd;border-left:4px solid var(--mint);border-radius:14px;padding:18px 22px;margin:22px 0;font-size:17px;line-height:1.65}
+.aeo-box b{color:var(--forest2)}
+.what p{color:var(--muted);margin-top:14px}
+.what p strong{color:var(--text)}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.tile{background:var(--bone);border:1px solid var(--line);border-radius:20px;padding:26px 20px;text-align:center;transition:transform .3s,box-shadow .3s}
+.tile:hover{transform:translateY(-6px);box-shadow:0 20px 44px #0b3b2918}
+.tile b{display:grid;place-items:center;width:52px;height:52px;margin:0 auto 12px;border-radius:15px;background:var(--forest2);color:var(--mint);font:800 20px var(--display)}
+.tile span{font-weight:600;font-size:15px}
+
+/* ===== services (dark bento) ===== */
+.services{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.services:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 90% 0%,#14684a55,transparent 40%)}
+.services .container{position:relative}
+.bento{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:52px}
+.svc{background:linear-gradient(160deg,#0f2b1f,#0a1c14);border:1px solid #ffffff14;border-radius:22px;padding:30px;transition:transform .3s,border-color .3s}
+.svc:hover{transform:translateY(-6px);border-color:#3ddc9766}
+.svc.feat{background:linear-gradient(135deg,#14684a,#0b3b29)}
+.svc:nth-child(1),.svc:nth-child(4),.svc:nth-child(6){grid-column:span 2}
+.svc-n{display:block;font:800 14px var(--display);color:var(--mint);margin-bottom:34px;letter-spacing:.08em}
+.svc h3{font-size:23px;font-weight:800;margin-bottom:10px}
+.svc p{color:#b5cbbf;font-size:15.5px}
+
+/* ===== long-tail + cities ===== */
+.head-c{text-align:center;margin-bottom:50px}
+.head-c .lead{margin:0 auto}
+.lt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.lt{background:var(--bone);border:1px solid var(--line);border-radius:22px;padding:28px}
+.lt h3{font-size:20px;font-weight:800;margin-bottom:18px}
+.kws{display:flex;flex-wrap:wrap;gap:9px}
+.kw{background:#fff;border:1px solid var(--line);border-radius:99px;padding:8px 14px;font-size:13.5px;font-weight:500;color:var(--forest2)}
+.cities{background:var(--bone)}
+.city-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.city{background:#fff;border:1px solid var(--line);border-top:4px solid var(--mint);border-radius:20px;padding:26px;display:flex;flex-direction:column;transition:transform .3s,box-shadow .3s}
+.city:hover{transform:translateY(-6px);box-shadow:0 22px 46px #0b3b2918}
+.city h3{font-size:21px;font-weight:800;margin-bottom:12px}
+.city-n{font-size:14px;color:var(--muted);margin-bottom:14px}
+.city-n b{color:var(--text)}
+.city-k{list-style:none;display:grid;gap:8px;margin-bottom:20px}
+.city-k li{font-size:14px;padding-left:22px;position:relative;color:var(--forest2);font-weight:500}
+.city-k li:before{content:"";position:absolute;left:0;top:9px;width:10px;height:10px;border-radius:50%;background:var(--mint)}
+.city-cta{margin-top:auto;font-weight:700;font-size:14px;color:var(--forest2);display:inline-flex;gap:8px;align-items:center;min-height:44px}
+.city-cta span{transition:transform .25s}
+.city-cta:hover span{transform:translateX(5px)}
+.city-more{text-align:center;margin-top:36px;color:var(--muted)}
+.city-more a{color:var(--forest2);font-weight:700;border-bottom:2px solid var(--mint)}
+
+/* ===== why (numbered rows) ===== */
+.why-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px;align-items:start}
+.sticky{position:sticky;top:120px}
+.why-list{display:grid;gap:0}
+.why{display:grid;grid-template-columns:70px 1fr;gap:18px;padding:26px 0;border-top:1px solid var(--line)}
+.why:last-child{border-bottom:1px solid var(--line)}
+.why b{font:800 34px var(--display);color:var(--mint);-webkit-text-stroke:0}
+.why h3{font-size:22px;font-weight:800;margin-bottom:6px}
+.why p{color:var(--muted)}
+
+/* ===== stats band ===== */
+.band{background:linear-gradient(110deg,var(--mint),#7fe8b9);color:var(--ink);padding:62px 0}
+.band-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.band b{display:block;font:800 clamp(34px,4vw,52px) var(--display);letter-spacing:-.03em}
+.band span{font-weight:600;font-size:15px}
+
+/* ===== process (timeline) ===== */
+.process{background:var(--bone)}
+.steps{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:56px;position:relative;counter-reset:s}
+.steps:before{content:"";position:absolute;top:27px;left:8%;right:8%;height:2px;background:repeating-linear-gradient(90deg,var(--mint) 0 10px,transparent 10px 18px)}
+.step{position:relative;text-align:center;background:#fff;border:1px solid var(--line);border-radius:22px;padding:56px 26px 30px;margin-top:27px}
+.step-dot{position:absolute;top:-27px;left:50%;transform:translateX(-50%);width:54px;height:54px;border-radius:50%;background:var(--forest2);color:var(--mint);display:grid;place-items:center;font:800 22px var(--display);box-shadow:0 0 0 8px var(--bone)}
+.step h3{font-size:22px;font-weight:800;margin-bottom:8px}
+.step p{color:var(--muted)}
+
+/* ===== specialties ===== */
+.chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.chip{display:inline-flex;gap:8px;align-items:center;padding:12px 20px;border-radius:99px;background:#fff;border:1.5px solid var(--line);font-weight:600;font-size:15px;transition:all .25s}
+.chip span{color:var(--mint);transition:transform .25s}
+.chip:hover{border-color:var(--forest2);background:var(--forest2);color:#fff;transform:translateY(-3px)}
+.chip:hover span{transform:translateX(4px)}
+
+/* ===== FAQ ===== */
+.faq{background:var(--bone)}
+.faq-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}
+.faq-list details{background:#fff;border:1px solid var(--line);border-radius:18px;padding:0 24px;margin-bottom:12px;transition:border-color .3s,box-shadow .3s}
+.faq-list details[open]{border-color:var(--mint);box-shadow:0 14px 36px #0b3b2914}
+.faq-list summary{list-style:none;cursor:pointer;padding:20px 0;font:700 18px var(--display);display:flex;justify-content:space-between;gap:16px;align-items:center}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary:after{content:"+";flex:none;width:30px;height:30px;border-radius:50%;background:#e3f4ea;color:var(--forest2);display:grid;place-items:center;font-size:20px;transition:transform .3s}
+.faq-list details[open] summary:after{transform:rotate(45deg);background:var(--mint)}
+.faq-list details p{color:var(--muted);padding:0 0 22px}
+
+/* ===== contact ===== */
+.contact{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.contact:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 10% 0%,#14684a66,transparent 45%)}
+.contact-grid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.contact p{color:#b5cbbf}
+.contact p strong{color:#fff}
+.cl{list-style:none;margin:26px 0;display:grid;gap:12px}
+.cl li{color:#cfe0d6}
+.cl a{color:var(--mint);font-weight:600}
+.wa-card{background:#0b1f16;border:1px solid #ffffff1c;border-radius:26px;padding:36px;text-align:center}
+.wa-card h3{font-size:26px;font-weight:800;margin-bottom:10px}
+.num{display:block;font:800 30px var(--display);color:var(--mint);margin:14px 0 6px}
+.badge{display:inline-block;background:#3ddc9722;color:var(--mint2);font-size:13px;font-weight:600;padding:6px 14px;border-radius:99px;margin-bottom:22px}
+
+/* ===== final CTA ===== */
+.final{background:linear-gradient(135deg,var(--forest),var(--ink));color:#fff;text-align:center;padding:96px 0}
+.final h2{font-size:clamp(30px,4.2vw,52px);font-weight:800;margin-bottom:16px}
+.final p{color:#b5cbbf;max-width:640px;margin:0 auto 30px}
+
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.visible{opacity:1;transform:none}
+.d-1{transition-delay:.1s}.d-2{transition-delay:.2s}
+.in{opacity:0;transform:translateY(26px);animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
+.in.d1{animation-delay:.1s}.in.d2{animation-delay:.25s}.in.d3{animation-delay:.4s}.in.d4{animation-delay:.55s}
+@keyframes rise{to{opacity:1;transform:none}}
+
+/* ===== responsive / mobile ===== */
+.btn,summary,nav a,.menu-toggle{min-height:44px}
+.menu-toggle{min-width:44px}
+.hero-grid>*,.what-grid>*,.why-wrap>*,.faq-wrap>*,.contact-grid>*{min-width:0}
+@media(max-width:1000px){
+  .hero-grid,.what-grid,.why-wrap,.faq-wrap,.contact-grid{grid-template-columns:minmax(0,1fr);gap:40px}
+  .sticky{position:static}
+  .lt-grid,.city-grid{grid-template-columns:1fr 1fr}
+  .bento{grid-template-columns:1fr 1fr}
+  .svc:nth-child(6){grid-column:auto}
+  .band-grid{grid-template-columns:1fr 1fr}
+  .f-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:820px){
+  .menu-toggle{display:block}
+  nav{display:none;position:absolute;top:78px;left:0;width:100%;background:var(--ink);padding:22px 5%;border-bottom:1px solid #ffffff14;max-height:calc(100vh - 78px);overflow-y:auto}
+  nav.open{display:block}
+  nav ul{flex-direction:column;align-items:flex-start;gap:18px}
+  nav .nav-cta{display:block}
+  nav .nav-cta a{display:inline-flex;align-items:center;background:var(--mint);color:var(--ink);font-weight:700;padding:12px 20px;border-radius:99px}
+  .dropdown-menu{position:static;display:block;width:100%;max-height:200px;margin-top:10px}
+  .navbar>.btn{display:none}
+  .steps{grid-template-columns:1fr;gap:44px}
+  .steps:before{display:none}
+}
+@media(max-width:600px){
+  .section{padding:68px 0}
+  .hero{padding:48px 0 64px}
+  .hero h1{font-size:clamp(28px,8.2vw,40px)}
+  .hero p.sub{font-size:16px}
+  .hero-actions{flex-direction:column;align-items:stretch}
+  .hero-actions .btn{width:100%}
+  .dash{padding:16px}
+  .dash-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .metric b{font-size:17px}
+  .lt-grid,.city-grid{grid-template-columns:1fr}
+  .bento{grid-template-columns:1fr}
+  .svc:nth-child(n){grid-column:auto}
+  .tiles{grid-template-columns:1fr 1fr;gap:12px}
+  .why{grid-template-columns:52px 1fr}
+  .why b{font-size:26px}
+  .band-grid{gap:18px}
+  .f-grid{grid-template-columns:1fr}
+  .faq-list summary{font-size:16px}
+  .wa-card{padding:26px 20px}
+  .num{font-size:24px}
+  .wa{padding:12px 18px;font-size:13px;right:16px;bottom:16px}
+}
+@media(prefers-reduced-motion:reduce){.reveal,.in{opacity:1;transform:none;transition:none;animation:none}.bar i{transition:none;width:var(--w)}.spark path.line{stroke-dashoffset:0;transition:none}}
+
+</style>
 </head>
 <body>
-    <header class="header robin-global-header"><div class="container header-inner"><a href="/" class="logo" aria-label="Robin SEO home">Robin <span>SEO Expert</span></a><button class="mobile-menu-toggle" type="button" aria-controls="robin-main-nav" aria-expanded="false" aria-label="Open navigation"><span></span><span></span><span></span></button><nav class="nav" id="robin-main-nav" aria-label="Main navigation"><ul class="nav-list"><li><a href="/">Home</a></li><li class="has-dropdown robin-services-item"><a href="/#services" class="robin-services-trigger" aria-haspopup="true" aria-expanded="false">Services <span class="robin-chevron" aria-hidden="true">▾</span></a><div class="dropdown robin-services-menu"><a href="/healthcare-seo">Healthcare SEO Services</a><a href="/medical-website-optimisation">Medical Website Optimisation</a><a href="/healthcare-local-seo">Healthcare Local SEO</a><a href="/patient-acquisition-seo">Patient Acquisition SEO</a><a href="/dental-seo-services">Dental & Orthodontic SEO</a><a href="/hair-transplant-seo-services">Hair Transplant SEO</a><a href="/dermatology-seo-services">Dermatology SEO</a><a href="/med-spa-seo-services">Med Spa & Aesthetic SEO</a><a href="/chiropractor-seo-services">Chiropractor SEO</a><a href="/physical-therapy-seo-services">Physical Therapy SEO</a><a href="/plastic-surgery-seo-services">Plastic Surgery SEO</a><a href="/ophthalmology-seo-services">Ophthalmology SEO</a><a href="/primary-care-seo-services">Primary Care SEO</a><a href="/mental-health-seo-services">Mental Health SEO</a><a href="/technical-seo-services-for-small-businesses">Technical SEO for Small Businesses</a><a href="/seo-packages">SEO Packages</a></div></li><li><a href="/seo-packages">SEO Packages</a></li><li><a href="/blog">Blog</a></li><li><a href="/portfolio">Portfolio</a></li><li><a href="/#contact">Contact</a></li></ul><a class="btn btn-primary robin-header-cta" href="/#contact">Get a Free Consultation</a></nav></div></header>
+<div class="progress" id="progress"></div>
 
-    <section class="hero">
-        <div class="container hero-grid">
-            <div class="hero-content">
-                <div class="breadcrumb"><a href="/">Home</a> / <span>Healthcare SEO Services</span></div>
-                <h1>Healthcare SEO Services – Rank Higher, Get More Patients</h1>
-                <p>Our <strong>healthcare SEO services</strong> help small clinics, doctors, and specialists dominate Google. We drive targeted patient traffic, increase appointment bookings, and grow your practice with proven <strong>medical SEO</strong> strategies. See our before-after Google Search Console results below.</p>
-                <a href="#contact" class="btn btn-whatsapp"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Get Free Healthcare SEO Audit</a>
-            </div>
-            <div class="hero-image">
-                <div class="before-after">
-                    <div class="ba-title">📊 Google Search Console – Before vs After (6 Months)</div>
-                    <div class="ba-row">
-                        <span class="ba-label">Total Impressions</span>
-                        <span class="ba-value">1,200 → 8,450</span>
-                        <div class="ba-bar"><div class="fill before"></div></div>
-                    </div>
-                    <div class="ba-row">
-                        <span class="ba-label">Total Clicks</span>
-                        <span class="ba-value">45 → 620</span>
-                        <div class="ba-bar"><div class="fill before" style="width:15%;"></div><div class="fill after" style="width:65%;"></div></div>
-                    </div>
-                    <div class="ba-row">
-                        <span class="ba-label">Avg. Position</span>
-                        <span class="ba-value">28 → 8</span>
-                        <div class="ba-bar"><div class="fill before" style="width:20%;"></div><div class="fill after" style="width:70%;"></div></div>
-                    </div>
-                    <div class="ba-row">
-                        <span class="ba-label">CTR (%)</span>
-                        <span class="ba-value">3.8% → 7.3%</span>
-                        <div class="ba-bar"><div class="fill before" style="width:25%;"></div><div class="fill after" style="width:60%;"></div></div>
-                    </div>
-                    <p style="font-size:0.8rem; color:#777; margin-top:0.5rem; text-align:center;">* Real data from a medical clinic client</p>
-                </div>
-            </div>
+<div class="topbar">Healthcare SEO for US clinics &amp; practices <b>— Local SEO · Technical SEO · AI Search</b></div>
+
+<header>
+<div class="container navbar">
+  <a href="/" class="logo" aria-label="Robin SEO home"><i>R</i>Robin<em>SEO</em></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav id="mainNav" aria-label="Main">
+    <ul>
+      <li><a href="/" data-text="Home">Home</a></li>
+      <li class="dropdown">
+        <a href="/#services" data-text="Services">Services ▾</a>
+        <div class="dropdown-menu">
+          <a href="/healthcare-seo.html" data-text="Healthcare SEO">Healthcare SEO</a>
+          <a href="/medical-website-optimisation.html" data-text="Medical Website Optimisation">Medical Website Optimisation</a>
+          <a href="/healthcare-local-seo.html" data-text="Healthcare Local SEO">Healthcare Local SEO</a>
+          <a href="/patient-acquisition-seo.html" data-text="Patient Acquisition SEO">Patient Acquisition SEO</a>
+          <a href="/dental-seo-services.html" data-text="Dental SEO">Dental SEO</a>
+          <a href="/hair-transplant-seo-services.html" data-text="Hair Transplant SEO">Hair Transplant SEO</a>
+          <a href="/dermatology-seo-services.html" data-text="Dermatology SEO">Dermatology SEO</a>
+          <a href="/med-spa-seo-services.html" data-text="Med Spa SEO">Med Spa SEO</a>
+          <a href="/chiropractor-seo-services.html" data-text="Chiropractor SEO">Chiropractor SEO</a>
+          <a href="/physical-therapy-seo-services.html" data-text="Physical Therapy SEO">Physical Therapy SEO</a>
+          <a href="/plastic-surgery-seo-services.html" data-text="Plastic Surgery SEO">Plastic Surgery SEO</a>
+          <a href="/ophthalmology-seo-services.html" data-text="Ophthalmology SEO">Ophthalmology SEO</a>
+          <a href="/primary-care-seo-services.html" data-text="Primary Care SEO">Primary Care SEO</a>
+          <a href="/mental-health-seo-services.html" data-text="Mental Health SEO">Mental Health SEO</a>
+          <a href="/technical-seo-services-for-small-businesses.html" data-text="Technical SEO">Technical SEO</a>
         </div>
-    </section>
+      </li>
+      <li><a href="/#markets" data-text="USA Markets">USA Markets</a></li>
+      <li><a href="/seo-packages" data-text="Packages">Packages</a></li>
+      <li><a href="/blog" data-text="Blog">Blog</a></li>
+      <li><a href="/portfolio" data-text="Portfolio">Portfolio</a></li>
+      <li class="nav-cta"><a href="#contact">Get Your Free Clinic SEO Audit</a></li>
+    </ul>
+  </nav>
+  <a href="#contact" class="btn btn-mint">Get Your Free Clinic SEO Audit <span class="arr">↗</span></a>
+</div>
+</header>
 
-    <section class="section">
-        <div class="container">
-            <h2>What is Healthcare SEO?</h2>
-            <p><strong>Healthcare SEO</strong> (Search Engine Optimisation) is the process of optimising your medical clinic's website to rank higher on Google, Bing, and other search engines. When patients search for <strong>healthcare services</strong> like "best doctor near me," "dentist in [city]," or "physiotherapy clinic," our <strong>healthcare SEO services</strong> ensure your practice appears at the top of search results — driving more patient inquiries and appointments. Unlike traditional advertising, healthcare SEO delivers sustainable, long-term growth with a higher ROI.</p>
-            <p style="margin-top:1rem;">We focus on <strong>long-tail keywords</strong> that have lower competition but high intent, such as "best pediatrician for asthma in Mumbai," "affordable dental implants near me," or "sports injury physiotherapist in Delhi." These keywords attract patients who are ready to book an appointment, giving you a competitive edge.</p>
-            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:1.5rem; max-width:900px; margin:2rem auto 0;">
-                <div style="background:#f9fafb; padding:1.5rem; border-radius:0.75rem; text-align:center;">
-                    <span style="display:block; font-size:2rem; font-weight:900; color:#25D366;">#1</span>
-                    <p style="font-weight:600;">Rank on Page 1 of Google</p>
-                </div>
-                <div style="background:#f9fafb; padding:1.5rem; border-radius:0.75rem; text-align:center;">
-                    <span style="display:block; font-size:2rem; font-weight:900; color:#25D366;">📈</span>
-                    <p style="font-weight:600;">Increase Patient Traffic</p>
-                </div>
-                <div style="background:#f9fafb; padding:1.5rem; border-radius:0.75rem; text-align:center;">
-                    <span style="display:block; font-size:2rem; font-weight:900; color:#25D366;">📞</span>
-                    <p style="font-weight:600;">More Appointment Calls</p>
-                </div>
-                <div style="background:#f9fafb; padding:1.5rem; border-radius:0.75rem; text-align:center;">
-                    <span style="display:block; font-size:2rem; font-weight:900; color:#25D366;">💰</span>
-                    <p style="font-weight:600;">Lower Patient Acquisition Cost</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<main>
+<!-- HERO -->
+<section class="hero on-dark">
+  <div class="container hero-grid">
+    <div>
+      <div class="crumb in"><a href="/">Home</a> / <span>Healthcare SEO Services</span></div>
+      <span class="kicker in d1">Healthcare SEO agency · serving the USA</span>
+      <h1 class="in d2">Healthcare SEO Services – Rank Higher, <em>Get More Patients</em></h1>
+      <p class="sub in d3">Our <strong>healthcare SEO services</strong> help small clinics, doctors and specialists show up on Google, Google Maps and AI answers. We bring targeted patient traffic, more appointment bookings and steady practice growth with proven <strong>medical SEO</strong> strategies.</p>
+      <div class="hero-actions in d4">
+        <a href="#contact" class="btn btn-mint">Get Your Free Clinic SEO Audit <span class="arr">↗</span></a>
+        <a href="https://wa.me/919814590619?text=Hi%20Robin%20SEO%2C%20I%20want%20a%20free%20clinic%20SEO%20audit." target="_blank" rel="noopener" class="btn btn-ghost"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.08-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.79a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.89 9.88M20.46 3.49A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.69 1.45c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.17-3.48-8.42"/></svg> Chat on WhatsApp</a>
+      </div>
+      <div class="trust in d4"><span>Patient-focused strategy</span><span>Local + technical + content</span><span>Transparent monthly reports</span></div>
+    </div>
 
-    <section class="section section-alt">
-        <div class="container">
-            <h2>Our Healthcare SEO Services</h2>
-            <p>We offer a complete suite of <strong>healthcare SEO services</strong> tailored to medical clinics, dental practices, physiotherapy, and specialist providers. Our process is data-driven and patient-centric.</p>
-            <div class="grid-3" style="margin-top:2rem;">
-                <div class="card card-center">
-                    <h4>🔍 On-Page Healthcare SEO</h4>
-                    <p>Optimise your website content, meta tags, headings, and internal linking for <strong>healthcare keywords</strong> that patients actually search for. We target long-tail phrases like "best gynecologist for pregnancy care" to capture high-intent traffic.</p>
-                </div>
-                <div class="card card-center">
-                    <h4>🔗 Off-Page Healthcare SEO</h4>
-                    <p>Build high-quality backlinks and citations from trusted healthcare directories, medical associations, and industry-relevant websites to boost your domain authority.</p>
-                </div>
-                <div class="card card-center">
-                    <h4>⚙️ Technical Healthcare SEO</h4>
-                    <p>Ensure your medical website is fast, mobile-friendly, secure, and easily crawlable by search engines for better rankings and user experience.</p>
-                </div>
-                <div class="card card-center">
-                    <h4>✍️ Healthcare Content SEO</h4>
-                    <p>Create patient-focused, authoritative content that answers common medical questions and ranks for <strong>healthcare search terms</strong>. We use AI-assisted writing to produce high-quality, compliant content at scale.</p>
-                </div>
-                <div class="card card-center">
-                    <h4>📍 Healthcare Local SEO</h4>
-                    <p>Dominate local search results and Google Maps for <strong>"healthcare services near me"</strong> and location-based patient queries. We optimise your Google Business Profile and local citations.</p>
-                </div>
-                <div class="card card-center">
-                    <h4>📊 Healthcare Analytics &amp; Reporting</h4>
-                    <p>Track your <strong>healthcare SEO</strong> performance with transparent, data-driven reports showing patient traffic, rankings, and conversions. We provide monthly insights to guide your growth.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="dash in d3" id="dash" role="img" aria-label="Example Google Search Console results for a medical clinic before and after six months of healthcare SEO">
+      <div class="dash-top"><i></i><i></i><i></i><span>Google Search Console · 6 months</span></div>
+      <div class="dash-title">Before vs after healthcare SEO</div>
+      <div class="dash-grid">
+        <div class="metric"><small>Impressions</small><b><s>1,200</s>8,450</b>
+          <div class="bar"><i class="b" style="--w:14%"></i></div><div class="bar"><i class="a" style="--w:100%"></i></div></div>
+        <div class="metric"><small>Clicks</small><b><s>45</s>620</b>
+          <div class="bar"><i class="b" style="--w:7%"></i></div><div class="bar"><i class="a" style="--w:100%"></i></div></div>
+        <div class="metric"><small>Avg. position (lower is better)</small><b><s>28</s>8</b>
+          <div class="bar"><i class="b" style="--w:70%"></i></div><div class="bar"><i class="a" style="--w:20%"></i></div></div>
+        <div class="metric"><small>CTR</small><b><s>3.8%</s>7.3%</b>
+          <div class="bar"><i class="b" style="--w:52%"></i></div><div class="bar"><i class="a" style="--w:100%"></i></div></div>
+      </div>
+      <div class="spark"><small>Organic clicks trend</small>
+        <svg viewBox="0 0 400 80" preserveAspectRatio="none" aria-hidden="true">
+          <defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3ddc97" stop-opacity=".35"/><stop offset="1" stop-color="#3ddc97" stop-opacity="0"/></linearGradient></defs>
+          <path d="M0 70 C40 68 60 64 100 58 S160 52 200 40 S280 30 320 18 S375 8 400 4 L400 80 L0 80Z" fill="url(#sg)"/>
+          <path class="line" d="M0 70 C40 68 60 64 100 58 S160 52 200 40 S280 30 320 18 S375 8 400 4" fill="none" stroke="#3ddc97" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <p class="dash-note">Example data from a medical clinic client. Results vary by market and competition.</p>
+    </div>
+  </div>
+</section>
 
-    <section class="section">
-        <div class="container">
-            <h2>Why Healthcare SEO is Essential for Your Medical Clinic</h2>
-            <p style="max-width:800px; margin:0 auto 2rem;">Every day, thousands of patients in your area search for <strong>healthcare services</strong> on Google. If your medical clinic isn't ranking on the first page, you're losing patients to competitors. Here's why <strong>healthcare SEO services</strong> are critical for your practice:</p>
-            <div class="grid-2">
-                <div class="card">
-                    <h4>🩺 Patients Trust Google</h4>
-                    <p>Over 80% of patients use Google to find healthcare providers. Ranking high builds trust and credibility for your medical practice.</p>
-                </div>
-                <div class="card">
-                    <h4>📱 Mobile-First Patient Search</h4>
-                    <p>Most patients search for healthcare services on their phones. Our <strong>healthcare SEO</strong> ensures your website is mobile-optimised for on-the-go patients.</p>
-                </div>
-                <div class="card">
-                    <h4>🏆 Stay Ahead of Competitors</h4>
-                    <p>Your competitors are investing in <strong>medical SEO</strong>. If you don't, they'll capture the patients who should be calling your clinic.</p>
-                </div>
-                <div class="card">
-                    <h4>💰 Cost-Effective Patient Acquisition</h4>
-                    <p><strong>Healthcare SEO</strong> delivers long-term, sustainable patient leads at a fraction of the cost of traditional advertising or PPC.</p>
-                </div>
-                <div class="card">
-                    <h4>🎯 Targeted Long-Tail Keywords</h4>
-                    <p>We focus on specific, low-competition keywords like "best dermatologist for acne scars" to attract patients who are further down the decision funnel and more likely to book.</p>
-                </div>
-                <div class="card">
-                    <h4>📈 Measurable ROI</h4>
-                    <p>With detailed analytics, you can see exactly how many patients found you through organic search, allowing you to calculate your return on investment accurately.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- WHAT IS -->
+<section class="section what" id="what">
+  <div class="container what-grid">
+    <div class="reveal">
+      <span class="kicker">Healthcare SEO explained</span>
+      <h2 class="h2">What is Healthcare SEO?</h2>
+      <p class="aeo-box speakable-answer"><b>In short:</b> healthcare SEO is the process of optimising a medical practice’s website, Google Business Profile and content so it ranks higher on Google, Google Maps and AI answer engines when patients search for care, leading to more calls, bookings and appointments.</p>
+      <p>When patients search for “best doctor near me”, “dentist in [city]” or “physiotherapy clinic”, our <strong>healthcare SEO services</strong> make sure your practice appears at the top of the results. Unlike traditional advertising, healthcare SEO delivers sustainable, long-term growth with a higher return on investment.</p>
+      <p>We focus on <strong>long-tail keywords</strong> with lower competition but high intent, such as “best pediatrician for asthma in [city]” or “affordable dental implants near me”. These searches come from patients who are ready to book.</p>
+    </div>
+    <div class="tiles reveal d-1">
+      <div class="tile"><b>#1</b><span>Rank on page 1 of Google</span></div>
+      <div class="tile"><b>↗</b><span>Increase patient traffic</span></div>
+      <div class="tile"><b>☎</b><span>More appointment calls</span></div>
+      <div class="tile"><b>$</b><span>Lower patient acquisition cost</span></div>
+    </div>
+  </div>
+</section>
 
-    <section class="stats-bar">
-        <div class="container stats-grid">
-            <div class="stat"><span class="stat-number">500+</span><span class="stat-label">Healthcare Campaigns Launched</span></div>
-            <div class="stat"><span class="stat-number">8 Years</span><span class="stat-label">Healthcare Marketing Experience</span></div>
-            <div class="stat"><span class="stat-number">+284%</span><span class="stat-label">Average Organic Traffic Growth</span></div>
-            <div class="stat"><span class="stat-number">100%</span><span class="stat-label">Local Patient Lead Guarantee</span></div>
-        </div>
-    </section>
+<!-- SERVICES -->
+<section class="section services on-dark" id="services">
+  <div class="container">
+    <div class="reveal">
+      <span class="kicker">What we do</span>
+      <h2 class="h2">Our Healthcare SEO Services</h2>
+      <p class="lead">A complete suite of healthcare SEO services for medical clinics, dental practices, physiotherapy and specialist providers. Data-driven and patient-centric.</p>
+    </div>
+    <div class="bento">
+      <article class="svc reveal feat d-0">
+        <span class="svc-n">01</span>
+        <h3>On-Page Healthcare SEO</h3>
+        <p>Optimise content, meta tags, headings and internal linking for the healthcare keywords patients actually search, including long-tail phrases like “best gynecologist for pregnancy care”.</p>
+      </article>
+      <article class="svc reveal d-1">
+        <span class="svc-n">02</span>
+        <h3>Off-Page Healthcare SEO</h3>
+        <p>Earn quality backlinks and citations from trusted healthcare directories, medical associations and relevant websites to strengthen your domain authority.</p>
+      </article>
+      <article class="svc reveal d-2">
+        <span class="svc-n">03</span>
+        <h3>Technical Healthcare SEO</h3>
+        <p>Make your medical website fast, mobile-friendly, secure and easy for search engines to crawl, for better rankings and a smoother patient experience.</p>
+      </article>
+      <article class="svc reveal d-0">
+        <span class="svc-n">04</span>
+        <h3>Healthcare Content SEO</h3>
+        <p>Patient-focused, authoritative content that answers common medical questions and ranks for healthcare search terms, reviewed for accuracy and compliance.</p>
+      </article>
+      <article class="svc reveal d-1">
+        <span class="svc-n">05</span>
+        <h3>Healthcare Local SEO</h3>
+        <p>Win Google Maps and “near me” searches by optimising your Google Business Profile, local citations and location pages.</p>
+      </article>
+      <article class="svc reveal d-2">
+        <span class="svc-n">06</span>
+        <h3>Analytics &amp; Reporting</h3>
+        <p>Transparent monthly reports covering patient traffic, rankings, calls and conversions, so you always know what is working.</p>
+      </article>
+    </div>
+  </div>
+</section>
 
-    <section class="section section-alt">
-        <div class="container">
-            <h2>Our Healthcare SEO Process</h2>
-            <p>We follow a proven, transparent process to deliver <strong>healthcare SEO results</strong> that grow your practice. From audit to ongoing optimisation, we're with you every step.</p>
-            <div class="grid-3" style="margin-top:2rem;">
-                <div class="card card-center">
-                    <span style="display:inline-block; background:#25D366; color:#fff; width:50px; height:50px; line-height:50px; border-radius:50%; font-weight:900; font-size:1.5rem; margin-bottom:1rem;">1</span>
-                    <h4>Healthcare SEO Audit</h4>
-                    <p>We analyse your medical website, keyword landscape, and competitor rankings to identify opportunities for patient growth.</p>
-                </div>
-                <div class="card card-center">
-                    <span style="display:inline-block; background:#25D366; color:#fff; width:50px; height:50px; line-height:50px; border-radius:50%; font-weight:900; font-size:1.5rem; margin-bottom:1rem;">2</span>
-                    <h4>Strategy &amp; Implementation</h4>
-                    <p>We develop a customised <strong>healthcare SEO strategy</strong> and implement on-page, off-page, and technical optimisations to boost rankings.</p>
-                </div>
-                <div class="card card-center">
-                    <span style="display:inline-block; background:#25D366; color:#fff; width:50px; height:50px; line-height:50px; border-radius:50%; font-weight:900; font-size:1.5rem; margin-bottom:1rem;">3</span>
-                    <h4>Monitor, Optimise &amp; Grow</h4>
-                    <p>We track patient traffic, keyword rankings, and conversions — continuously optimising to bring you more patient inquiries.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- LONG-TAIL -->
+<section class="section" id="keywords">
+  <div class="container">
+    <div class="reveal head-c">
+      <span class="kicker">Keyword strategy</span>
+      <h2 class="h2">Long-tail keywords that bring ready-to-book patients</h2>
+      <p class="lead">Short keywords like “dentist” are crowded and vague. Long-tail searches are specific, face less competition and come from patients close to booking. These are the kinds of searches we build your pages, Google Business Profile and content around, for Google and Bing.</p>
+    </div>
+    <div class="lt-grid">
+<div class='lt reveal'><h3>Specialty + location</h3><div class='kws'><span class='kw'>dental SEO for small clinics in [city]</span><span class='kw'>med spa SEO company near me</span><span class='kw'>dermatology SEO agency in [city]</span><span class='kw'>chiropractor marketing and SEO in [city]</span><span class='kw'>SEO for physical therapy clinics in [city]</span><span class='kw'>healthcare SEO agency for doctors in the USA</span></div></div>
+<div class='lt reveal'><h3>Patient intent</h3><div class='kws'><span class='kw'>best dentist for dental implants in [city]</span><span class='kw'>affordable physiotherapy for back pain near me</span><span class='kw'>top-rated dermatologist for acne scars in [city]</span><span class='kw'>same-day appointment doctor near me</span><span class='kw'>urgent care open now near me</span><span class='kw'>botox and fillers med spa near me</span></div></div>
+<div class='lt reveal'><h3>Trust &amp; insurance</h3><div class='kws'><span class='kw'>dentist that accepts Delta Dental in [city]</span><span class='kw'>pediatrician accepting new patients in [city]</span><span class='kw'>female gynecologist near me</span><span class='kw'>Spanish-speaking doctor in [city]</span><span class='kw'>walk-in clinic that takes Medicare</span><span class='kw'>best-reviewed chiropractor in [neighbourhood]</span></div></div>
+    </div>
+  </div>
+</section>
 
-    <section class="section">
-        <div class="container">
-            <h2>Frequently Asked Questions About Healthcare SEO</h2>
-            <p style="margin-bottom:2rem;">Common questions from medical clinics about <strong>healthcare SEO services</strong> and patient acquisition.</p>
-            <div class="faq-list">
-                <details>
-                    <summary>How long does healthcare SEO take to show results?</summary>
-                    <p>While some improvements can be seen within 4-6 weeks, significant patient growth typically occurs within 3-6 months of consistent <strong>healthcare SEO</strong> efforts. Our strategies are designed for sustainable, long-term patient acquisition.</p>
-                </details>
-                <details>
-                    <summary>What is the cost of healthcare SEO services?</summary>
-                    <p>We offer customised <strong>healthcare SEO packages</strong> based on your practice size, location, and patient acquisition goals. Contact us for a free consultation and customised quote.</p>
-                </details>
-                <details>
-                    <summary>Do you guarantee #1 rankings on Google?</summary>
-                    <p>While we can't guarantee #1 rankings due to market variables, we guarantee to work aggressively to improve your rankings and patient leads. We have a proven track record of delivering top 3 rankings for our healthcare clients.</p>
-                </details>
-                <details>
-                    <summary>Do you work with all types of medical clinics?</summary>
-                    <p>Yes, we work with a wide range of healthcare providers including general practitioners, dentists, physiotherapists, specialists, multi-location clinics, and hospitals.</p>
-                </details>
-                <details>
-                    <summary>Do you offer healthcare SEO for multiple locations?</summary>
-                    <p>Absolutely. We provide <strong>healthcare SEO services</strong> for multi-location medical practices, helping each clinic rank locally while maintaining a consistent brand presence.</p>
-                </details>
-                <details>
-                    <summary>What long-tail keywords do you target for healthcare?</summary>
-                    <p>We target specific, intent-rich phrases like "best pediatric dentist for children in [city]," "affordable physiotherapy for back pain," "top-rated dermatologist for acne treatment," and many more based on your specialty and location.</p>
-                </details>
-                <details>
-                    <summary>How do you measure success for healthcare SEO?</summary>
-                    <p>We measure success through key performance indicators such as organic traffic, keyword rankings, patient call volume, form submissions, and ultimately, new patient appointments booked.</p>
-                </details>
-                <details>
-                    <summary>Is healthcare SEO compliant with medical advertising regulations?</summary>
-                    <p>Yes, we strictly adhere to HIPAA, GDPR, and other medical advertising guidelines. Our content is accurate, non-misleading, and patient-centric.</p>
-                </details>
-            </div>
-        </div>
-    </section>
+<!-- CITIES -->
+<section class="section cities" id="cities">
+  <div class="container">
+    <div class="reveal head-c">
+      <span class="kicker">Cities we serve</span>
+      <h2 class="h2">Healthcare SEO Services in Houston, Dallas, Los Angeles, Miami &amp; More</h2>
+      <p class="lead">Patients search by city, suburb and neighbourhood. We target your main city and the areas around it, so your clinic shows up where your patients actually live. Find your city below, or ask us about another US location.</p>
+    </div>
+    <div class="city-grid">
+      <article class="city reveal" id="houston">
+        <h3>Healthcare SEO in Houston, TX</h3>
+        <p class="city-n"><b>Areas we target:</b> Katy · Sugar Land · The Woodlands · Pearland · Cypress</p>
+        <ul class="city-k"><li>Dental SEO in Houston, TX</li><li>Med Spa SEO in Katy, TX</li><li>Primary Care marketing near Sugar Land, TX</li></ul>
+        <a class="city-cta" href="https://wa.me/919814590619?text=Hi%20Robin%20SEO%2C%20I%20run%20a%20clinic%20in%20Houston%2C%20TX.%20I%20want%20a%20free%20clinic%20SEO%20audit." target="_blank" rel="noopener">Free Houston clinic SEO audit <span>→</span></a>
+      </article>
+      <article class="city reveal" id="dallas">
+        <h3>Healthcare SEO in Dallas, TX</h3>
+        <p class="city-n"><b>Areas we target:</b> Plano · Frisco · Irving · Arlington · McKinney</p>
+        <ul class="city-k"><li>Dermatology SEO in Dallas, TX</li><li>Chiropractor SEO in Plano, TX</li><li>Dental marketing near Frisco, TX</li></ul>
+        <a class="city-cta" href="https://wa.me/919814590619?text=Hi%20Robin%20SEO%2C%20I%20run%20a%20clinic%20in%20Dallas%2C%20TX.%20I%20want%20a%20free%20clinic%20SEO%20audit." target="_blank" rel="noopener">Free Dallas clinic SEO audit <span>→</span></a>
+      </article>
+      <article class="city reveal" id="los-angeles">
+        <h3>Healthcare SEO in Los Angeles, CA</h3>
+        <p class="city-n"><b>Areas we target:</b> Santa Monica · Pasadena · Beverly Hills · Burbank · Long Beach</p>
+        <ul class="city-k"><li>Med Spa SEO in Los Angeles, CA</li><li>Plastic Surgery SEO in Santa Monica, CA</li><li>Dermatology marketing near Pasadena, CA</li></ul>
+        <a class="city-cta" href="https://wa.me/919814590619?text=Hi%20Robin%20SEO%2C%20I%20run%20a%20clinic%20in%20Los%20Angeles%2C%20CA.%20I%20want%20a%20free%20clinic%20SEO%20audit." target="_blank" rel="noopener">Free Los Angeles clinic SEO audit <span>→</span></a>
+      </article>
+      <article class="city reveal" id="miami">
+        <h3>Healthcare SEO in Miami, FL</h3>
+        <p class="city-n"><b>Areas we target:</b> Coral Gables · Brickell · Doral · Hialeah · Miami Beach</p>
+        <ul class="city-k"><li>Plastic Surgery SEO in Miami, FL</li><li>Dental SEO in Coral Gables, FL</li><li>Med Spa marketing near Brickell, FL</li></ul>
+        <a class="city-cta" href="https://wa.me/919814590619?text=Hi%20Robin%20SEO%2C%20I%20run%20a%20clinic%20in%20Miami%2C%20FL.%20I%20want%20a%20free%20clinic%20SEO%20audit." target="_blank" rel="noopener">Free Miami clinic SEO audit <span>→</span></a>
+      </article>
+      <article class="city reveal" id="atlanta">
+        <h3>Healthcare SEO in Atlanta, GA</h3>
+        <p class="city-n"><b>Areas we target:</b> Buckhead · Marietta · Decatur · Alpharetta · Sandy Springs</p>
+        <ul class="city-k"><li>Primary Care SEO in Atlanta, GA</li><li>Dental SEO in Buckhead, GA</li><li>Chiropractor marketing near Marietta, GA</li></ul>
+        <a class="city-cta" href="https://wa.me/919814590619?text=Hi%20Robin%20SEO%2C%20I%20run%20a%20clinic%20in%20Atlanta%2C%20GA.%20I%20want%20a%20free%20clinic%20SEO%20audit." target="_blank" rel="noopener">Free Atlanta clinic SEO audit <span>→</span></a>
+      </article>
+      <article class="city reveal" id="chicago">
+        <h3>Healthcare SEO in Chicago, IL</h3>
+        <p class="city-n"><b>Areas we target:</b> Naperville · Evanston · Schaumburg · Oak Brook · Wicker Park</p>
+        <ul class="city-k"><li>Dermatology SEO in Chicago, IL</li><li>Physical Therapy SEO in Naperville, IL</li><li>Dental marketing near Evanston, IL</li></ul>
+        <a class="city-cta" href="https://wa.me/919814590619?text=Hi%20Robin%20SEO%2C%20I%20run%20a%20clinic%20in%20Chicago%2C%20IL.%20I%20want%20a%20free%20clinic%20SEO%20audit." target="_blank" rel="noopener">Free Chicago clinic SEO audit <span>→</span></a>
+      </article>
+      <article class="city reveal" id="new-york">
+        <h3>Healthcare SEO in New York, NY</h3>
+        <p class="city-n"><b>Areas we target:</b> Manhattan · Brooklyn · Queens · Staten Island · Long Island</p>
+        <ul class="city-k"><li>Mental Health SEO in New York, NY</li><li>Dental SEO in Manhattan, NY</li><li>Dermatology marketing near Brooklyn, NY</li></ul>
+        <a class="city-cta" href="https://wa.me/919814590619?text=Hi%20Robin%20SEO%2C%20I%20run%20a%20clinic%20in%20New%20York%2C%20NY.%20I%20want%20a%20free%20clinic%20SEO%20audit." target="_blank" rel="noopener">Free New York clinic SEO audit <span>→</span></a>
+      </article>
+      <article class="city reveal" id="phoenix">
+        <h3>Healthcare SEO in Phoenix, AZ</h3>
+        <p class="city-n"><b>Areas we target:</b> Scottsdale · Tempe · Mesa · Chandler · Glendale</p>
+        <ul class="city-k"><li>Med Spa SEO in Phoenix, AZ</li><li>Hair Transplant SEO in Scottsdale, AZ</li><li>Dental marketing near Tempe, AZ</li></ul>
+        <a class="city-cta" href="https://wa.me/919814590619?text=Hi%20Robin%20SEO%2C%20I%20run%20a%20clinic%20in%20Phoenix%2C%20AZ.%20I%20want%20a%20free%20clinic%20SEO%20audit." target="_blank" rel="noopener">Free Phoenix clinic SEO audit <span>→</span></a>
+      </article>
+      <article class="city reveal" id="seattle">
+        <h3>Healthcare SEO in Seattle, WA</h3>
+        <p class="city-n"><b>Areas we target:</b> Bellevue · Redmond · Kirkland · Tacoma · Everett</p>
+        <ul class="city-k"><li>Physical Therapy SEO in Seattle, WA</li><li>Primary Care SEO in Bellevue, WA</li><li>Dental marketing near Redmond, WA</li></ul>
+        <a class="city-cta" href="https://wa.me/919814590619?text=Hi%20Robin%20SEO%2C%20I%20run%20a%20clinic%20in%20Seattle%2C%20WA.%20I%20want%20a%20free%20clinic%20SEO%20audit." target="_blank" rel="noopener">Free Seattle clinic SEO audit <span>→</span></a>
+      </article>
+      <article class="city reveal" id="denver">
+        <h3>Healthcare SEO in Denver, CO</h3>
+        <p class="city-n"><b>Areas we target:</b> Aurora · Boulder · Lakewood · Littleton · Highlands Ranch</p>
+        <ul class="city-k"><li>Chiropractor SEO in Denver, CO</li><li>Dental SEO in Aurora, CO</li><li>Mental Health marketing near Boulder, CO</li></ul>
+        <a class="city-cta" href="https://wa.me/919814590619?text=Hi%20Robin%20SEO%2C%20I%20run%20a%20clinic%20in%20Denver%2C%20CO.%20I%20want%20a%20free%20clinic%20SEO%20audit." target="_blank" rel="noopener">Free Denver clinic SEO audit <span>→</span></a>
+      </article>
+      <article class="city reveal" id="san-diego">
+        <h3>Healthcare SEO in San Diego, CA</h3>
+        <p class="city-n"><b>Areas we target:</b> La Jolla · Chula Vista · Carlsbad · Escondido · Oceanside</p>
+        <ul class="city-k"><li>Dermatology SEO in San Diego, CA</li><li>Med Spa SEO in La Jolla, CA</li><li>Physical Therapy marketing near Chula Vista, CA</li></ul>
+        <a class="city-cta" href="https://wa.me/919814590619?text=Hi%20Robin%20SEO%2C%20I%20run%20a%20clinic%20in%20San%20Diego%2C%20CA.%20I%20want%20a%20free%20clinic%20SEO%20audit." target="_blank" rel="noopener">Free San Diego clinic SEO audit <span>→</span></a>
+      </article>
+      <article class="city reveal" id="austin">
+        <h3>Healthcare SEO in Austin, TX</h3>
+        <p class="city-n"><b>Areas we target:</b> Round Rock · Cedar Park · Georgetown · Pflugerville · Westlake</p>
+        <ul class="city-k"><li>Primary Care SEO in Austin, TX</li><li>Chiropractor SEO in Round Rock, TX</li><li>Dental marketing near Cedar Park, TX</li></ul>
+        <a class="city-cta" href="https://wa.me/919814590619?text=Hi%20Robin%20SEO%2C%20I%20run%20a%20clinic%20in%20Austin%2C%20TX.%20I%20want%20a%20free%20clinic%20SEO%20audit." target="_blank" rel="noopener">Free Austin clinic SEO audit <span>→</span></a>
+      </article>
+    </div>
+    <p class="city-more reveal">Your city is not listed? We work with clinics across the United States. <a href="https://wa.me/919814590619?text=Hi%20Robin%20SEO%2C%20I%20want%20a%20free%20clinic%20SEO%20audit." target="_blank" rel="noopener">Tell us your city and get a free audit →</a></p>
+  </div>
+</section>
 
-    <section id="contact" class="contact-section">
-        <div class="container contact-grid">
-            <div class="contact-info">
-                <h2>Ready to Grow Your Practice with Healthcare SEO?</h2>
-                <p>Get a free <strong>healthcare SEO audit</strong> for your medical clinic. We'll analyse your website, identify patient acquisition opportunities, and show you exactly how to rank higher on Google.</p>
-                <ul class="contact-details">
-                    <li><strong>Email:</strong> <a href="mailto:robinwebseo4@gmail.com" style="color:#25D366;">robinwebseo4@gmail.com</a></li>
-                    <li><strong>Phone / WhatsApp:</strong> <a href="https://wa.me/919814590619" style="color:#25D366;">+91 98145 90619</a></li>
-                    <li><strong>Response Time:</strong> Within 10 minutes</li>
-                </ul>
-                <div style="margin-top:2rem;">
-                    <a href="https://wa.me/919814590619?text=Hi%20Robin%20SEO%20Expert%2C%20I%20want%20a%20free%20healthcare%20SEO%20audit." target="_blank" class="btn btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                        Get Free Healthcare SEO Audit
-                    </a>
-                </div>
-            </div>
-            <div class="contact-whatsapp">
-                <h2 style="font-size:1.75rem; font-weight:800; margin-bottom:0.5rem;">📱 Connect on WhatsApp</h2>
-                <p style="color:#4a4a4a; margin-bottom:1rem;">Get your <strong>free healthcare SEO audit</strong> instantly. Just send us a message and we'll respond within 10 minutes.</p>
-                <span class="whatsapp-number">+91 98145 90619</span>
-                <span class="response-badge">⚡ Response within 10 min</span>
-                <br />
-                <a href="https://wa.me/919814590619?text=Hi%20Robin%20SEO%20Expert%2C%20I%20want%20a%20free%20healthcare%20SEO%20audit." target="_blank" class="btn btn-whatsapp" style="margin-top:1.25rem; padding:0.875rem 2.5rem; font-size:1.1rem;">
-                    <svg viewBox="0 0 24 24" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                    Chat Now on WhatsApp
-                </a>
-                <p style="color:#4a4a4a; font-size:0.9rem; margin-top:1rem;">
-                    <strong>Email:</strong> <a href="mailto:robinwebseo4@gmail.com" class="email-link">robinwebseo4@gmail.com</a>
-                </p>
-            </div>
-        </div>
-    </section>
+<!-- WHY -->
+<section class="section" id="why">
+  <div class="container why-wrap">
+    <div class="sticky reveal">
+      <span class="kicker">Why it matters</span>
+      <h2 class="h2">Why Healthcare SEO is Essential for Your Medical Clinic</h2>
+      <p class="lead">Every day, patients in your area search for healthcare services on Google. If your clinic is not on the first page, those patients book with a competitor instead.</p>
+      <a href="#contact" class="btn btn-dark" style="margin-top:28px">Get Your Free Clinic SEO Audit <span class="arr">↗</span></a>
+    </div>
+    <div class="why-list">
+      <div class="why reveal d-0"><b>01</b><div><h3>Patients trust Google</h3><p>Most patients use Google to find a healthcare provider. Ranking high builds trust and credibility for your practice.</p></div></div>
+      <div class="why reveal d-1"><b>02</b><div><h3>Mobile-first patient search</h3><p>Most patients search on their phones. We make sure your website is fast and easy to use for on-the-go patients.</p></div></div>
+      <div class="why reveal d-2"><b>03</b><div><h3>Stay ahead of competitors</h3><p>Competing clinics invest in medical SEO. If you do not, they capture the patients who should be calling you.</p></div></div>
+      <div class="why reveal d-0"><b>04</b><div><h3>Cost-effective acquisition</h3><p>Healthcare SEO delivers long-term, sustainable patient leads at a fraction of the cost of ongoing paid advertising.</p></div></div>
+      <div class="why reveal d-1"><b>05</b><div><h3>High-intent keywords</h3><p>Specific searches like “best dermatologist for acne scars” attract patients further down the decision funnel who are ready to book.</p></div></div>
+      <div class="why reveal d-2"><b>06</b><div><h3>Measurable ROI</h3><p>Detailed analytics show how many patients found you through organic search, so you can calculate your return accurately.</p></div></div>
+    </div>
+  </div>
+</section>
 
-    <section class="final-cta">
-        <div class="container">
-            <h2>Start Getting More Patients Today</h2>
-            <p>Stop losing patients to competitors. Our <strong>healthcare SEO services</strong> will help your medical clinic rank higher, attract more patient calls, and grow your practice.</p>
-            <a href="#contact" class="btn btn-whatsapp">
-                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                Get Free Healthcare SEO Audit
-            </a>
-        </div>
-    </section>
+<!-- STATS -->
+<section class="band" aria-label="Robin SEO at a glance">
+  <div class="container band-grid">
+    <div class="reveal"><b>500+</b><span>Healthcare campaigns launched</span></div>
+    <div class="reveal d-1"><b>8 Years</b><span>Healthcare marketing experience</span></div>
+    <div class="reveal d-2"><b>+284%</b><span>Average organic traffic growth</span></div>
+    <div class="reveal d-2"><b>10 min</b><span>Typical WhatsApp response time</span></div>
+  </div>
+</section>
 
-    <footer class="footer">
-        <div class="container footer-inner">
-            <div class="footer-brand">
-                <a href="/" class="logo">Robin <span>SEO Expert</span></a>
-                <p>Healthcare SEO &amp; AI Visibility That Brings More Patient Bookings</p>
-                <p style="font-size:0.85rem; color:#777; margin-top:0.5rem;">GP | DC | PT | Trusted by 127+ Medical Clinics &amp; Healthcare Providers</p>
-                <p style="font-size:0.85rem; color:#777; margin-top:0.25rem;">
-                    <a href="mailto:robinwebseo4@gmail.com" style="color:#25D366;">robinwebseo4@gmail.com</a> | <a href="https://wa.me/919814590619" style="color:#25D366;">+91 98145 90619</a>
-                </p>
-            </div>
-            <nav class="footer-nav">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/healthcare-seo">Healthcare SEO</a></li>
-                    <li><a href="/medical-website-optimisation">Medical Website Optimisation</a></li>
-                    <li><a href="/healthcare-local-seo">Healthcare Local SEO</a></li>
-                    <li><a href="/patient-acquisition-seo">Patient Acquisition SEO</a></li>
-                    <li><a href="/technical-seo-services-for-small-businesses">Technical SEO for Small Businesses</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="footer-legal">
-                <p>&copy; 2026 Robin SEO Expert. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+<!-- PROCESS -->
+<section class="section process" id="process">
+  <div class="container">
+    <div class="reveal" style="text-align:center">
+      <span class="kicker">How it works</span>
+      <h2 class="h2">Our Healthcare SEO Process</h2>
+      <p class="lead" style="margin:0 auto">A proven, transparent process that takes you from audit to ongoing optimisation. We are with you every step.</p>
+    </div>
+    <ol class="steps">
+      <li class="step reveal d-0"><span class="step-dot">1</span><h3>Healthcare SEO audit</h3><p>We analyse your medical website, keyword landscape and competitor rankings to find the biggest opportunities for patient growth.</p></li>
+      <li class="step reveal d-1"><span class="step-dot">2</span><h3>Strategy &amp; implementation</h3><p>We build a customised healthcare SEO strategy and implement on-page, off-page, local and technical optimisations.</p></li>
+      <li class="step reveal d-2"><span class="step-dot">3</span><h3>Monitor, optimise &amp; grow</h3><p>We track patient traffic, rankings and conversions, and keep optimising to bring in more patient enquiries.</p></li>
+    </ol>
+  </div>
+</section>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const toggle = document.getElementById('mobile-toggle');
-            const navList = document.querySelector('.nav-list');
-            if (toggle && navList) { toggle.addEventListener('click', function() { navList.classList.toggle('open'); }); }
-            document.querySelectorAll('.has-dropdown > a').forEach(function(link) {
-                link.addEventListener('click', function(e) { if (window.innerWidth <= 768) { e.preventDefault(); this.parentElement.classList.toggle('open'); } });
-            });
-        });
-    </script>
+<!-- SPECIALTIES -->
+<section class="section" id="specialties">
+  <div class="container">
+    <div class="reveal">
+      <span class="kicker">Explore more</span>
+      <h2 class="h2">SEO for every kind of practice</h2>
+      <p class="lead">Looking for something more specific? Explore our specialty and local SEO pages.</p>
+    </div>
+    <div class="chips reveal d-1">
+<a href="/dental-seo-services.html" class="chip">Dental &amp; Orthodontic SEO <span>→</span></a>
+<a href="/dermatology-seo-services.html" class="chip">Dermatology SEO <span>→</span></a>
+<a href="/med-spa-seo-services.html" class="chip">Med Spa SEO <span>→</span></a>
+<a href="/chiropractor-seo-services.html" class="chip">Chiropractor SEO <span>→</span></a>
+<a href="/physical-therapy-seo-services.html" class="chip">Physical Therapy SEO <span>→</span></a>
+<a href="/hair-transplant-seo-services.html" class="chip">Hair Transplant SEO <span>→</span></a>
+<a href="/plastic-surgery-seo-services.html" class="chip">Plastic Surgery SEO <span>→</span></a>
+<a href="/primary-care-seo-services.html" class="chip">Primary Care SEO <span>→</span></a>
+<a href="/mental-health-seo-services.html" class="chip">Mental Health SEO <span>→</span></a>
+<a href="/healthcare-local-seo.html" class="chip">Healthcare Local SEO <span>→</span></a>
+<a href="/medical-website-optimisation.html" class="chip">Medical Website Optimisation <span>→</span></a>
+<a href="/patient-acquisition-seo.html" class="chip">Patient Acquisition SEO <span>→</span></a>
+    </div>
+  </div>
+</section>
 
-<a class="robin-whatsapp-float" href="https://wa.me/919814590619?text=Hi%20Robin%20SEO%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20discuss%20SEO%20services." target="_blank" rel="noopener noreferrer" aria-label="Chat with Robin SEO on WhatsApp">
-<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.02 3C8.86 3 3.04 8.77 3.04 15.88c0 2.28.6 4.51 1.75 6.48L3 29l6.83-1.78a13.1 13.1 0 0 0 6.19 1.56h.01c7.15 0 12.97-5.78 12.97-12.89 0-3.45-1.35-6.69-3.81-9.12A12.9 12.9 0 0 0 16.02 3zm0 23.59h-.01a10.8 10.8 0 0 1-5.5-1.5l-.4-.24-4.05 1.06 1.08-3.92-.26-.41a10.64 10.64 0 0 1-1.65-5.7c0-5.94 4.87-10.78 10.8-10.78 2.87 0 5.58 1.12 7.61 3.15a10.68 10.68 0 0 1 3.16 7.62c0 5.94-4.86 10.78-10.78 10.78zm5.92-8.07c-.32-.16-1.9-.93-2.2-1.03-.3-.11-.51-.16-.72.16-.22.32-.83 1.03-1.02 1.24-.19.22-.38.24-.7.08-.33-.16-1.37-.5-2.61-1.6-.97-.86-1.62-1.92-1.81-2.24-.19-.32-.02-.49.14-.65.15-.14.33-.38.49-.57.16-.19.22-.32.33-.54.11-.21.05-.4-.03-.56-.08-.16-.73-1.75-1-2.4-.26-.63-.53-.54-.73-.55h-.62c-.22 0-.57.08-.87.4-.3.32-1.14 1.1-1.14 2.68s1.17 3.11 1.33 3.33c.16.21 2.3 3.5 5.57 4.91.78.34 1.39.55 1.86.7.78.25 1.49.22 2.05.13.63-.1 1.9-.78 2.17-1.54.27-.75.27-1.4.19-1.53-.08-.14-.3-.22-.62-.38z"/></svg>
-<span class="robin-whatsapp-label">Chat on WhatsApp</span></a>
+<!-- FAQ -->
+<section class="section faq" id="faq">
+  <div class="container faq-wrap">
+    <div class="sticky reveal">
+      <span class="kicker">FAQ</span>
+      <h2 class="h2">Frequently Asked Questions About Healthcare SEO</h2>
+      <p class="lead">Common questions from medical clinics about healthcare SEO services, AI search and patient acquisition.</p>
+    </div>
+    <div class="faq-list reveal d-1">
+        <details open><summary>How long does healthcare SEO take to show results?</summary><p>Some improvements can show within 4–6 weeks, but significant patient growth typically takes 3–6 months of consistent work. Healthcare SEO is built for sustainable, long-term patient acquisition rather than overnight spikes.</p></details>
+        <details><summary>What is the cost of healthcare SEO services?</summary><p>Pricing depends on your practice size, location, competition and patient acquisition goals. Contact us for a free consultation and a customised quote.</p></details>
+        <details><summary>Do you guarantee #1 rankings on Google?</summary><p>No. Nobody can honestly guarantee rankings because Google controls them. We work to improve your rankings and patient enquiries, report on verified data, and explain what is and is not working.</p></details>
+        <details><summary>Do you work with all types of medical clinics?</summary><p>Yes. We work with general practitioners, dentists, dermatologists, med spas, chiropractors, physiotherapists, specialists, multi-location clinics and hospitals.</p></details>
+        <details><summary>Do you offer healthcare SEO for multiple locations?</summary><p>Yes. We provide healthcare SEO for multi-location practices, helping each clinic rank locally while keeping a consistent brand presence.</p></details>
+        <details><summary>What long-tail keywords do you target for healthcare?</summary><p>We target specific, intent-rich phrases such as “best pediatric dentist for children in [city]”, “affordable physiotherapy for back pain” and “top-rated dermatologist for acne treatment”, based on your specialty and location.</p></details>
+        <details><summary>How do you measure success for healthcare SEO?</summary><p>We track organic traffic, keyword rankings, patient call volume, form submissions and, ultimately, new patient appointments booked.</p></details>
+        <details><summary>Is healthcare SEO compliant with medical advertising regulations?</summary><p>We follow medical advertising guidelines and keep content accurate, non-misleading and patient-centric. We do not need access to patient health information to do SEO work.</p></details>
+        <details><summary>Can you rank my clinic in multiple cities and suburbs?</summary><p>Yes. We target your main city plus the suburbs and neighbourhoods your patients come from, using location-specific long-tail keywords, Google Business Profile optimisation, local citations and reviews. Each location should have a real presence (an address or service area) so the rankings are genuine.</p></details>
+        <details><summary>Do I need a separate page for every city?</summary><p>Not at the start. This page covers the cities we serve and the keywords we target. If you have a physical clinic in a city, a dedicated location page with unique content (your team, services, address, reviews and map) is the strongest long-term option. We never publish copy-paste city pages, because Google treats those as low quality.</p></details>
+        <details><summary>What is AEO (Answer Engine Optimisation) for clinics?</summary><p>AEO means structuring your pages so answer engines such as Google AI Overviews, ChatGPT, Gemini and Perplexity can pull a short, accurate answer about your practice. It uses question-style headings, direct answers, FAQ schema and consistent practice details.</p></details>
+        <details><summary>What is GEO (Generative Engine Optimisation)?</summary><p>GEO increases the chance that generative AI tools understand, mention and recommend your practice. It relies on clear entity information (name, address, specialties), schema markup, reviews, citations and helpful, trustworthy content. No agency can guarantee a mention.</p></details>
+    </div>
+  </div>
+</section>
 
-<script src="/robinseo-redesign.js?v=2" defer></script>
+<!-- CONTACT -->
+<section id="contact" class="section contact on-dark">
+  <div class="container contact-grid">
+    <div class="reveal">
+      <span class="kicker">Free audit</span>
+      <h2 class="h2">Ready to Grow Your Practice with Healthcare SEO?</h2>
+      <p>Get a free <strong>healthcare SEO audit</strong> for your clinic. We will analyse your website, find patient acquisition opportunities and show you exactly how to rank higher on Google.</p>
+      <ul class="cl">
+        <li><strong>Email:</strong> <a href="mailto:robinwebseo4@gmail.com">robinwebseo4@gmail.com</a></li>
+        <li><strong>Phone / WhatsApp:</strong> <a href="https://wa.me/919814590619">+91 98145 90619</a></li>
+        <li><strong>Response time:</strong> Within 10 minutes</li>
+      </ul>
+      <a href="https://wa.me/919814590619?text=Hi%20Robin%20SEO%2C%20I%20want%20a%20free%20clinic%20SEO%20audit." target="_blank" rel="noopener" class="btn btn-mint">Get Your Free Clinic SEO Audit <span class="arr">↗</span></a>
+    </div>
+    <div class="wa-card reveal d-1">
+      <h3>Connect on WhatsApp</h3>
+      <p>Send us a message and get your free audit started. No forms, no waiting.</p>
+      <span class="num">+91 98145 90619</span>
+      <span class="badge">⚡ Response within 10 min</span><br>
+      <a href="https://wa.me/919814590619?text=Hi%20Robin%20SEO%2C%20I%20want%20a%20free%20clinic%20SEO%20audit." target="_blank" rel="noopener" class="btn btn-wa"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.08-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.79a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.89 9.88M20.46 3.49A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.69 1.45c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.17-3.48-8.42"/></svg> Chat Now on WhatsApp</a>
+      <p style="font-size:14px;margin-top:18px">Prefer email? <a href="mailto:robinwebseo4@gmail.com" style="color:var(--mint);font-weight:600">robinwebseo4@gmail.com</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final on-dark">
+  <div class="container reveal">
+    <h2>Start Getting More Patients Today</h2>
+    <p>Stop losing patients to competitors. Our healthcare SEO services help your clinic rank higher, attract more patient calls and grow your practice.</p>
+    <a href="#contact" class="btn btn-mint">Get Your Free Clinic SEO Audit <span class="arr">↗</span></a>
+  </div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+  <div class="f-grid">
+    <div>
+      <a href="/" class="logo"><i>R</i>Robin<em>SEO</em></a>
+      <p style="margin-top:16px;max-width:320px">Healthcare SEO agency helping clinics and medical practices across the USA improve search visibility with technical SEO, local optimisation and useful content.</p>
+    </div>
+    <div>
+      <h3>Services</h3>
+      <a href="/healthcare-seo.html" data-text="Healthcare SEO">Healthcare SEO</a>
+      <a href="/healthcare-local-seo.html" data-text="Local SEO">Local SEO</a>
+      <a href="/medical-website-optimisation.html" data-text="Website Optimisation">Website Optimisation</a>
+      <a href="/patient-acquisition-seo.html" data-text="Patient Acquisition">Patient Acquisition</a>
+      <a href="/technical-seo-services-for-small-businesses.html" data-text="Technical SEO">Technical SEO</a>
+    </div>
+    <div>
+      <h3>Specialties</h3>
+      <a href="/dental-seo-services.html" data-text="Dental SEO">Dental SEO</a>
+      <a href="/med-spa-seo-services.html" data-text="Med Spa SEO">Med Spa SEO</a>
+      <a href="/dermatology-seo-services.html" data-text="Dermatology SEO">Dermatology SEO</a>
+      <a href="/chiropractor-seo-services.html" data-text="Chiropractor SEO">Chiropractor SEO</a>
+    </div>
+    <div>
+      <h3>Company</h3>
+      <a href="/seo-packages" data-text="SEO Packages">SEO Packages</a>
+      <a href="/blog" data-text="Blog">Blog</a>
+      <a href="/portfolio" data-text="Portfolio">Portfolio</a>
+      <a href="#contact" data-text="Contact">Contact</a>
+    </div>
+  </div>
+  <div class="f-areas">Serving healthcare practices in Los Angeles · Houston · Dallas · Miami · Atlanta · Chicago · New York · Phoenix · Seattle · Denver and cities across the United States.</div>
+  <div class="copy">
+    <span>© 2026 Robin SEO. All rights reserved.</span>
+    <span>Designed by Mani Sidhu Digital Marketing Services</span>
+  </div>
+</div>
+</footer>
+
+<a class="wa" href="https://wa.me/919814590619?text=Hi%20Robin%20SEO%2C%20I%20want%20a%20free%20clinic%20SEO%20audit." target="_blank" rel="noopener">WhatsApp</a>
+
+<script>
+const toggle=document.getElementById("menuToggle"),nav=document.getElementById("mainNav");
+toggle.addEventListener("click",()=>{nav.classList.toggle("open");toggle.setAttribute("aria-expanded",nav.classList.contains("open"))});
+nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{if(innerWidth<=820&&!a.closest(".dropdown-menu")&&!a.parentElement.classList.contains("dropdown"))nav.classList.remove("open")}));
+const bar=document.getElementById("progress");
+addEventListener("scroll",()=>{const h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+"%"},{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+setTimeout(()=>document.getElementById("dash").classList.add("go"),700);
+</script>
 </body>
 </html>
