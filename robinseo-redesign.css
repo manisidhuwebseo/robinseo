@@ -140,21 +140,3 @@ a{transition:color .2s ease,background .2s ease,border-color .2s ease,transform 
 .robin-coming-note h2{margin:0 0 8px;color:#10251c;font-size:1.45rem;letter-spacing:-.035em}
 .robin-coming-note p{margin:0;color:#617184;line-height:1.65}
 @media(max-width:700px){.robin-coming-hero{padding:66px 0}.robin-coming-inner .robin-home-actions{align-items:stretch;flex-direction:column}.robin-coming-inner .robin-home-actions .btn{width:100%;text-align:center}.robin-coming-note{align-items:flex-start;flex-direction:column;padding:23px}}
-
-
-/* Restore Robin SEO's original green-and-white colour palette; layout is unchanged */
-:root{--rs-ink:#1a1a1a;--rs-ink-2:#2d2d2d;--rs-green:#087f3f;--rs-green-dark:#066b35;--rs-mint:#e8f5e9;--rs-muted:#4a4a4a;--rs-line:#e8e8e8;--rs-paper:#fff;--rs-soft:#f9fafb}
-.logo,.brand,.footer-brand .logo{color:#087f3f!important}
-.logo span{color:#1a1a1a!important}
-.nav-list a,.navlinks a{color:#1a1a1a!important}
-.nav-list a:hover,.navlinks a:hover{color:#087f3f!important}
-.btn-primary,.btn-whatsapp,.nav-cta,.btn:not(.secondary):not(.btn-light){background:#087f3f!important}
-.btn-outline,.btn.secondary{border-color:#087f3f!important;color:#066b35!important}
-.hero,.dental-hero{background:linear-gradient(135deg,#f5faf6 0%,#fff 58%,#f9fafb 100%)!important}
-.hero h1,.hero-content h1,.hero-copy h1,.section h2,.services h2,.deliverables h2,.section-heading h2,.section-head h2,.contact-info h2{color:#1a1a1a!important}
-.hero p,.hero-content p,.hero-copy p,.section p,.service-card p,.card p,.deliverable p{color:#4a4a4a!important}
-.section-alt,.section.alt,.deliverables,.services-cta,.value-intro{background:#f9fafb!important}
-.footer{background:#087f3f!important;color:#fff!important}
-.footer a,.footer p,.footer-legal,.footer small{color:#fff!important}
-.final-cta,.cta{background:linear-gradient(120deg,#087f3f,#066b35)!important}
-.robin-whatsapp-float,.wa-float{background:#25d366!important}
