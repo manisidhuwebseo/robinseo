@@ -1,184 +1,106 @@
 {
+  "cleanUrls": false,
+  "trailingSlash": false,
   "redirects": [
     {
-      "source": "/healthcare-seo.html",
-      "destination": "/healthcare-seo",
+      "source": "/blog",
+      "destination": "/blog.html",
       "permanent": true
     },
     {
-      "source": "/medical-website-optimisation.html",
-      "destination": "/medical-website-optimisation",
+      "source": "/blog-google-november-2026-core-update-healthcare-seo",
+      "destination": "/blog-google-november-2026-core-update-healthcare-seo.html",
       "permanent": true
     },
     {
-      "source": "/healthcare-local-seo.html",
-      "destination": "/healthcare-local-seo",
+      "source": "/chiropractor-seo-services",
+      "destination": "/chiropractor-seo-services.html",
       "permanent": true
     },
     {
-      "source": "/patient-acquisition-seo.html",
-      "destination": "/patient-acquisition-seo",
+      "source": "/dental-seo-services",
+      "destination": "/dental-seo-services.html",
       "permanent": true
     },
     {
-      "source": "/technical-seo-services-for-small-businesses.html",
-      "destination": "/technical-seo-services-for-small-businesses",
+      "source": "/dermatology-seo-services",
+      "destination": "/dermatology-seo-services.html",
       "permanent": true
     },
     {
-      "source": "/seo-packages.html",
-      "destination": "/seo-packages",
+      "source": "/hair-transplant-seo-services",
+      "destination": "/hair-transplant-seo-services.html",
       "permanent": true
     },
     {
-      "source": "/dental-seo-services.html",
-      "destination": "/dental-seo-services",
+      "source": "/healthcare-local-seo",
+      "destination": "/healthcare-local-seo.html",
       "permanent": true
     },
     {
-      "source": "/hair-transplant-seo-services.html",
-      "destination": "/hair-transplant-seo-services",
+      "source": "/healthcare-seo",
+      "destination": "/healthcare-seo.html",
       "permanent": true
     },
     {
-      "source": "/dermatology-seo-services.html",
-      "destination": "/dermatology-seo-services",
+      "source": "/med-spa-seo-services",
+      "destination": "/med-spa-seo-services.html",
       "permanent": true
     },
     {
-      "source": "/med-spa-seo-services.html",
-      "destination": "/med-spa-seo-services",
+      "source": "/medical-website-optimisation",
+      "destination": "/medical-website-optimisation.html",
       "permanent": true
     },
     {
-      "source": "/chiropractor-seo-services.html",
-      "destination": "/chiropractor-seo-services",
+      "source": "/mental-health-seo-services",
+      "destination": "/mental-health-seo-services.html",
       "permanent": true
     },
     {
-      "source": "/physical-therapy-seo-services.html",
-      "destination": "/physical-therapy-seo-services",
+      "source": "/ophthalmology-seo-services",
+      "destination": "/ophthalmology-seo-services.html",
       "permanent": true
     },
     {
-      "source": "/plastic-surgery-seo-services.html",
-      "destination": "/plastic-surgery-seo-services",
+      "source": "/patient-acquisition-seo",
+      "destination": "/patient-acquisition-seo.html",
       "permanent": true
     },
     {
-      "source": "/ophthalmology-seo-services.html",
-      "destination": "/ophthalmology-seo-services",
+      "source": "/physical-therapy-seo-services",
+      "destination": "/physical-therapy-seo-services.html",
       "permanent": true
     },
     {
-      "source": "/primary-care-seo-services.html",
-      "destination": "/primary-care-seo-services",
+      "source": "/plastic-surgery-seo-services",
+      "destination": "/plastic-surgery-seo-services.html",
       "permanent": true
     },
     {
-      "source": "/mental-health-seo-services.html",
-      "destination": "/mental-health-seo-services",
+      "source": "/portfolio",
+      "destination": "/portfolio.html",
       "permanent": true
     },
     {
-      "source": "/blog.html",
-      "destination": "/blog",
+      "source": "/primary-care-seo-services",
+      "destination": "/primary-care-seo-services.html",
       "permanent": true
     },
     {
-      "source": "/portfolio.html",
-      "destination": "/portfolio",
+      "source": "/seo-packages",
+      "destination": "/seo-packages.html",
       "permanent": true
-    }
-  ],
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/index.html"
     },
     {
-      "src": "/healthcare-seo",
-      "dest": "/healthcare-seo.html"
+      "source": "/seo-service-ratia",
+      "destination": "/seo-service-ratia.html",
+      "permanent": true
     },
     {
-      "src": "/medical-website-optimisation",
-      "dest": "/medical-website-optimisation.html"
-    },
-    {
-      "src": "/healthcare-local-seo",
-      "dest": "/healthcare-local-seo.html"
-    },
-    {
-      "src": "/patient-acquisition-seo",
-      "dest": "/patient-acquisition-seo.html"
-    },
-    {
-      "src": "/technical-seo-services-for-small-businesses",
-      "dest": "/technical-seo-services-for-small-businesses.html"
-    },
-    {
-      "src": "/seo-packages",
-      "dest": "/seo-packages.html"
-    },
-    {
-      "src": "/dental-seo-services",
-      "dest": "/dental-seo-services.html"
-    },
-    {
-      "src": "/hair-transplant-seo-services",
-      "dest": "/hair-transplant-seo-services.html"
-    },
-    {
-      "src": "/dermatology-seo-services",
-      "dest": "/dermatology-seo-services.html"
-    },
-    {
-      "src": "/med-spa-seo-services",
-      "dest": "/med-spa-seo-services.html"
-    },
-    {
-      "src": "/chiropractor-seo-services",
-      "dest": "/chiropractor-seo-services.html"
-    },
-    {
-      "src": "/physical-therapy-seo-services",
-      "dest": "/physical-therapy-seo-services.html"
-    },
-    {
-      "src": "/plastic-surgery-seo-services",
-      "dest": "/plastic-surgery-seo-services.html"
-    },
-    {
-      "src": "/ophthalmology-seo-services",
-      "dest": "/ophthalmology-seo-services.html"
-    },
-    {
-      "src": "/primary-care-seo-services",
-      "dest": "/primary-care-seo-services.html"
-    },
-    {
-      "src": "/mental-health-seo-services",
-      "dest": "/mental-health-seo-services.html"
-    },
-    {
-      "src": "/blog/google-november-2026-core-update-healthcare-seo",
-      "dest": "/blog-google-november-2026-core-update-healthcare-seo.html"
-    },
-    {
-      "src": "/blog",
-      "dest": "/blog.html"
-    },
-    {
-      "src": "/portfolio",
-      "dest": "/portfolio.html"
-    },
-    {
-      "src": "/robots.txt",
-      "dest": "/robots.txt"
-    },
-    {
-      "src": "/sitemap.xml",
-      "dest": "/sitemap.xml"
+      "source": "/technical-seo-services-for-small-businesses",
+      "destination": "/technical-seo-services-for-small-businesses.html",
+      "permanent": true
     }
   ]
 }
