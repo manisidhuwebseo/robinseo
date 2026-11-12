@@ -3,6 +3,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/blog/:slug",
+      "destination": "/blog/:slug.html",
+      "permanent": true
+    },
+    {
       "source": "/blog-google-november-2026-core-update-healthcare-seo",
       "destination": "/blog/google-november-2026-core-update-healthcare-seo.html",
       "permanent": true
