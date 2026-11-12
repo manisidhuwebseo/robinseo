@@ -3,6 +3,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/blog-chatgpt-business-hub-guide-ai-search-visibility",
+      "destination": "/blog-chatgpt-business-hub-guide-ai-search-visibility.html",
+      "permanent": true
+    },
+    {
       "source": "/blog",
       "destination": "/blog.html",
       "permanent": true
