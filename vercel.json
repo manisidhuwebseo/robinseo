@@ -3,38 +3,28 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/chatgpt-business-hub-guide-ai-search-visibility",
-      "destination": "/blog/chatgpt-business-hub-guide-ai-search-visibility.html",
-      "permanent": true
-    },
-    {
-      "source": "/chatgpt-business-hub-guide-ai-search-visibility.html",
-      "destination": "/blog/chatgpt-business-hub-guide-ai-search-visibility.html",
-      "permanent": true
-    },
-    {
-      "source": "/google-november-2026-core-update-healthcare-seo",
+      "source": "/blog-google-november-2026-core-update-healthcare-seo",
       "destination": "/blog/google-november-2026-core-update-healthcare-seo.html",
       "permanent": true
     },
     {
-      "source": "/google-november-2026-core-update-healthcare-seo.html",
+      "source": "/blog-google-november-2026-core-update-healthcare-seo.html",
       "destination": "/blog/google-november-2026-core-update-healthcare-seo.html",
       "permanent": true
     },
     {
       "source": "/blog-chatgpt-business-hub-guide-ai-search-visibility",
-      "destination": "/blog-chatgpt-business-hub-guide-ai-search-visibility.html",
+      "destination": "/blog/chatgpt-business-hub-guide-ai-search-visibility.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog-chatgpt-business-hub-guide-ai-search-visibility.html",
+      "destination": "/blog/chatgpt-business-hub-guide-ai-search-visibility.html",
       "permanent": true
     },
     {
       "source": "/blog",
       "destination": "/blog.html",
-      "permanent": true
-    },
-    {
-      "source": "/blog-google-november-2026-core-update-healthcare-seo",
-      "destination": "/blog-google-november-2026-core-update-healthcare-seo.html",
       "permanent": true
     },
     {
