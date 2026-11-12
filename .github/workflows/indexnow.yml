@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "**.html"
+      - "**/*.html"
       - "sitemap.xml"
       - "8d4c1a7f93e2b6d0a5c8f1e4b7d2936a.txt"
   workflow_dispatch:
@@ -64,11 +64,11 @@ jobs:
                   for filename in changed:
                       if not filename.endswith(".html"):
                           continue
-                      stem = os.path.splitext(os.path.basename(filename))[0]
-                      if path == "" and stem == "index":
+                      normalized_file = filename.replace("\\\\", "/").lstrip("./")
+                      if path == normalized_file:
                           selected.append(url)
                           break
-                      if path == stem or path == stem + ".html":
+                      if path == "" and normalized_file == "index.html":
                           selected.append(url)
                           break
 
