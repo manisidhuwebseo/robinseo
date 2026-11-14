@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Technical SEO audit workspace for a small business website</title>
+<desc id="desc">A laptop displaying a technical website audit dashboard with crawl checks, indexing status, performance indicators and a prioritized action list, set against a deep green digital workspace.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06150e"/><stop offset="1" stop-color="#123e2b"/></linearGradient>
+  <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fcf9"/><stop offset="1" stop-color="#e7f4eb"/></linearGradient>
+  <linearGradient id="mint" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#58e6a2"/><stop offset="1" stop-color="#18a66a"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="28"/></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<circle cx="1320" cy="150" r="260" fill="#2bd58c" opacity=".12"/>
+<circle cx="220" cy="760" r="280" fill="#2bd58c" opacity=".09"/>
+<path d="M0 690 C300 600 430 820 760 730 S1250 600 1600 720 V900 H0Z" fill="#0b2a1d" opacity=".72"/>
+<g opacity=".18" stroke="#75e5ad" stroke-width="2"><path d="M0 120H1600M0 240H1600M0 360H1600M0 480H1600M0 600H1600M0 720H1600"/><path d="M160 0V900M320 0V900M480 0V900M640 0V900M800 0V900M960 0V900M1120 0V900M1280 0V900M1440 0V900"/></g>
+<ellipse cx="790" cy="748" rx="570" ry="70" fill="#000" opacity=".35" filter="url(#shadow)"/>
+<g transform="translate(230 125)">
+  <rect x="110" y="35" width="900" height="545" rx="34" fill="#101d18" stroke="#4a7962" stroke-width="7"/>
+  <rect x="137" y="62" width="846" height="491" rx="17" fill="url(#screen)"/>
+  <rect x="137" y="62" width="846" height="62" rx="17" fill="#0d2b1e"/>
+  <circle cx="174" cy="92" r="8" fill="#f7b86a"/><circle cx="202" cy="92" r="8" fill="#70d9a0"/><circle cx="230" cy="92" r="8" fill="#7cae94"/>
+  <text x="275" y="101" fill="#e8fff1" font-family="Arial,sans-serif" font-size="23" font-weight="700">SITE HEALTH AUDIT</text>
+  <rect x="168" y="151" width="250" height="365" rx="18" fill="#fff" stroke="#d9e8df" stroke-width="2"/>
+  <text x="194" y="191" fill="#173b2a" font-family="Arial,sans-serif" font-size="22" font-weight="700">Audit overview</text>
+  <circle cx="292" cy="292" r="68" fill="none" stroke="#dcece2" stroke-width="18"/>
+  <circle cx="292" cy="292" r="68" fill="none" stroke="url(#mint)" stroke-width="18" stroke-linecap="round" stroke-dasharray="335 427" transform="rotate(-90 292 292)"/>
+  <text x="292" y="302" text-anchor="middle" fill="#123b28" font-family="Arial,sans-serif" font-size="38" font-weight="800">78</text>
+  <text x="292" y="334" text-anchor="middle" fill="#718579" font-family="Arial,sans-serif" font-size="15">health score</text>
+  <rect x="194" y="390" width="198" height="13" rx="7" fill="#e8f1eb"/><rect x="194" y="390" width="155" height="13" rx="7" fill="#20a66c"/>
+  <rect x="194" y="424" width="198" height="13" rx="7" fill="#e8f1eb"/><rect x="194" y="424" width="130" height="13" rx="7" fill="#54c68e"/>
+  <rect x="194" y="458" width="198" height="13" rx="7" fill="#e8f1eb"/><rect x="194" y="458" width="176" height="13" rx="7" fill="#20a66c"/>
+  <text x="194" y="493" fill="#718579" font-family="Arial,sans-serif" font-size="14">Crawl · Index · Speed</text>
+  <rect x="440" y="151" width="510" height="176" rx="18" fill="#fff" stroke="#d9e8df" stroke-width="2"/>
+  <text x="470" y="191" fill="#173b2a" font-family="Arial,sans-serif" font-size="22" font-weight="700">Priority issues</text>
+  <g font-family="Arial,sans-serif" font-size="17" fill="#345346">
+    <circle cx="477" cy="231" r="11" fill="#e8f8ef" stroke="#1ba76b" stroke-width="3"/><path d="M471 231l4 4 8-9" fill="none" stroke="#168a58" stroke-width="3" stroke-linecap="round"/><text x="503" y="237">Important pages can be crawled</text>
+    <circle cx="477" cy="271" r="11" fill="#fff2df" stroke="#e8a64f" stroke-width="3"/><text x="503" y="277">Review duplicate URL signals</text>
+    <circle cx="477" cy="311" r="11" fill="#e8f8ef" stroke="#1ba76b" stroke-width="3"/><path d="M471 311l4 4 8-9" fill="none" stroke="#168a58" stroke-width="3" stroke-linecap="round"/><text x="503" y="317">Check mobile page experience</text>
+  </g>
+  <rect x="440" y="350" width="510" height="166" rx="18" fill="#fff" stroke="#d9e8df" stroke-width="2"/>
+  <text x="470" y="390" fill="#173b2a" font-family="Arial,sans-serif" font-size="22" font-weight="700">Search visibility signals</text>
+  <path d="M475 475 L535 456 L590 464 L650 427 L710 439 L770 402 L830 415 L900 374" fill="none" stroke="#18a66a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M475 475 L535 456 L590 464 L650 427 L710 439 L770 402 L830 415 L900 374 L900 488 L475 488Z" fill="#b7efd0" opacity=".35"/>
+  <g fill="#18a66a"><circle cx="535" cy="456" r="6"/><circle cx="650" cy="427" r="6"/><circle cx="770" cy="402" r="6"/><circle cx="900" cy="374" r="6"/></g>
+  <path d="M50 580 H1070 L1018 628 H105 Q68 628 50 580Z" fill="#a8bcb0" stroke="#5f7b6c" stroke-width="5"/>
+  <rect x="470" y="585" width="220" height="10" rx="5" fill="#6c8577"/>
+</g>
+<g transform="translate(1190 555)">
+  <rect x="0" y="0" width="270" height="170" rx="22" fill="#eaf9f0" stroke="#5bd99c" stroke-width="3"/>
+  <circle cx="54" cy="55" r="25" fill="#d1f4df"/><path d="M42 55h24M54 43v24" stroke="#158b57" stroke-width="6" stroke-linecap="round"/>
+  <text x="94" y="61" fill="#143c29" font-family="Arial,sans-serif" font-size="22" font-weight="700">Small business</text>
+  <text x="32" y="112" fill="#4d6d5c" font-family="Arial,sans-serif" font-size="17">Clear fixes. Better foundations.</text>
+  <text x="32" y="141" fill="#168b59" font-family="Arial,sans-serif" font-size="15" font-weight="700">PRIORITISE WHAT MATTERS</text>
+</g>
+<text x="90" y="820" fill="#b9e9ce" font-family="Arial,sans-serif" font-size="22" letter-spacing="4">ROBIN SEO  /  TECHNICAL SEO</text>
+</svg>
