@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Google Business Profile optimization for a dental practice</title>
+<desc id="desc">A dental practice profile card with accurate hours, services, photos and reviews sits over an illustrated local map with location pins and a tooth symbol, in Robin SEO's green visual palette.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06150e"/><stop offset="1" stop-color="#16442f"/></linearGradient>
+ <linearGradient id="card" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#eef8f1"/></linearGradient>
+ <linearGradient id="pin" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5de7a4"/><stop offset="1" stop-color="#159b62"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="25"/></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<circle cx="220" cy="170" r="250" fill="#3bd78f" opacity=".12"/><circle cx="1400" cy="780" r="280" fill="#3bd78f" opacity=".09"/>
+<g opacity=".16" stroke="#9ce9bf" stroke-width="3" fill="none"><path d="M-30 260 C180 160 300 390 520 270 S850 130 1030 270 S1330 420 1640 250"/><path d="M-30 500 C200 400 320 630 560 510 S880 390 1100 540 S1390 680 1640 500"/><path d="M250 -30 C160 190 360 300 250 500 S190 740 300 930"/><path d="M730 -30 C640 180 850 320 730 520 S680 760 810 930"/><path d="M1250 -30 C1140 190 1360 330 1240 520 S1180 760 1300 930"/></g>
+<ellipse cx="800" cy="770" rx="560" ry="72" fill="#000" opacity=".32" filter="url(#shadow)"/>
+<g transform="translate(105 120)">
+ <rect x="0" y="0" width="560" height="610" rx="34" fill="url(#card)" stroke="#d8eee0" stroke-width="3"/>
+ <rect x="0" y="0" width="560" height="112" rx="34" fill="#0d2b1e"/>
+ <rect x="0" y="78" width="560" height="34" fill="#0d2b1e"/>
+ <circle cx="58" cy="56" r="28" fill="#d5f4e2"/><path d="M42 49 Q42 34 55 34 Q62 34 70 42 Q78 34 86 34 Q99 34 99 49 Q99 65 70 85 Q42 65 42 49Z" transform="translate(-14 -10) scale(.78)" fill="#159b62"/>
+ <text x="110" y="50" fill="#f1fff6" font-family="Arial,sans-serif" font-size="20" font-weight="700">PRACTICE PROFILE</text>
+ <text x="110" y="78" fill="#a8e8c3" font-family="Arial,sans-serif" font-size="16">Local information patients can trust</text>
+ <rect x="36" y="142" width="488" height="112" rx="20" fill="#e2f5e9"/>
+ <circle cx="94" cy="198" r="35" fill="#c5edd4"/><path d="M75 191 Q75 171 91 171 Q100 171 107 180 Q116 171 126 171 Q143 171 143 191 Q143 212 109 234 Q75 212 75 191Z" fill="#168e5b"/>
+ <text x="155" y="184" fill="#123c29" font-family="Arial,sans-serif" font-size="25" font-weight="700">Oak &amp; Grove Dental</text>
+ <text x="155" y="215" fill="#587365" font-family="Arial,sans-serif" font-size="17">Dentist · Local practice</text>
+ <g fill="#e7a83e"><path d="M159 231l5 10 11 1-8 7 2 11-10-5-10 5 2-11-8-7 11-1Z"/><path d="M190 231l5 10 11 1-8 7 2 11-10-5-10 5 2-11-8-7 11-1Z"/><path d="M221 231l5 10 11 1-8 7 2 11-10-5-10 5 2-11-8-7 11-1Z"/><path d="M252 231l5 10 11 1-8 7 2 11-10-5-10 5 2-11-8-7 11-1Z"/><path d="M283 231l5 10 11 1-8 7 2 11-10-5-10 5 2-11-8-7 11-1Z"/></g>
+ <text x="315" y="249" fill="#587365" font-family="Arial,sans-serif" font-size="15">Review signals</text>
+ <g font-family="Arial,sans-serif" font-size="18" fill="#244a36">
+  <rect x="38" y="286" width="484" height="60" rx="13" fill="#fff" stroke="#dcebe1" stroke-width="2"/><circle cx="72" cy="316" r="16" fill="#dff5e7"/><path d="M64 316h16M72 308v16" stroke="#168e5b" stroke-width="3" stroke-linecap="round"/><text x="105" y="323">Accurate hours &amp; contact details</text>
+  <rect x="38" y="360" width="484" height="60" rx="13" fill="#fff" stroke="#dcebe1" stroke-width="2"/><circle cx="72" cy="390" r="16" fill="#dff5e7"/><path d="M62 391l7 7 14-17" stroke="#168e5b" stroke-width="3" fill="none" stroke-linecap="round"/><text x="105" y="397">Relevant services &amp; categories</text>
+  <rect x="38" y="434" width="484" height="60" rx="13" fill="#fff" stroke="#dcebe1" stroke-width="2"/><circle cx="72" cy="464" r="16" fill="#dff5e7"/><path d="M63 457h18v14H63zM66 453h12" stroke="#168e5b" stroke-width="3" fill="none"/><text x="105" y="471">Current practice photos</text>
+  <rect x="38" y="508" width="484" height="60" rx="13" fill="#fff" stroke="#dcebe1" stroke-width="2"/><circle cx="72" cy="538" r="16" fill="#dff5e7"/><path d="M63 538q9 13 18 0" stroke="#168e5b" stroke-width="3" fill="none" stroke-linecap="round"/><text x="105" y="545">Genuine patient feedback</text>
+ </g>
+</g>
+<g transform="translate(760 130)">
+ <rect x="0" y="0" width="700" height="570" rx="32" fill="#dff2e5" opacity=".13" stroke="#7ddbab" stroke-width="3"/>
+ <g stroke="#9be7b9" stroke-width="12" stroke-linecap="round" fill="none" opacity=".75">
+  <path d="M70 110 L250 220 L410 120 L600 230"/><path d="M50 390 L220 300 L390 420 L630 340"/><path d="M250 220 L220 300"/><path d="M410 120 L390 420"/>
+ </g>
+ <g fill="#c4efd4" opacity=".3"><rect x="110" y="150" width="90" height="52" rx="12"/><rect x="490" y="90" width="82" height="60" rx="12"/><rect x="500" y="420" width="92" height="58" rx="12"/><rect x="100" y="440" width="80" height="54" rx="12"/></g>
+ <g transform="translate(295 180)">
+  <path d="M70 0 C29 0 0 31 0 71 C0 126 70 220 70 220 C70 220 140 126 140 71 C140 31 111 0 70 0Z" fill="url(#pin)" stroke="#c5f5d7" stroke-width="5"/>
+  <circle cx="70" cy="68" r="42" fill="#effcf3"/>
+  <path d="M43 58 Q43 34 62 34 Q72 34 82 47 Q92 34 103 34 Q122 34 122 58 Q122 82 82 110 Q43 82 43 58Z" fill="#168e5b" transform="translate(-12 -6) scale(.96)"/>
+ </g>
+ <g transform="translate(75 275)">
+  <path d="M42 0 C18 0 0 18 0 42 C0 74 42 124 42 124 C42 124 84 74 84 42 C84 18 66 0 42 0Z" fill="#53d995" stroke="#d2f7df" stroke-width="4"/><circle cx="42" cy="42" r="17" fill="#effcf3"/>
+ </g>
+ <g transform="translate(540 275)">
+  <path d="M42 0 C18 0 0 18 0 42 C0 74 42 124 42 124 C42 124 84 74 84 42 C84 18 66 0 42 0Z" fill="#53d995" stroke="#d2f7df" stroke-width="4"/><circle cx="42" cy="42" r="17" fill="#effcf3"/>
+ </g>
+ <rect x="180" y="475" width="340" height="58" rx="29" fill="#0d2b1e" stroke="#5bd99c" stroke-width="2"/>
+ <text x="350" y="512" text-anchor="middle" fill="#dff8e8" font-family="Arial,sans-serif" font-size="19" font-weight="700">REAL LOCATIONS · CLEAR DETAILS</text>
+</g>
+<text x="92" y="820" fill="#b9e9ce" font-family="Arial,sans-serif" font-size="22" letter-spacing="4">ROBIN SEO  /  DENTAL LOCAL SEARCH</text>
+</svg>
